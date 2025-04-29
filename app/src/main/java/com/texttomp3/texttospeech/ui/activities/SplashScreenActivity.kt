@@ -19,14 +19,17 @@ import com.texttomp3.texttospeech.billing.GoogleBillingManager
 import com.texttomp3.texttospeech.databinding.ActivitySplashBinding
 import com.texttomp3.texttospeech.helpers.PreferenceHelper
 import com.texttomp3.texttospeech.utils.Constants.IS_FIRST_OPEN_APP
+import com.texttomp3.texttospeech.utils.Utils
 import com.texttomp3.texttospeech.viewmodels.SettingViewModel
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 import java.util.concurrent.atomic.AtomicBoolean
 
 @SuppressLint("CustomSplashScreen")
-class SplashScreenActivity : AppCompatActivity(), GoogleBillingManager.OnPurchaseStateChangeListener {
+class SplashScreenActivity : AppCompatActivity(),
+    GoogleBillingManager.OnPurchaseStateChangeListener {
     private val binding: ActivitySplashBinding by lazy {
         ActivitySplashBinding.inflate(layoutInflater)
     }
@@ -53,7 +56,7 @@ class SplashScreenActivity : AppCompatActivity(), GoogleBillingManager.OnPurchas
         }
         hideNavigationBar()
         billingManager = GoogleBillingManager(this, this, this, settingViewModel)
-        billingManager.queryPurchases()
+        billingManager.getSubscriptionData()
         isFirstOpenApp = PreferenceHelper.getInstance(this).getBoolean(IS_FIRST_OPEN_APP, true)
         setupUMP()
     }
@@ -80,29 +83,27 @@ class SplashScreenActivity : AppCompatActivity(), GoogleBillingManager.OnPurchas
         if (isMobileAdsInitializeCalled.getAndSet(true)) {
             return
         }
-        kotlin.runCatching {
-            (application as MyApplication).initializeMobileAdsSdk()
-
-            if (settingViewModel.proVersion.value) {
-                lifecycleScope.launch {
-                    delay(1000)
-                    openMainActivity()
-                }
-            } else {
-                val appOpenAdManager = AppOpenManager()
-                appOpenAdManager.loadAd(this) { success ->
-                    if (success) {
-                        appOpenAdManager.showAdIfAvailable(this, object : MyApplication.OnShowAdCompleteListener {
-                            override fun onShowAdComplete() {
-                                openMainActivity()
-                            }
-                        })
-                    } else {
-                        openMainActivity()
-                    }
-                }
-            }
+        lifecycleScope.launch {
+            delay(1000)
+            openMainActivity()
         }
+//        kotlin.runCatching {
+//            (application as MyApplication).initializeMobileAdsSdk()
+//            val appOpenAdManager = AppOpenManager()
+//            appOpenAdManager.loadAd(this) { success ->
+//                if (success) {
+//                    appOpenAdManager.showAdIfAvailable(
+//                        this,
+//                        object : MyApplication.OnShowAdCompleteListener {
+//                            override fun onShowAdComplete() {
+//                                openMainActivity()
+//                            }
+//                        })
+//                } else {
+//                    openMainActivity()
+//                }
+//            }
+//        }
     }
 
 

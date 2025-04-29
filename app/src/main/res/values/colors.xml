@@ -11,4 +11,5 @@
     <color name="blue_light">#ECF5FF</color>
     <color name="blue_bold">#214DFC</color>
     <color name="color_ads">#FFA733</color>
+    <color name="color_shimmer">#DDDDDD</color>
 </resources>

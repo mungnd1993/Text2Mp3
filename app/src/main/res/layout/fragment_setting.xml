@@ -122,6 +122,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="6dp"
                                 android:text="@string/support_more_than_100_languages"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/roboto_regular"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/iv_tick1"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -151,6 +154,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="6dp"
                                 android:text="@string/remove_ads"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/roboto_regular"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/iv_tick2"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -180,6 +186,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="6dp"
                                 android:text="@string/load_audio_file"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/roboto_regular"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/iv_tick3"
                                 app:layout_constraintTop_toTopOf="parent" />

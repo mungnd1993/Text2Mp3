@@ -22,4 +22,9 @@
         <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
+    <style name="CustomEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColorHighlight">#D9EAFF</item>
+    </style>
+
+
 </resources>

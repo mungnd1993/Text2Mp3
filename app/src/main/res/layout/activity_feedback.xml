@@ -100,6 +100,7 @@
             android:scrollHorizontally="false"
             android:textColor="@color/black"
             android:textColorHint="#9B9B9C"
+            style="@style/CustomEditTextStyle"
             android:textSize="14sp"
             android:lines="8"
             android:enabled="false"/>

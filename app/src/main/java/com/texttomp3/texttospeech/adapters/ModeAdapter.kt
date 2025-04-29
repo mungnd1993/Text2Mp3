@@ -27,11 +27,11 @@ class ModeAdapter(private val listener: OnClickListener): BaseRecyclerView<ItemM
         with(binding) {
             when (item.name) {
                 ANDROID -> {
-                    tvName.text = "Default Voice Engine"
+                    tvName.text = root.context.getString(R.string.default_voice_engine)
                     ivIcon.setImageResource(R.drawable.ic_android)
                 }
                 EDGE -> {
-                    tvName.text = "Edge Text To Speech"
+                    tvName.text = root.context.getString(R.string.edge_text_to_speech)
                     ivIcon.setImageResource(R.drawable.ic_edge)
                 }
             }

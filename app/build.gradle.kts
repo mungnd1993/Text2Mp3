@@ -80,6 +80,7 @@ dependencies {
     implementation(libs.play.services.ads)
     implementation(libs.androidx.lifecycle.process)
     implementation(libs.user.messaging.platform)
+    implementation(libs.shimmer)
 
     // Billing
     implementation(libs.billing.ktx)
