@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#1B1B1C</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#BCBCBC</color>
+    <color name="grey_text">#6E6E6E</color>
+    <color name="grey_text_main">#9B9B9C</color>
+    <color name="grey_button">#F1F1F1</color>
+    <color name="grey_button_bold">#E8E8E8</color>
+    <color name="blue">#346DFA</color>
+    <color name="blue_light">#ECF5FF</color>
+    <color name="blue_bold">#214DFC</color>
+    <color name="color_ads">#FFA733</color>
+</resources>

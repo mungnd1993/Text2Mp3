@@ -1,0 +1,5404 @@
+[
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "voice": "af-ZA-AdriNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hallo, gaan dit goed met jou?"
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "voice": "af-ZA-WillemNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hallo, gaan dit goed met jou?"
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "voice": "en-ZA-LeahNeural",
+    "voiceName": "Voice 3",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "voice": "en-ZA-LukeNeural",
+    "voiceName": "Voice 4",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "voice": "zu-ZA-ThandoNeural",
+    "voiceName": "Voice 5",
+    "demo": "Sawubona, unjani?"
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "voice": "zu-ZA-ThembaNeural",
+    "voiceName": "Voice 6",
+    "demo": "Sawubona, unjani?"
+  },
+  {
+    "code": "AL",
+    "name": "Albania",
+    "voice": "sq-AL-AnilaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Përshëndetje, si jeni?"
+  },
+  {
+    "code": "AL",
+    "name": "Albania",
+    "voice": "sq-AL-IlirNeural",
+    "voiceName": "Voice 2",
+    "demo": "Përshëndetje, si jeni?"
+  },
+  {
+    "code": "ET",
+    "name": "Ethiopia",
+    "voice": "am-ET-AmehaNeural",
+    "voiceName": "Voice 1",
+    "demo": "ሰላም፣ እርስዎ እንደምን ነው?"
+  },
+  {
+    "code": "ET",
+    "name": "Ethiopia",
+    "voice": "am-ET-MekdesNeural",
+    "voiceName": "Voice 2",
+    "demo": "ሰላም፣ እርስዎ እንደምን ነው?"
+  },
+  {
+    "code": "DZ",
+    "name": "Algeria",
+    "voice": "ar-DZ-AminaNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "DZ",
+    "name": "Algeria",
+    "voice": "ar-DZ-IsmaelNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "BH",
+    "name": "Bahrain",
+    "voice": "ar-BH-AliNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "BH",
+    "name": "Bahrain",
+    "voice": "ar-BH-LailaNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "EG",
+    "name": "Egypt",
+    "voice": "ar-EG-SalmaNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "EG",
+    "name": "Egypt",
+    "voice": "ar-EG-ShakirNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "IQ",
+    "name": "Iraq",
+    "voice": "ar-IQ-BasselNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "IQ",
+    "name": "Iraq",
+    "voice": "ar-IQ-RanaNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "JO",
+    "name": "Jordan",
+    "voice": "ar-JO-SanaNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "JO",
+    "name": "Jordan",
+    "voice": "ar-JO-TaimNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "KW",
+    "name": "Kuwait",
+    "voice": "ar-KW-FahedNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "KW",
+    "name": "Kuwait",
+    "voice": "ar-KW-NouraNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "LB",
+    "name": "Lebanon",
+    "voice": "ar-LB-LaylaNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "LB",
+    "name": "Lebanon",
+    "voice": "ar-LB-RamiNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "LY",
+    "name": "Libya",
+    "voice": "ar-LY-ImanNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "LY",
+    "name": "Libya",
+    "voice": "ar-LY-OmarNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "MA",
+    "name": "Morocco",
+    "voice": "ar-MA-JamalNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "MA",
+    "name": "Morocco",
+    "voice": "ar-MA-MounaNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "OM",
+    "name": "Oman",
+    "voice": "ar-OM-AbdullahNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "OM",
+    "name": "Oman",
+    "voice": "ar-OM-AyshaNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "QA",
+    "name": "Qatar",
+    "voice": "ar-QA-AmalNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "QA",
+    "name": "Qatar",
+    "voice": "ar-QA-MoazNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "SA",
+    "name": "Saudi Arabia",
+    "voice": "ar-SA-HamedNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "SA",
+    "name": "Saudi Arabia",
+    "voice": "ar-SA-ZariyahNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "SY",
+    "name": "Syria",
+    "voice": "ar-SY-AmanyNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "SY",
+    "name": "Syria",
+    "voice": "ar-SY-LaithNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "TN",
+    "name": "Tunisia",
+    "voice": "ar-TN-HediNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "TN",
+    "name": "Tunisia",
+    "voice": "ar-TN-ReemNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "voice": "ar-AE-FatimaNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "voice": "ar-AE-HamdanNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "YE",
+    "name": "Yemen",
+    "voice": "ar-YE-MaryamNeural",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "YE",
+    "name": "Yemen",
+    "voice": "ar-YE-SalehNeural",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "AZ",
+    "name": "Azerbaijan",
+    "voice": "az-AZ-BabekNeural",
+    "voiceName": "Voice 1",
+    "demo": "Salam, necəsən?"
+  },
+  {
+    "code": "AZ",
+    "name": "Azerbaijan",
+    "voice": "az-AZ-BanuNeural",
+    "voiceName": "Voice 2",
+    "demo": "Salam, necəsən?"
+  },
+  {
+    "code": "BD",
+    "name": "Bangladesh",
+    "voice": "bn-BD-NabanitaNeural",
+    "voiceName": "Voice 1",
+    "demo": "হ্যালো, তুমি কেমন আছো?"
+  },
+  {
+    "code": "BD",
+    "name": "Bangladesh",
+    "voice": "bn-BD-PradeepNeural",
+    "voiceName": "Voice 2",
+    "demo": "হ্যালো, তুমি কেমন আছো?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "bn-IN-BashkarNeural",
+    "voiceName": "Voice 1",
+    "demo": "হ্যালো, তুমি কেমন আছো?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "bn-IN-TanishaaNeural",
+    "voiceName": "Voice 2",
+    "demo": "হ্যালো, তুমি কেমন আছো?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "voiceName": "Voice 3",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "en-IN-NeerjaNeural",
+    "voiceName": "Voice 4",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "en-IN-PrabhatNeural",
+    "voiceName": "Voice 5",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "gu-IN-DhwaniNeural",
+    "voiceName": "Voice 6",
+    "demo": "નમસ્તે, તમે કેમ છો?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "gu-IN-NiranjanNeural",
+    "voiceName": "Voice 7",
+    "demo": "નમસ્તે, તમે કેમ છો?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "hi-IN-MadhurNeural",
+    "voiceName": "Voice 8",
+    "demo": "नमस्ते, आप कैसे हैं?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "hi-IN-SwaraNeural",
+    "voiceName": "Voice 9",
+    "demo": "नमस्ते, आप कैसे हैं?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "kn-IN-GaganNeural",
+    "voiceName": "Voice 10",
+    "demo": "ಹಲೋ, ನೀವು ಹೇಗಿದ್ದೀರಿ?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "kn-IN-SapnaNeural",
+    "voiceName": "Voice 11",
+    "demo": "ಹಲೋ, ನೀವು ಹೇಗಿದ್ದೀರಿ?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ml-IN-MidhunNeural",
+    "voiceName": "Voice 12",
+    "demo": "നമസ്കാരം, സുഖമാണോ?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ml-IN-SobhanaNeural",
+    "voiceName": "Voice 13",
+    "demo": "നമസ്കാരം, സുഖമാണോ?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mr-IN-AarohiNeural",
+    "voiceName": "Voice 14",
+    "demo": "नमस्कार, तुम्ही कसे आहात?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mr-IN-ManoharNeural",
+    "voiceName": "Voice 15",
+    "demo": "नमस्कार, तुम्ही कसे आहात?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ta-IN-PallaviNeural",
+    "voiceName": "Voice 16",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ta-IN-ValluvarNeural",
+    "voiceName": "Voice 17",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "te-IN-MohanNeural",
+    "voiceName": "Voice 18",
+    "demo": "నమస్తే, మీరు ఎలా ఉన్నారు?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "te-IN-ShrutiNeural",
+    "voiceName": "Voice 19",
+    "demo": "నమస్తే, మీరు ఎలా ఉన్నారు?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ur-IN-GulNeural",
+    "voiceName": "Voice 20",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ur-IN-SalmanNeural",
+    "voiceName": "Voice 21",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "BA",
+    "name": "Bosnia",
+    "voice": "bs-BA-GoranNeural",
+    "voiceName": "Voice 1",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "BA",
+    "name": "Bosnia",
+    "voice": "bs-BA-VesnaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "BG",
+    "name": "Bulgaria",
+    "voice": "bg-BG-BorislavNeural",
+    "voiceName": "Voice 1",
+    "demo": "Здравей, как си?"
+  },
+  {
+    "code": "BG",
+    "name": "Bulgaria",
+    "voice": "bg-BG-KalinaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Здравей, как си?"
+  },
+  {
+    "code": "MM",
+    "name": "Myanmar (Burma)",
+    "voice": "my-MM-NilarNeural",
+    "voiceName": "Voice 1",
+    "demo": "မင်္ဂလာပါ၊ နေကောင်းလား?"
+  },
+  {
+    "code": "MM",
+    "name": "Myanmar (Burma)",
+    "voice": "my-MM-ThihaNeural",
+    "voiceName": "Voice 2",
+    "demo": "မင်္ဂလာပါ၊ နေကောင်းလား?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "ca-ES-EnricNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, com estàs?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "ca-ES-JoanaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, com estàs?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "gl-ES-RoiNeural",
+    "voiceName": "Voice 3",
+    "demo": "Ola, como estás?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "gl-ES-SabelaNeural",
+    "voiceName": "Voice 4",
+    "demo": "Ola, como estás?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "es-ES-AlvaroNeural",
+    "voiceName": "Voice 5",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "es-ES-ElviraNeural",
+    "voiceName": "Voice 6",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "zh-HK-HiuGaaiNeural",
+    "voiceName": "Voice 1",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "zh-HK-HiuMaanNeural",
+    "voiceName": "Voice 2",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "zh-HK-WanLungNeural",
+    "voiceName": "Voice 3",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "en-HK-SamNeural",
+    "voiceName": "Voice 4",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "en-HK-YanNeural",
+    "voiceName": "Voice 5",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "voiceName": "Voice 1",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "zh-CN-XiaoyiNeural",
+    "voiceName": "Voice 2",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "zh-CN-YunjianNeural",
+    "voiceName": "Voice 3",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "zh-CN-YunxiNeural",
+    "voiceName": "Voice 4",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "zh-CN-YunxiaNeural",
+    "voiceName": "Voice 5",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "zh-CN-YunyangNeural",
+    "voiceName": "Voice 6",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "CN-LIAONING",
+    "name": "CN-LIAONING",
+    "voice": "zh-CN-liaoning-XiaobeiNeural",
+    "voiceName": "Voice 1",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "voice": "zh-TW-HsiaoChenNeural",
+    "voiceName": "Voice 1",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "voice": "zh-TW-YunJheNeural",
+    "voiceName": "Voice 2",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "voice": "zh-TW-HsiaoYuNeural",
+    "voiceName": "Voice 3",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "CN-SHAANXI",
+    "name": "CN-SHAANXI",
+    "voice": "zh-CN-shaanxi-XiaoniNeural",
+    "voiceName": "Voice 1",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "voice": "hr-HR-GabrijelaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "voice": "hr-HR-SreckoNeural",
+    "voiceName": "Voice 2",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "CZ",
+    "name": "Czechia",
+    "voice": "cs-CZ-AntoninNeural",
+    "voiceName": "Voice 1",
+    "demo": "Ahoj, jak se máš?"
+  },
+  {
+    "code": "CZ",
+    "name": "Czechia",
+    "voice": "cs-CZ-VlastaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Ahoj, jak se máš?"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "voice": "da-DK-ChristelNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hej, har du det godt?"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "voice": "da-DK-JeppeNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hej, har du det godt?"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "voice": "nl-BE-ArnaudNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "voice": "nl-BE-DenaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "voice": "fr-BE-CharlineNeural",
+    "voiceName": "Voice 3",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "voice": "fr-BE-GerardNeural",
+    "voiceName": "Voice 4",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-NL-ColetteNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-NL-FennaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-NL-MaartenNeural",
+    "voiceName": "Voice 3",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "voice": "en-AU-NatashaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "voice": "en-AU-WilliamNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "en-CA-ClaraNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "en-CA-LiamNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "fr-CA-AntoineNeural",
+    "voiceName": "Voice 3",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "fr-CA-JeanNeural",
+    "voiceName": "Voice 4",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "fr-CA-SylvieNeural",
+    "voiceName": "Voice 5",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "IE",
+    "name": "Ireland",
+    "voice": "en-IE-ConnorNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IE",
+    "name": "Ireland",
+    "voice": "en-IE-EmilyNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IE",
+    "name": "Ireland",
+    "voice": "ga-IE-ColmNeural",
+    "voiceName": "Voice 3",
+    "demo": "Dia duit, conas atá tú?"
+  },
+  {
+    "code": "IE",
+    "name": "Ireland",
+    "voice": "ga-IE-OrlaNeural",
+    "voiceName": "Voice 4",
+    "demo": "Dia duit, conas atá tú?"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "voice": "en-KE-AsiliaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "voice": "en-KE-ChilembaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "voice": "sw-KE-RafikiNeural",
+    "voiceName": "Voice 3",
+    "demo": "Jambo, hujambo?"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "voice": "sw-KE-ZuriNeural",
+    "voiceName": "Voice 4",
+    "demo": "Jambo, hujambo?"
+  },
+  {
+    "code": "NZ",
+    "name": "New Zealand",
+    "voice": "en-NZ-MitchellNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "NZ",
+    "name": "New Zealand",
+    "voice": "en-NZ-MollyNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "voice": "en-NG-AbeoNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "voice": "en-NG-EzinneNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "en-PH-JamesNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "en-PH-RosaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "fil-PH-AngeloNeural",
+    "voiceName": "Voice 3",
+    "demo": "Kamusta"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "fil-PH-BlessicaNeural",
+    "voiceName": "Voice 4",
+    "demo": "Kamusta"
+  },
+  {
+    "code": "SG",
+    "name": "Singapore",
+    "voice": "en-SG-LunaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "SG",
+    "name": "Singapore",
+    "voice": "en-SG-WayneNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "SG",
+    "name": "Singapore",
+    "voice": "ta-SG-AnbuNeural",
+    "voiceName": "Voice 3",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "SG",
+    "name": "Singapore",
+    "voice": "ta-SG-VenbaNeural",
+    "voiceName": "Voice 4",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "TZ",
+    "name": "Tanzania",
+    "voice": "en-TZ-ElimuNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "TZ",
+    "name": "Tanzania",
+    "voice": "en-TZ-ImaniNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "TZ",
+    "name": "Tanzania",
+    "voice": "sw-TZ-DaudiNeural",
+    "voiceName": "Voice 3",
+    "demo": "Jambo, hujambo?"
+  },
+  {
+    "code": "TZ",
+    "name": "Tanzania",
+    "voice": "sw-TZ-RehemaNeural",
+    "voiceName": "Voice 4",
+    "demo": "Jambo, hujambo?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-GB-LibbyNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-GB-MaisieNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-GB-RyanNeural",
+    "voiceName": "Voice 3",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-GB-SoniaNeural",
+    "voiceName": "Voice 4",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-GB-ThomasNeural",
+    "voiceName": "Voice 5",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "cy-GB-AledNeural",
+    "voiceName": "Voice 6",
+    "demo": "Helo, sut wyt ti?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "cy-GB-NiaNeural",
+    "voiceName": "Voice 7",
+    "demo": "Helo, sut wyt ti?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-US-AriaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-US-AnaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-US-ChristopherNeural",
+    "voiceName": "Voice 3",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-US-EricNeural",
+    "voiceName": "Voice 4",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-US-GuyNeural",
+    "voiceName": "Voice 5",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-US-JennyNeural",
+    "voiceName": "Voice 6",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-US-MichelleNeural",
+    "voiceName": "Voice 7",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-US-RogerNeural",
+    "voiceName": "Voice 8",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-US-SteffanNeural",
+    "voiceName": "Voice 9",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "es-US-AlonsoNeural",
+    "voiceName": "Voice 10,",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "es-US-PalomaNeural",
+    "voiceName": "Voice 11,",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "EE",
+    "name": "Estonia",
+    "voice": "et-EE-AnuNeural",
+    "voiceName": "Voice 1",
+    "demo": "Tere, kuidas sul läheb?"
+  },
+  {
+    "code": "EE",
+    "name": "Estonia",
+    "voice": "et-EE-KertNeural",
+    "voiceName": "Voice 2",
+    "demo": "Tere, kuidas sul läheb?"
+  },
+  {
+    "code": "FI",
+    "name": "Finland",
+    "voice": "fi-FI-HarriNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hei, mitä kuuluu?"
+  },
+  {
+    "code": "FI",
+    "name": "Finland",
+    "voice": "fi-FI-NooraNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hei, mitä kuuluu?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-FR-DeniseNeural",
+    "voiceName": "Voice 1",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-FR-EloiseNeural",
+    "voiceName": "Voice 2",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-FR-HenriNeural",
+    "voiceName": "Voice 3",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "CH",
+    "name": "Switzerland",
+    "voice": "fr-CH-ArianeNeural",
+    "voiceName": "Voice 1",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "CH",
+    "name": "Switzerland",
+    "voice": "fr-CH-FabriceNeural",
+    "voiceName": "Voice 2",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "CH",
+    "name": "Switzerland",
+    "voice": "de-CH-JanNeural",
+    "voiceName": "Voice 3",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "CH",
+    "name": "Switzerland",
+    "voice": "de-CH-LeniNeural",
+    "voiceName": "Voice 4",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "GE",
+    "name": "Georgia",
+    "voice": "ka-GE-EkaNeural",
+    "voiceName": "Voice 1",
+    "demo": "გამარჯობა, როგორ ხარ?"
+  },
+  {
+    "code": "GE",
+    "name": "Georgia",
+    "voice": "ka-GE-GiorgiNeural",
+    "voiceName": "Voice 2",
+    "demo": "გამარჯობა, როგორ ხარ?"
+  },
+  {
+    "code": "AT",
+    "name": "Austria",
+    "voice": "de-AT-IngridNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "AT",
+    "name": "Austria",
+    "voice": "de-AT-JonasNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-DE-AmalaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-DE-ConradNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-DE-KatjaNeural",
+    "voiceName": "Voice 3",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-DE-KillianNeural",
+    "voiceName": "Voice 4",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "voice": "el-GR-AthinaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Γειά σου, είσαι καλά;"
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "voice": "el-GR-NestorasNeural",
+    "voiceName": "Voice 2",
+    "demo": "Γειά σου, είσαι καλά;"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "voice": "he-IL-AvriNeural",
+    "voiceName": "Voice 1",
+    "demo": "שלום, מה שלומך?"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "voice": "he-IL-HilaNeural",
+    "voiceName": "Voice 2",
+    "demo": "שלום, מה שלומך?"
+  },
+  {
+    "code": "HU",
+    "name": "Hungary",
+    "voice": "hu-HU-NoemiNeural",
+    "voiceName": "Voice 1",
+    "demo": "Szia, hogy vagy?"
+  },
+  {
+    "code": "HU",
+    "name": "Hungary",
+    "voice": "hu-HU-TamasNeural",
+    "voiceName": "Voice 2",
+    "demo": "Szia, hogy vagy?"
+  },
+  {
+    "code": "IS",
+    "name": "Iceland",
+    "voice": "is-IS-GudrunNeural",
+    "voiceName": "Voice 1",
+    "demo": "Halló, hvernig hefurðu það?"
+  },
+  {
+    "code": "IS",
+    "name": "Iceland",
+    "voice": "is-IS-GunnarNeural",
+    "voiceName": "Voice 2",
+    "demo": "Halló, hvernig hefurðu það?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "id-ID-ArdiNeural",
+    "voiceName": "Voice 1",
+    "demo": "Halo, apa kabar?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "id-ID-GadisNeural",
+    "voiceName": "Voice 2",
+    "demo": "Halo, apa kabar?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "jv-ID-DimasNeural",
+    "voiceName": "Voice 3",
+    "demo": "Halo, piye kabarmu?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "jv-ID-SitiNeural",
+    "voiceName": "Voice 4",
+    "demo": "Halo, piye kabarmu?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "su-ID-JajangNeural",
+    "voiceName": "Voice 5",
+    "demo": "Halo, kumaha damang?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "su-ID-TutiNeural",
+    "voiceName": "Voice 6",
+    "demo": "Halo, kumaha damang?"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "voice": "it-IT-DiegoNeural",
+    "voiceName": "Voice 1",
+    "demo": "Ciao, come stai?"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "voice": "it-IT-ElsaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Ciao, come stai?"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "voice": "it-IT-IsabellaNeural",
+    "voiceName": "Voice 3",
+    "demo": "Ciao, come stai?"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "voice": "ja-JP-KeitaNeural",
+    "voiceName": "Voice 1",
+    "demo": "こんにちは、お元気ですか？"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "voice": "ja-JP-NanamiNeural",
+    "voiceName": "Voice 2",
+    "demo": "こんにちは、お元気ですか？"
+  },
+  {
+    "code": "KZ",
+    "name": "Kazakhstan",
+    "voice": "kk-KZ-AigulNeural",
+    "voiceName": "Voice 1",
+    "demo": "Сәлем, қал қалай?"
+  },
+  {
+    "code": "KZ",
+    "name": "Kazakhstan",
+    "voice": "kk-KZ-DauletNeural",
+    "voiceName": "Voice 2",
+    "demo": "Сәлем, қал қалай?"
+  },
+  {
+    "code": "KH",
+    "name": "Cambodia",
+    "voice": "km-KH-PisethNeural",
+    "voiceName": "Voice 1",
+    "demo": "សួស្តី អ្នកសុខសប្បាយទេ?"
+  },
+  {
+    "code": "KH",
+    "name": "Cambodia",
+    "voice": "km-KH-SreymomNeural",
+    "voiceName": "Voice 2",
+    "demo": "សួស្តី អ្នកសុខសប្បាយទេ?"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "voice": "ko-KR-InJoonNeural",
+    "voiceName": "Voice 1",
+    "demo": "안녕하세요, 잘 지내세요?"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "voice": "ko-KR-SunHiNeural",
+    "voiceName": "Voice 2",
+    "demo": "안녕하세요, 잘 지내세요?"
+  },
+  {
+    "code": "LA",
+    "name": "Laos",
+    "voice": "lo-LA-ChanthavongNeural",
+    "voiceName": "Voice 1",
+    "demo": "ສະບາຍດີ, ເຈົ້າສະບາຍດີບໍ?"
+  },
+  {
+    "code": "LA",
+    "name": "Laos",
+    "voice": "lo-LA-KeomanyNeural",
+    "voiceName": "Voice 2",
+    "demo": "ສະບາຍດີ, ເຈົ້າສະບາຍດີບໍ?"
+  },
+  {
+    "code": "LV",
+    "name": "Latvia",
+    "voice": "lv-LV-EveritaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Sveiki, kā jums klājas?"
+  },
+  {
+    "code": "LV",
+    "name": "Latvia",
+    "voice": "lv-LV-NilsNeural",
+    "voiceName": "Voice 2",
+    "demo": "Sveiki, kā jums klājas?"
+  },
+  {
+    "code": "LT",
+    "name": "Lithuania",
+    "voice": "lt-LT-LeonasNeural",
+    "voiceName": "Voice 1",
+    "demo": "Labas, kaip sekasi?"
+  },
+  {
+    "code": "LT",
+    "name": "Lithuania",
+    "voice": "lt-LT-OnaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Labas, kaip sekasi?"
+  },
+  {
+    "code": "MK",
+    "name": "North Macedonia",
+    "voice": "mk-MK-AleksandarNeural",
+    "voiceName": "Voice 1",
+    "demo": "Здраво, како си?"
+  },
+  {
+    "code": "MK",
+    "name": "North Macedonia",
+    "voice": "mk-MK-MarijaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Здраво, како си?"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ms-MY-OsmanNeural",
+    "voiceName": "Voice 1",
+    "demo": "Halo, apa khabar?"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ms-MY-YasminNeural",
+    "voiceName": "Voice 2",
+    "demo": "Halo, apa khabar?"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ta-MY-KaniNeural",
+    "voiceName": "Voice 3",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ta-MY-SuryaNeural",
+    "voiceName": "Voice 4",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "MT",
+    "name": "Malta",
+    "voice": "mt-MT-GraceNeural",
+    "voiceName": "Voice 1",
+    "demo": "Ħelow, kif inti?"
+  },
+  {
+    "code": "MT",
+    "name": "Malta",
+    "voice": "mt-MT-JosephNeural",
+    "voiceName": "Voice 2",
+    "demo": "Ħelow, kif inti?"
+  },
+  {
+    "code": "MN",
+    "name": "Mongolia",
+    "voice": "mn-MN-BataaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Сайн байна уу, та сайн байна уу?"
+  },
+  {
+    "code": "MN",
+    "name": "Mongolia",
+    "voice": "mn-MN-YesuiNeural",
+    "voiceName": "Voice 2",
+    "demo": "Сайн байна уу, та сайн байна уу?"
+  },
+  {
+    "code": "NP",
+    "name": "Nepal",
+    "voice": "ne-NP-HemkalaNeural",
+    "voiceName": "Voice 1",
+    "demo": "नमस्ते, तपाईंलाई कस्तो छ?"
+  },
+  {
+    "code": "NP",
+    "name": "Nepal",
+    "voice": "ne-NP-SagarNeural",
+    "voiceName": "Voice 2",
+    "demo": "नमस्ते, तपाईंलाई कस्तो छ?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-NO-FinnNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-NO-PernilleNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "AF",
+    "name": "Afghanistan",
+    "voice": "ps-AF-GulNawazNeural",
+    "voiceName": "Voice 1",
+    "demo": "سلام، ته څنګه يې؟"
+  },
+  {
+    "code": "AF",
+    "name": "Afghanistan",
+    "voice": "ps-AF-LatifaNeural",
+    "voiceName": "Voice 2",
+    "demo": "سلام، ته څنګه يې؟"
+  },
+  {
+    "code": "IR",
+    "name": "Iran",
+    "voice": "fa-IR-DilaraNeural",
+    "voiceName": "Voice 1",
+    "demo": "سلام، حال شما چطوره؟"
+  },
+  {
+    "code": "IR",
+    "name": "Iran",
+    "voice": "fa-IR-FaridNeural",
+    "voiceName": "Voice 2",
+    "demo": "سلام، حال شما چطوره؟"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-PL-MarekNeural",
+    "voiceName": "Voice 1",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-PL-ZofiaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "voice": "pt-BR-AntonioNeural",
+    "voiceName": "Voice 1",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "voice": "pt-BR-FranciscaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "voice": "pt-PT-DuarteNeural",
+    "voiceName": "Voice 1",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "voice": "pt-PT-RaquelNeural",
+    "voiceName": "Voice 2",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "RO",
+    "name": "Romania",
+    "voice": "ro-RO-AlinaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Bună, ce mai faci?"
+  },
+  {
+    "code": "RO",
+    "name": "Romania",
+    "voice": "ro-RO-EmilNeural",
+    "voiceName": "Voice 2",
+    "demo": "Bună, ce mai faci?"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-RU-DmitryNeural",
+    "voiceName": "Voice 1",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-RU-SvetlanaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "RS",
+    "name": "Serbia",
+    "voice": "sr-RS-NicholasNeural",
+    "voiceName": "Voice 1",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "RS",
+    "name": "Serbia",
+    "voice": "sr-RS-SophieNeural",
+    "voiceName": "Voice 2",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "voice": "si-LK-SameeraNeural",
+    "voiceName": "Voice 1",
+    "demo": "ආයුබෝවන්, ඔබට කොහොම ද?"
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "voice": "si-LK-ThiliniNeural",
+    "voiceName": "Voice 2",
+    "demo": "ආයුබෝවන්, ඔබට කොහොම ද?"
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "voice": "ta-LK-KumarNeural",
+    "voiceName": "Voice 3",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "voice": "ta-LK-SaranyaNeural",
+    "voiceName": "Voice 4",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "SK",
+    "name": "Slovakia",
+    "voice": "sk-SK-LukasNeural",
+    "voiceName": "Voice 1",
+    "demo": "Ahoj, ako sa máš?"
+  },
+  {
+    "code": "SK",
+    "name": "Slovakia",
+    "voice": "sk-SK-ViktoriaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Ahoj, ako sa máš?"
+  },
+  {
+    "code": "SI",
+    "name": "Slovenia",
+    "voice": "sl-SI-PetraNeural",
+    "voiceName": "Voice 1",
+    "demo": "Živjo, kako si?"
+  },
+  {
+    "code": "SI",
+    "name": "Slovenia",
+    "voice": "sl-SI-RokNeural",
+    "voiceName": "Voice 2",
+    "demo": "Živjo, kako si?"
+  },
+  {
+    "code": "SO",
+    "name": "Somalia",
+    "voice": "so-SO-MuuseNeural",
+    "voiceName": "Voice 1",
+    "demo": "Salaan, sidee tahay?"
+  },
+  {
+    "code": "SO",
+    "name": "Somalia",
+    "voice": "so-SO-UbaxNeural",
+    "voiceName": "Voice 2",
+    "demo": "Salaan, sidee tahay?"
+  },
+  {
+    "code": "AR",
+    "name": "Argentina",
+    "voice": "es-AR-ElenaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "AR",
+    "name": "Argentina",
+    "voice": "es-AR-TomasNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "BO",
+    "name": "Bolivia",
+    "voice": "es-BO-MarceloNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "BO",
+    "name": "Bolivia",
+    "voice": "es-BO-SofiaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "CL",
+    "name": "Chile",
+    "voice": "es-CL-CatalinaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "CL",
+    "name": "Chile",
+    "voice": "es-CL-LorenzoNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "CO",
+    "name": "Colombia",
+    "voice": "es-CO-GonzaloNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "CO",
+    "name": "Colombia",
+    "voice": "es-CO-SalomeNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "CR",
+    "name": "Costa Rica",
+    "voice": "es-CR-JuanNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "CR",
+    "name": "Costa Rica",
+    "voice": "es-CR-MariaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "CU",
+    "name": "Cuba",
+    "voice": "es-CU-BelkysNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "CU",
+    "name": "Cuba",
+    "voice": "es-CU-ManuelNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "DO",
+    "name": "Dominican Republic",
+    "voice": "es-DO-EmilioNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "DO",
+    "name": "Dominican Republic",
+    "voice": "es-DO-RamonaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "EC",
+    "name": "Ecuador",
+    "voice": "es-EC-AndreaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "EC",
+    "name": "Ecuador",
+    "voice": "es-EC-LuisNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "SV",
+    "name": "El Salvador",
+    "voice": "es-SV-LorenaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "SV",
+    "name": "El Salvador",
+    "voice": "es-SV-RodrigoNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "GQ",
+    "name": "Equatorial Guinea",
+    "voice": "es-GQ-JavierNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "GQ",
+    "name": "Equatorial Guinea",
+    "voice": "es-GQ-TeresaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "GT",
+    "name": "Guatemala",
+    "voice": "es-GT-AndresNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "GT",
+    "name": "Guatemala",
+    "voice": "es-GT-MartaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "HN",
+    "name": "Honduras",
+    "voice": "es-HN-CarlosNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "HN",
+    "name": "Honduras",
+    "voice": "es-HN-KarlaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "MX",
+    "name": "Mexico",
+    "voice": "es-MX-DaliaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "MX",
+    "name": "Mexico",
+    "voice": "es-MX-JorgeNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "NI",
+    "name": "Nicaragua",
+    "voice": "es-NI-FedericoNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "NI",
+    "name": "Nicaragua",
+    "voice": "es-NI-YolandaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "PA",
+    "name": "Panama",
+    "voice": "es-PA-MargaritaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "PA",
+    "name": "Panama",
+    "voice": "es-PA-RobertoNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "PY",
+    "name": "Paraguay",
+    "voice": "es-PY-MarioNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "PY",
+    "name": "Paraguay",
+    "voice": "es-PY-TaniaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "PE",
+    "name": "Peru",
+    "voice": "es-PE-AlexNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "PE",
+    "name": "Peru",
+    "voice": "es-PE-CamilaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "PR",
+    "name": "Puerto Rico",
+    "voice": "es-PR-KarinaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "PR",
+    "name": "Puerto Rico",
+    "voice": "es-PR-VictorNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "UY",
+    "name": "Uruguay",
+    "voice": "es-UY-MateoNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "UY",
+    "name": "Uruguay",
+    "voice": "es-UY-ValentinaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "VE",
+    "name": "Venezuela",
+    "voice": "es-VE-PaolaNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "VE",
+    "name": "Venezuela",
+    "voice": "es-VE-SebastianNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-SE-MattiasNeural",
+    "voiceName": "Voice 1",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-SE-SofieNeural",
+    "voiceName": "Voice 2",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "voice": "th-TH-NiwatNeural",
+    "voiceName": "Voice 1",
+    "demo": "สวัสดี คุณสบายดีไหม?"
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "voice": "th-TH-PremwadeeNeural",
+    "voiceName": "Voice 2",
+    "demo": "สวัสดี คุณสบายดีไหม?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-TR-AhmetNeural",
+    "voiceName": "Voice 1",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-TR-EmelNeural",
+    "voiceName": "Voice 2",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "UA",
+    "name": "Ukraine",
+    "voice": "uk-UA-OstapNeural",
+    "voiceName": "Voice 1",
+    "demo": "Привіт, як справи?"
+  },
+  {
+    "code": "UA",
+    "name": "Ukraine",
+    "voice": "uk-UA-PolinaNeural",
+    "voiceName": "Voice 2",
+    "demo": "Привіт, як справи?"
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "voice": "ur-PK-AsadNeural",
+    "voiceName": "Voice 1",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "voice": "ur-PK-UzmaNeural",
+    "voiceName": "Voice 2",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "UZ",
+    "name": "Uzbekistan",
+    "voice": "uz-UZ-MadinaNeural",
+    "voiceName": "Voice 1"
+  },
+  {
+    "code": "UZ",
+    "name": "Uzbekistan",
+    "voice": "uz-UZ-SardorNeural",
+    "voiceName": "Voice 2"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-VN-HoaiMyNeural",
+    "voiceName": "Voice 1",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-VN-NamMinhNeural",
+    "voiceName": "Voice 2",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "voice": "ur-PK-language",
+    "voiceName": "Voice 1",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "voice": "ja-jp-x-htm-network",
+    "voiceName": "Voice 1",
+    "demo": "こんにちは、お元気ですか？"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-ru-x-rud-local",
+    "voiceName": "Voice 1",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "voice": "th-th-x-thd-network",
+    "voiceName": "Voice 1",
+    "demo": "สวัสดี คุณสบายดีไหม?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-nl-x-yfr-network",
+    "voiceName": "Voice 1",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "voice": "it-it-x-itd-local",
+    "voiceName": "Voice 1",
+    "demo": "Ciao, come stai?"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "voice": "en-AU-language",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "as-in-x-end-local",
+    "voiceName": "Voice 1",
+    "demo": "নমস্কাৰ, আপুনি কেনে আছেন?"
+  },
+  {
+    "code": "UA",
+    "name": "Ukraine",
+    "voice": "uk-UA-language",
+    "voiceName": "Voice 1",
+    "demo": "Привіт, як справи?"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "voice": "pt-pt-x-pmj-local",
+    "voiceName": "Voice 1",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-se-x-lfs-local",
+    "voiceName": "Voice 1",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "voice": "cmn-tw-x-ctc-network",
+    "voiceName": "Voice 1"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-tpf-local",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-de-x-deb-network",
+    "voiceName": "Voice 1",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "bn-in-x-bnd-local",
+    "voiceName": "Voice 2",
+    "demo": "হ্যালো, তুমি কেমন আছো?"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "yue-hk-x-yuf-network",
+    "voiceName": "Voice 1",
+    "demo": "你好，你好嗎？"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "cy-gb-x-cyf-local",
+    "voiceName": "Voice 11",
+    "demo": "Helo, sut wyt ti?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "en-in-x-end-network",
+    "voiceName": "Voice 3",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-nl-x-yfr-local",
+    "voiceName": "Voice 2",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ur-in-x-urc-local",
+    "voiceName": "Voice 4",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "cy-gb-x-cyf-network",
+    "voiceName": "Voice 14",
+    "demo": "Helo, sut wyt ti?"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-pl-x-afb-local",
+    "voiceName": "Voice 1",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "es-us-x-sfb-network",
+    "voiceName": "Voice 2",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "fr-ca-x-cab-local",
+    "voiceName": "Voice 1",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "id-id-x-idd-network",
+    "voiceName": "Voice 1",
+    "demo": "Halo, apa kabar?"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "voice": "pt-br-x-afs-network",
+    "voiceName": "Voice 1",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "id-id-x-idc-local",
+    "voiceName": "Voice 2",
+    "demo": "Halo, apa kabar?"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "voice": "da-dk-x-sfp-network",
+    "voiceName": "Voice 1",
+    "demo": "Hej, har du det godt?"
+  },
+  {
+    "code": "BD",
+    "name": "Bangladesh",
+    "voice": "bn-BD-language",
+    "voiceName": "Voice 1",
+    "demo": "হ্যালো, তুমি কেমন আছো?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ml-in-x-mlc-local",
+    "voiceName": "Voice 5",
+    "demo": "നമസ്കാരം, സുഖമാണോ?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "es-US-language",
+    "voiceName": "Voice 3",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "voice": "hr-HR-language",
+    "voiceName": "Voice 1",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "voice": "pt-pt-x-sfs-network",
+    "voiceName": "Voice 2",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "voice": "zh-TW-language",
+    "voiceName": "Voice 2",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mni-in-x-end-local",
+    "voiceName": "Voice 6",
+    "demo": "ꯊꯧꯗꯣꯛ, ꯑꯃꯨ ꯑꯁꯣꯡꯕ ꯍꯥꯡꯗꯣꯛ?"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "voice": "en-au-x-aua-network",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-GB-language",
+    "voiceName": "Voice 9",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "yue-hk-x-yud-network",
+    "voiceName": "Voice 2",
+    "demo": "你好，你好嗎？"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "cmn-cn-x-cce-network",
+    "voiceName": "Voice 1"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "es-us-x-esc-network",
+    "voiceName": "Voice 4",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "voice": "ko-kr-x-koc-network",
+    "voiceName": "Voice 1",
+    "demo": "안녕하세요, 잘 지내세요?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-gb-x-gba-network",
+    "voiceName": "Voice 10",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-pl-x-bmg-network",
+    "voiceName": "Voice 2",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ml-IN-language",
+    "voiceName": "Voice 7",
+    "demo": "നമസ്കാരം, സുഖമാണോ?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-sfg-network",
+    "voiceName": "Voice 5",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "hi-in-x-hid-network",
+    "voiceName": "Voice 8",
+    "demo": "नमस्ते, आप कैसे हैं?"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "voice": "en-au-x-aud-local",
+    "voiceName": "Voice 3",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-pl-x-zfg-network",
+    "voiceName": "Voice 3",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "es-es-x-eee-local",
+    "voiceName": "Voice 1",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-tr-x-tmc-local",
+    "voiceName": "Voice 1",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-fr-x-vlf-network",
+    "voiceName": "Voice 1",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "cmn-cn-x-ccc-local",
+    "voiceName": "Voice 2"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "bn-in-x-bnc-network",
+    "voiceName": "Voice 9",
+    "demo": "হ্যালো, তুমি কেমন আছো?"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "voice": "en-au-x-aua-local",
+    "voiceName": "Voice 4",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "voice": "pt-pt-x-sfs-local",
+    "voiceName": "Voice 3",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "",
+    "name": "Arabic",
+    "voice": "ar-language",
+    "voiceName": "Voice 1",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "voice": "cmn-tw-x-ctc-local",
+    "voiceName": "Voice 3"
+  },
+  {
+    "code": "EE",
+    "name": "Estonia",
+    "voice": "et-ee-x-tms-network",
+    "voiceName": "Voice 1",
+    "demo": "Tere, kuidas sul läheb?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "fr-CA-language",
+    "voiceName": "Voice 2",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "doi-in-x-end-local",
+    "voiceName": "Voice 10",
+    "demo": "नमस्ते, तुंद सारा ठीक ऐ?"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-VN-language",
+    "voiceName": "Voice 1",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ms-my-x-msc-local",
+    "voiceName": "Voice 1",
+    "demo": "Halo, apa khabar?"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "voice": "ja-jp-x-jab-network",
+    "voiceName": "Voice 2",
+    "demo": "こんにちは、お元気ですか？"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "voice": "it-IT-language",
+    "voiceName": "Voice 2",
+    "demo": "Ciao, come stai?"
+  },
+  {
+    "code": "BA",
+    "name": "Bosnia & Herzegovina",
+    "voice": "bs-ba-x-bsm-local",
+    "voiceName": "Voice 1",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "jv-id-x-jvf-local",
+    "voiceName": "Voice 3",
+    "demo": "Halo, piye kabarmu?"
+  },
+  {
+    "code": "BD",
+    "name": "Bangladesh",
+    "voice": "bn-bd-x-ban-network",
+    "voiceName": "Voice 2",
+    "demo": "হ্যালো, তুমি কেমন আছো?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-gb-x-gbc-network",
+    "voiceName": "Voice 12",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "voice": "pt-PT-language",
+    "voiceName": "Voice 4",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "BD",
+    "name": "Bangladesh",
+    "voice": "bn-bd-x-ban-local",
+    "voiceName": "Voice 3",
+    "demo": "হ্যালো, তুমি কেমন আছো?"
+  },
+  {
+    "code": "",
+    "name": "Arabic",
+    "voice": "ar-xa-x-ard-network",
+    "voiceName": "Voice 2",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "voice": "hr-hr-x-hra-local",
+    "voiceName": "Voice 2",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "voice": "pt-pt-x-jfb-network",
+    "voiceName": "Voice 5",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "voice": "pt-br-x-pte-local",
+    "voiceName": "Voice 2",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "cmn-cn-x-ssa-network",
+    "voiceName": "Voice 3"
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "voice": "el-GR-language",
+    "voiceName": "Voice 1",
+    "demo": "Γειά σου, είσαι καλά;"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "sat-IN-language",
+    "voiceName": "Voice 11",
+    "demo": "Hul Johar, inhen tana?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-sfg-local",
+    "voiceName": "Voice 6",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "fil-PH-language",
+    "voiceName": "Voice 1",
+    "demo": "Kamusta"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "en-in-x-ene-local",
+    "voiceName": "Voice 12",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "voice": "pt-BR-language",
+    "voiceName": "Voice 3",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-pl-x-jmk-network",
+    "voiceName": "Voice 4",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-vn-x-gft-network",
+    "voiceName": "Voice 2",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-ru-x-rue-network",
+    "voiceName": "Voice 2",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "bn-IN-language",
+    "voiceName": "Voice 13",
+    "demo": "হ্যালো, তুমি কেমন আছো?"
+  },
+  {
+    "code": "FI",
+    "name": "Finland",
+    "voice": "fi-FI-language",
+    "voiceName": "Voice 1",
+    "demo": "Hei, mitä kuuluu?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "fr-ca-x-cab-network",
+    "voiceName": "Voice 3",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "HU",
+    "name": "Hungary",
+    "voice": "hu-HU-language",
+    "voiceName": "Voice 1",
+    "demo": "Szia, hogy vagy?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-FR-language",
+    "voiceName": "Voice 2",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-vn-x-vie-network",
+    "voiceName": "Voice 3",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "fil-ph-x-fie-local",
+    "voiceName": "Voice 2"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "voice": "da-DK-language",
+    "voiceName": "Voice 2",
+    "demo": "Hej, har du det godt?"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "voice": "ja-jp-x-jad-network",
+    "voiceName": "Voice 3",
+    "demo": "こんにちは、お元気ですか？"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-se-x-afp-local",
+    "voiceName": "Voice 2",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "fil-ph-x-fid-network",
+    "voiceName": "Voice 3"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ml-in-x-mlc-network",
+    "voiceName": "Voice 14",
+    "demo": "നമസ്കാരം, സുഖമാണോ?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "kn-in-x-knc-local",
+    "voiceName": "Voice 15",
+    "demo": "ಹಲೋ, ನೀವು ಹೇಗಿದ್ದೀರಿ?"
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "voice": "si-lk-x-sin-local",
+    "voiceName": "Voice 1",
+    "demo": "ආයුබෝවන්, ඔබට කොහොම ද?"
+  },
+  {
+    "code": "SK",
+    "name": "Slovakia",
+    "voice": "sk-sk-x-sfk-local",
+    "voiceName": "Voice 1",
+    "demo": "Ahoj, ako sa máš?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-iob-local",
+    "voiceName": "Voice 7",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "BG",
+    "name": "Bulgaria",
+    "voice": "bg-bg-x-ifk-local",
+    "voiceName": "Voice 1",
+    "demo": "Здравей, как си?"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "cmn-cn-x-ccc-network",
+    "voiceName": "Voice 4"
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "voice": "th-th-x-thd-local",
+    "voiceName": "Voice 2",
+    "demo": "สวัสดี คุณสบายดีไหม?"
+  },
+  {
+    "code": "KH",
+    "name": "Cambodia",
+    "voice": "km-KH-language",
+    "voiceName": "Voice 1",
+    "demo": "សួស្តី អ្នកសុខសប្បាយទេ?"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "voice": "he-il-x-heb-network",
+    "voiceName": "Voice 1",
+    "demo": "שלום, מה שלומך?"
+  },
+  {
+    "code": "BA",
+    "name": "Bosnia & Herzegovina",
+    "voice": "bs-ba-language",
+    "voiceName": "Voice 2",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mr-in-x-mra-network",
+    "voiceName": "Voice 16",
+    "demo": "नमस्कार, तुम्ही कसे आहात?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "kn-in-x-knd-network",
+    "voiceName": "Voice 17",
+    "demo": "ಹಲೋ, ನೀವು ಹೇಗಿದ್ದೀರಿ?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "pa-in-x-pac-local",
+    "voiceName": "Voice 18",
+    "demo": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ?"
+  },
+  {
+    "code": "",
+    "name": "Arabic",
+    "voice": "ar-xa-x-are-local",
+    "voiceName": "Voice 3",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mr-in-x-mrd-local",
+    "voiceName": "Voice 19",
+    "demo": "नमस्कार, तुम्ही कसे आहात?"
+  },
+  {
+    "code": "HU",
+    "name": "Hungary",
+    "voice": "hu-hu-x-kfl-network",
+    "voiceName": "Voice 2",
+    "demo": "Szia, hogy vagy?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-nl-x-lfc-network",
+    "voiceName": "Voice 3",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-fr-x-frc-network",
+    "voiceName": "Voice 3",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-vn-x-vid-local",
+    "voiceName": "Voice 4",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "voice": "pt-pt-x-jmn-local",
+    "voiceName": "Voice 6",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-nl-x-dma-network",
+    "voiceName": "Voice 4",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "CZ",
+    "name": "Czechia",
+    "voice": "cs-cz-x-jfs-local",
+    "voiceName": "Voice 1",
+    "demo": "Ahoj, jak se máš?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-tr-x-efu-network",
+    "voiceName": "Voice 2",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "EE",
+    "name": "Estonia",
+    "voice": "et-ee-x-tms-local",
+    "voiceName": "Voice 2",
+    "demo": "Tere, kuidas sul läheb?"
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "voice": "hr-hr-x-hrb-network",
+    "voiceName": "Voice 3",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "voice": "en-au-x-auc-network",
+    "voiceName": "Voice 5",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-gb-x-gbc-local",
+    "voiceName": "Voice 8",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "es-us-x-esd-local",
+    "voiceName": "Voice 8",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "gu-in-x-gud-local",
+    "voiceName": "Voice 20",
+    "demo": "નમસ્તે, તમે કેમ છો?"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "voice": "sw-ke-x-swm-local",
+    "voiceName": "Voice 1",
+    "demo": "Jambo, hujambo?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-tr-x-mfm-local",
+    "voiceName": "Voice 3",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "IS",
+    "name": "Iceland",
+    "voice": "is-is-x-isf-local",
+    "voiceName": "Voice 1",
+    "demo": "Halló, hvernig hefurðu það?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "hi-in-x-hie-local",
+    "voiceName": "Voice 21",
+    "demo": "नमस्ते, आप कैसे हैं?"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-se-x-dmc-local",
+    "voiceName": "Voice 3",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ur-in-x-urc-network",
+    "voiceName": "Voice 22",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ms-my-x-msg-network",
+    "voiceName": "Voice 2",
+    "demo": "Halo, apa khabar?"
+  },
+  {
+    "code": "FI",
+    "name": "Finland",
+    "voice": "fi-fi-x-afi-local",
+    "voiceName": "Voice 2",
+    "demo": "Hei, mitä kuuluu?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "ca-ES-language",
+    "voiceName": "Voice 2",
+    "demo": "Hola, com estàs?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-tpd-network",
+    "voiceName": "Voice 9",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-no-x-cfl-local",
+    "voiceName": "Voice 1",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "voice": "pt-pt-x-pmj-network",
+    "voiceName": "Voice 7",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "es-es-x-eef-local",
+    "voiceName": "Voice 3",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "gu-in-x-gud-network",
+    "voiceName": "Voice 23",
+    "demo": "નમસ્તે, તમે કેમ છો?"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "voice": "ko-kr-x-kod-local",
+    "voiceName": "Voice 2",
+    "demo": "안녕하세요, 잘 지내세요?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ta-IN-language",
+    "voiceName": "Voice 24",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "IS",
+    "name": "Iceland",
+    "voice": "is-is-x-isf-network",
+    "voiceName": "Voice 2",
+    "demo": "Halló, hvernig hefurðu það?"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "yue-hk-x-jar-network",
+    "voiceName": "Voice 3",
+    "demo": "你好，你好嗎？"
+  },
+  {
+    "code": "RS",
+    "name": "Serbia",
+    "voice": "sr-rs-x-gfg-network",
+    "voiceName": "Voice 1",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-tpc-network",
+    "voiceName": "Voice 10",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-fr-x-frb-local",
+    "voiceName": "Voice 4",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "voice": "he-il-x-hee-network",
+    "voiceName": "Voice 2",
+    "demo": "שלום, מה שלומך?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "es-es-x-eec-network",
+    "voiceName": "Voice 4",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "voice": "en-au-x-aub-local",
+    "voiceName": "Voice 6",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "voice": "el-gr-x-vfz-local",
+    "voiceName": "Voice 2",
+    "demo": "Γειά σου, είσαι καλά;"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-pl-x-afb-network",
+    "voiceName": "Voice 5",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "en-in-x-end-local",
+    "voiceName": "Voice 25",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "voice": "ja-jp-x-jad-local",
+    "voiceName": "Voice 4",
+    "demo": "こんにちは、お元気ですか？"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "es-es-x-eea-local",
+    "voiceName": "Voice 5",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-se-x-dmc-network",
+    "voiceName": "Voice 4",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "",
+    "name": "Arabic",
+    "voice": "ar-xa-x-arc-local",
+    "voiceName": "Voice 4",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "voice": "ko-kr-x-ism-local",
+    "voiceName": "Voice 3",
+    "demo": "안녕하세요, 잘 지내세요?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "gu-IN-language",
+    "voiceName": "Voice 26",
+    "demo": "નમસ્તે, તમે કેમ છો?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "or-IN-language",
+    "voiceName": "Voice 27",
+    "demo": "ନମସ୍କାର, ଆପଣ କେମିତି ଅଛନ୍ତି?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "or-in-x-end-local",
+    "voiceName": "Voice 28",
+    "demo": "ନମସ୍କାର, ଆପଣ କେମିତି ଅଛନ୍ତି?"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "voice": "he-il-x-hec-network",
+    "voiceName": "Voice 3",
+    "demo": "שלום, מה שלומך?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-no-x-rfj-network",
+    "voiceName": "Voice 2",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-DE-language",
+    "voiceName": "Voice 2",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "voice": "nl-be-x-bed-network",
+    "voiceName": "Voice 2",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ms-my-x-msg-local",
+    "voiceName": "Voice 3",
+    "demo": "Halo, apa khabar?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-fr-x-frd-network",
+    "voiceName": "Voice 5",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "BG",
+    "name": "Bulgaria",
+    "voice": "bg-bg-x-ifk-network",
+    "voiceName": "Voice 2",
+    "demo": "Здравей, как си?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "id-id-x-idd-local",
+    "voiceName": "Voice 4",
+    "demo": "Halo, apa kabar?"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "yue-hk-x-yuf-local",
+    "voiceName": "Voice 4",
+    "demo": "你好，你好嗎？"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "brx-IN-language",
+    "voiceName": "Voice 29",
+    "demo": "नङा खालाम, नोंथों बिफाय हाया?"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "voice": "ja-JP-language",
+    "voiceName": "Voice 5",
+    "demo": "こんにちは、お元気ですか？"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "gu-in-x-guc-network",
+    "voiceName": "Voice 30",
+    "demo": "નમસ્તે, તમે કેમ છો?"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-pl-x-jmk-local",
+    "voiceName": "Voice 6",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ms-MY-language",
+    "voiceName": "Voice 4",
+    "demo": "Halo, apa khabar?"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "fil-ph-x-fid-local",
+    "voiceName": "Voice 4"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "voice": "nl-be-x-bec-network",
+    "voiceName": "Voice 3",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "fil-ph-x-fie-network",
+    "voiceName": "Voice 5",
+    "demo": "Kumusta, kamusta ka?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mr-in-x-mrc-local",
+    "voiceName": "Voice 31",
+    "demo": "नमस्कार, तुम्ही कसे आहात?"
+  },
+  {
+    "code": "",
+    "name": "Arabic",
+    "voice": "ar-xa-x-ard-local",
+    "voiceName": "Voice 5",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-vn-x-vic-local",
+    "voiceName": "Voice 5",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "yue-hk-x-jar-local",
+    "voiceName": "Voice 5",
+    "demo": "你好，你好嗎？"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "yue-hk-x-yue-local",
+    "voiceName": "Voice 6",
+    "demo": "你好，你好嗎？"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "su-id-x-suf-network",
+    "voiceName": "Voice 5",
+    "demo": "Halo, kumaha damang?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "te-in-x-teg-local",
+    "voiceName": "Voice 32",
+    "demo": "నమస్తే, మీరు ఎలా ఉన్నారు?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-no-x-cfl-network",
+    "voiceName": "Voice 3",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "voice": "pt-pt-x-jmn-network",
+    "voiceName": "Voice 8",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-gb-x-gbb-local",
+    "voiceName": "Voice 7",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "voice": "it-it-x-itb-local",
+    "voiceName": "Voice 3",
+    "demo": "Ciao, come stai?"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-vn-x-gft-local",
+    "voiceName": "Voice 6",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "su-ID-language",
+    "voiceName": "Voice 6",
+    "demo": "Halo, kumaha damang?"
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "voice": "th-TH-language",
+    "voiceName": "Voice 3",
+    "demo": "สวัสดี คุณสบายดีไหม?"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "zh-CN-language",
+    "voiceName": "Voice 5",
+    "demo": "你好，你好吗？"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-RU-language",
+    "voiceName": "Voice 3",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-iob-network",
+    "voiceName": "Voice 11",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-no-x-cmj-network",
+    "voiceName": "Voice 4",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-iol-network",
+    "voiceName": "Voice 12",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "",
+    "name": "Arabic",
+    "voice": "ar-xa-x-arz-local",
+    "voiceName": "Voice 6",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-pl-x-zfg-local",
+    "voiceName": "Voice 7",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-ru-x-ruc-network",
+    "voiceName": "Voice 4",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-ru-x-rue-local",
+    "voiceName": "Voice 5",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "pa-in-x-pag-local",
+    "voiceName": "Voice 33",
+    "demo": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "id-id-x-dfz-network",
+    "voiceName": "Voice 7",
+    "demo": "Halo, apa kabar?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "pa-IN-language",
+    "voiceName": "Voice 34",
+    "demo": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-iom-network",
+    "voiceName": "Voice 13",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-nl-x-lfc-local",
+    "voiceName": "Voice 5",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "id-id-x-dfz-local",
+    "voiceName": "Voice 8",
+    "demo": "Halo, apa kabar?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ks-IN-language",
+    "voiceName": "Voice 35",
+    "demo": "السلام علیکم، تہند چھۍ وارۍ؟"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "doi-IN-language",
+    "voiceName": "Voice 36",
+    "demo": "नमस्ते, तुसीं किण्ने हो?"
+  },
+  {
+    "code": "LV",
+    "name": "Latvia",
+    "voice": "lv-LV-language",
+    "voiceName": "Voice 1",
+    "demo": "Sveiki, kā jums klājas?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "es-es-x-eea-network",
+    "voiceName": "Voice 6",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "fr-ca-x-cac-local",
+    "voiceName": "Voice 4",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-tr-x-tmc-network",
+    "voiceName": "Voice 4",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "hi-in-x-hia-local",
+    "voiceName": "Voice 37",
+    "demo": "नमस्ते, आप कैसे हैं?"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "voice": "it-it-x-kda-network",
+    "voiceName": "Voice 4",
+    "demo": "Ciao, come stai?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-fr-x-fra-local",
+    "voiceName": "Voice 6",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "voice": "ko-kr-x-kob-network",
+    "voiceName": "Voice 4",
+    "demo": "안녕하세요, 잘 지내세요?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mr-IN-language",
+    "voiceName": "Voice 38",
+    "demo": "नमस्कार, तुम्ही कसे आहात?"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "voice": "he-il-x-hed-network",
+    "voiceName": "Voice 4",
+    "demo": "שלום, מה שלומך?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-tr-x-efu-local",
+    "voiceName": "Voice 5",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-no-x-tfs-local",
+    "voiceName": "Voice 5",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "jv-id-x-jvf-network",
+    "voiceName": "Voice 9",
+    "demo": "Halo, piye kabarmu?"
+  },
+  {
+    "code": "EE",
+    "name": "Estonia",
+    "voice": "et-EE-language",
+    "voiceName": "Voice 3",
+    "demo": "Tere, kuidas sul läheb?"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "voice": "ko-KR-language",
+    "voiceName": "Voice 5",
+    "demo": "안녕하세요, 잘 지내세요?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "id-id-x-idc-network",
+    "voiceName": "Voice 10",
+    "demo": "Halo, apa kabar?"
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "voice": "en-NG-language",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "en-in-x-enc-local",
+    "voiceName": "Voice 39",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "te-IN-language",
+    "voiceName": "Voice 40",
+    "demo": "నమస్తే, మీరు ఎలా ఉన్నారు?"
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "voice": "th-th-x-thc-local",
+    "voiceName": "Voice 4",
+    "demo": "สวัสดี คุณสบายดีไหม?"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "voice": "ja-jp-x-jac-local",
+    "voiceName": "Voice 6",
+    "demo": "こんにちは、お元気ですか？"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-de-x-dea-network",
+    "voiceName": "Voice 3",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "voice": "cmn-tw-x-ctd-network",
+    "voiceName": "Voice 4"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-vn-x-vie-local",
+    "voiceName": "Voice 7",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "voice": "he-il-x-hee-local",
+    "voiceName": "Voice 5",
+    "demo": "שלום, מה שלומך?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "ca-es-x-caf-network",
+    "voiceName": "Voice 7",
+    "demo": "Hola, com estàs?"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "voice": "da-dk-x-nmm-network",
+    "voiceName": "Voice 3",
+    "demo": "Hej, har du det godt?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-tr-x-cfs-local",
+    "voiceName": "Voice 6",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "es-us-x-esf-local",
+    "voiceName": "Voice 14",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "hi-in-x-hid-local",
+    "voiceName": "Voice 41",
+    "demo": "नमस्ते, आप कैसे हैं?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-gb-x-gbd-local",
+    "voiceName": "Voice 5",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "es-us-x-esc-local",
+    "voiceName": "Voice 15",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "hi-in-x-hic-network",
+    "voiceName": "Voice 42",
+    "demo": "नमस्ते, आप कैसे हैं?"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-pl-x-oda-network",
+    "voiceName": "Voice 8",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-gb-x-gbg-local",
+    "voiceName": "Voice 4",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mr-in-x-mrd-network",
+    "voiceName": "Voice 43",
+    "demo": "नमस्कार, तुम्ही कसे आहात?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-gb-x-rjs-local",
+    "voiceName": "Voice 3",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "AL",
+    "name": "Albania",
+    "voice": "sq-al-x-sqm-network",
+    "voiceName": "Voice 1",
+    "demo": "Përshëndetje, si jeni?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-iom-local",
+    "voiceName": "Voice 16",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "voice": "it-it-x-kda-local",
+    "voiceName": "Voice 5",
+    "demo": "Ciao, come stai?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "en-in-x-enc-network",
+    "voiceName": "Voice 44",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "voice": "pt-br-x-afs-local",
+    "voiceName": "Voice 4",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "voice": "th-th-x-thc-network",
+    "voiceName": "Voice 5",
+    "demo": "สวัสดี คุณสบายดีไหม?"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "fil-ph-x-fic-local",
+    "voiceName": "Voice 6"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "voice": "ko-kr-x-kod-network",
+    "voiceName": "Voice 6",
+    "demo": "안녕하세요, 잘 지내세요?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "bn-in-x-bnd-network",
+    "voiceName": "Voice 45",
+    "demo": "হ্যালো, তুমি কেমন আছো?"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "cmn-cn-x-ssa-local",
+    "voiceName": "Voice 6"
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "voice": "si-lk-x-sin-network",
+    "voiceName": "Voice 2",
+    "demo": "ආයුබෝවන්, ඔබට කොහොම ද?"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "voice": "en-au-x-aub-network",
+    "voiceName": "Voice 7",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "fr-ca-x-caa-network",
+    "voiceName": "Voice 5",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "en-in-x-ene-network",
+    "voiceName": "Voice 46",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "id-ID-language",
+    "voiceName": "Voice 11",
+    "demo": "Halo, apa kabar?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "pa-in-x-pag-network",
+    "voiceName": "Voice 47",
+    "demo": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mai-in-x-end-local",
+    "voiceName": "Voice 48",
+    "demo": "नमस्कार, अहाँ केहन छी?"
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "voice": "hr-hr-x-hra-network",
+    "voiceName": "Voice 4",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "LT",
+    "name": "Lithuania",
+    "voice": "lt-lt-language",
+    "voiceName": "Voice 1",
+    "demo": "Labas, kaip sekasi?"
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "voice": "en-ng-x-tfn-network",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-tr-x-ama-network",
+    "voiceName": "Voice 7",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "sa-IN-language",
+    "voiceName": "Voice 49",
+    "demo": "नमस्ते, किम् अवस्थायाम्?"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "voice": "da-dk-x-nmm-local",
+    "voiceName": "Voice 4",
+    "demo": "Hej, har du det godt?"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "voice": "da-dk-x-vfb-network",
+    "voiceName": "Voice 5",
+    "demo": "Hej, har du det godt?"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-pl-x-oda-local",
+    "voiceName": "Voice 9",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-se-x-afp-network",
+    "voiceName": "Voice 5",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-TR-language",
+    "voiceName": "Voice 8",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "voice": "sw-ke-x-swm-network",
+    "voiceName": "Voice 2",
+    "demo": "Jambo, hujambo?"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "voice": "ko-kr-x-koc-local",
+    "voiceName": "Voice 7",
+    "demo": "안녕하세요, 잘 지내세요?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-US-language",
+    "voiceName": "Voice 17",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "LT",
+    "name": "Lithuania",
+    "voice": "lt-lt-x-amc-network",
+    "voiceName": "Voice 2",
+    "demo": "Labas, kaip sekasi?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "hi-in-x-hia-network",
+    "voiceName": "Voice 50",
+    "demo": "नमस्ते, आप कैसे हैं?"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "voice": "da-dk-x-kfm-network",
+    "voiceName": "Voice 6",
+    "demo": "Hej, har du det godt?"
+  },
+  {
+    "code": "AL",
+    "name": "Albania",
+    "voice": "sq-al-language",
+    "voiceName": "Voice 2",
+    "demo": "Përshëndetje, si jeni?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-fr-x-frc-local",
+    "voiceName": "Voice 7",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "su-id-x-suf-local",
+    "voiceName": "Voice 12",
+    "demo": "Halo, kumaha damang?"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-ru-x-rud-network",
+    "voiceName": "Voice 6",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-gb-x-gba-local",
+    "voiceName": "Voice 1",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "kn-in-x-knd-local",
+    "voiceName": "Voice 51",
+    "demo": "ಹಲೋ, ನೀವು ಹೇಗಿದ್ದೀರಿ?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "sd-IN-language",
+    "voiceName": "Voice 52",
+    "demo": "नमस्कार, तुसीं केंहो?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "pa-in-x-pae-local",
+    "voiceName": "Voice 53",
+    "demo": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ?"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "yue-HK-language",
+    "voiceName": "Voice 7",
+    "demo": "你好，你好嗎？"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "sat-in-x-end-local",
+    "voiceName": "Voice 54",
+    "demo": "ᱵᱟᱹᱨ ᱨᱚᱲᱟᱜ, ᱟᱞᱟᱹ ᱠᱷᱩᱛᱤᱞ?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "id-id-x-ide-network",
+    "voiceName": "Voice 13",
+    "demo": "Halo, apa kabar?"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "voice": "ja-jp-x-htm-local",
+    "voiceName": "Voice 7",
+    "demo": "こんにちは、お元気ですか？"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-ru-x-ruf-local",
+    "voiceName": "Voice 7",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "voice": "en-ng-x-tfn-local",
+    "voiceName": "Voice 3",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "voice": "ja-jp-x-jac-network",
+    "voiceName": "Voice 8",
+    "demo": "こんにちは、お元気ですか？"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-se-x-cfg-local",
+    "voiceName": "Voice 6",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ur-in-x-urb-network",
+    "voiceName": "Voice 55",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "es-es-x-eed-local",
+    "voiceName": "Voice 8",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "voice": "en-au-x-aud-network",
+    "voiceName": "Voice 8",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "hi-IN-language",
+    "voiceName": "Voice 56",
+    "demo": "नमस्ते, आप कैसे हैं?"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-se-x-cmh-network",
+    "voiceName": "Voice 7",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "brx-in-x-end-local",
+    "voiceName": "Voice 57",
+    "demo": "नमस्कार, तुमि कीखौ?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ml-in-x-mle-local",
+    "voiceName": "Voice 58",
+    "demo": "നമസ്കാരം, സുഖമാണോ?"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "voice": "da-dk-x-kfm-local",
+    "voiceName": "Voice 7",
+    "demo": "Hej, har du det godt?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-tpd-local",
+    "voiceName": "Voice 18",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "RO",
+    "name": "Romania",
+    "voice": "ro-ro-x-vfv-network",
+    "voiceName": "Voice 1",
+    "demo": "Bună, ce mai faci?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "id-id-x-ide-local",
+    "voiceName": "Voice 14",
+    "demo": "Halo, apa kabar?"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "cmn-cn-x-ccd-network",
+    "voiceName": "Voice 7"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mni-IN-language",
+    "voiceName": "Voice 59",
+    "demo": "ꯅꯣꯟꯌꯦꯛ, ꯇꯨꯅꯂꯦ ꯀꯨꯛꯤ ꯃ꯭ꯕꯤ?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-NO-language",
+    "voiceName": "Voice 6",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "fr-ca-x-caa-local",
+    "voiceName": "Voice 6",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "es-us-x-esf-network",
+    "voiceName": "Voice 19",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "voice": "ur-pk-x-cfn-local",
+    "voiceName": "Voice 2",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "HU",
+    "name": "Hungary",
+    "voice": "hu-hu-x-kfl-local",
+    "voiceName": "Voice 3",
+    "demo": "Szia, hogy vagy?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "fr-ca-x-cad-local",
+    "voiceName": "Voice 7",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "yue-hk-x-yuc-network",
+    "voiceName": "Voice 8",
+    "demo": "你好，你好嗎？"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "es-us-x-sfb-local",
+    "voiceName": "Voice 20",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "IS",
+    "name": "Iceland",
+    "voice": "is-is-language",
+    "voiceName": "Voice 3",
+    "demo": "Halló, hvernig hefurðu það?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "es-ES-language",
+    "voiceName": "Voice 9",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-nl-x-tfb-network",
+    "voiceName": "Voice 6",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-vn-x-vif-network",
+    "voiceName": "Voice 8",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-no-x-rfj-local",
+    "voiceName": "Voice 7",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "fr-ca-x-cac-network",
+    "voiceName": "Voice 8",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-gb-x-rjs-network",
+    "voiceName": "Voice 15",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-ru-x-ruc-local",
+    "voiceName": "Voice 8",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-ru-x-ruf-network",
+    "voiceName": "Voice 9",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "voice": "he-il-x-heb-local",
+    "voiceName": "Voice 6",
+    "demo": "שלום, מה שלומך?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ks-in-x-end-local",
+    "voiceName": "Voice 60",
+    "demo": "السلام علیکم، تُہند چھُھوار؟"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "fil-ph-x-fic-network",
+    "voiceName": "Voice 7",
+    "demo": "Kamusta, kumusta ka?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ur-in-x-urb-local",
+    "voiceName": "Voice 61",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-ru-x-dfc-local",
+    "voiceName": "Voice 10",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "fil-ph-x-cfc-network",
+    "voiceName": "Voice 8"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "kok-in-x-end-local",
+    "voiceName": "Voice 62",
+    "demo": "नमस्कार, हाँव कितें?"
+  },
+  {
+    "code": "CZ",
+    "name": "Czechia",
+    "voice": "cs-cz-x-jfs-network",
+    "voiceName": "Voice 2",
+    "demo": "Ahoj, jak se máš?"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "voice": "it-it-x-itc-local",
+    "voiceName": "Voice 6",
+    "demo": "Ciao, come stai?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "bn-in-x-bnc-local",
+    "voiceName": "Voice 63",
+    "demo": "হ্যালো, তুমি কেমন আছো?"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-de-x-deg-network",
+    "voiceName": "Voice 4",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "pa-in-x-pac-network",
+    "voiceName": "Voice 64",
+    "demo": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ?"
+  },
+  {
+    "code": "RO",
+    "name": "Romania",
+    "voice": "ro-RO-language",
+    "voiceName": "Voice 2",
+    "demo": "Bună, ce mai faci?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "en-in-x-ena-network",
+    "voiceName": "Voice 65",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "UA",
+    "name": "Ukraine",
+    "voice": "uk-ua-x-hfd-local",
+    "voiceName": "Voice 2",
+    "demo": "Привіт, як справи?"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "voice": "nl-be-x-bec-local",
+    "voiceName": "Voice 1",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "yue-hk-x-yud-local",
+    "voiceName": "Voice 9",
+    "demo": "你好，你好嗎？"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "es-es-x-eed-network",
+    "voiceName": "Voice 10",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ms-my-x-mse-network",
+    "voiceName": "Voice 5",
+    "demo": "Halo, apa khabar?"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-PL-language",
+    "voiceName": "Voice 10",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "",
+    "name": "Arabic",
+    "voice": "ar-xa-x-are-network",
+    "voiceName": "Voice 7",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "voice": "he-il-language",
+    "voiceName": "Voice 7",
+    "demo": "שלום, מה שלומך?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "sa-in-x-end-local",
+    "voiceName": "Voice 66"
+  },
+  {
+    "code": "RS",
+    "name": "Serbia",
+    "voice": "sr-rs-language",
+    "voiceName": "Voice 2",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "voice": "en-au-x-auc-local",
+    "voiceName": "Voice 9",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-gb-x-gbb-network",
+    "voiceName": "Voice 2",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "NP",
+    "name": "Nepal",
+    "voice": "ne-np-x-nep-local",
+    "voiceName": "Voice 1",
+    "demo": "नमस्ते, तपाईंलाई कस्तो छ?"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "voice": "fil-ph-x-cfc-local",
+    "voiceName": "Voice 9"
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "voice": "cmn-tw-x-cte-local",
+    "voiceName": "Voice 5"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "hi-in-x-hie-network",
+    "voiceName": "Voice 67",
+    "demo": "नमस्ते, आप कैसे हैं?"
+  },
+  {
+    "code": "NP",
+    "name": "Nepal",
+    "voice": "ne-np-x-nep-network",
+    "voiceName": "Voice 2",
+    "demo": "नमस्ते, तपाईंलाई कस्तो छ?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-iog-network",
+    "voiceName": "Voice 21",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "NP",
+    "name": "Nepal",
+    "voice": "ne-NP-language",
+    "voiceName": "Voice 3",
+    "demo": "नमस्ते, तपाईंलाई कस्तो छ?"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-de-x-deb-local",
+    "voiceName": "Voice 5",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "voice": "nl-BE-language",
+    "voiceName": "Voice 5",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "KH",
+    "name": "Cambodia",
+    "voice": "km-kh-x-khm-network",
+    "voiceName": "Voice 2",
+    "demo": "សួស្តី អ្នកសុខសប្បាយទេ?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ur-IN-language",
+    "voiceName": "Voice 68",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "voice": "si-LK-language",
+    "voiceName": "Voice 3",
+    "demo": "ආයුබෝවන්, ඔබට කොහොම ද?"
+  },
+  {
+    "code": "SK",
+    "name": "Slovakia",
+    "voice": "sk-sk-x-sfk-network",
+    "voiceName": "Voice 2",
+    "demo": "Ahoj, ako sa máš?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "gu-in-x-guc-local",
+    "voiceName": "Voice 69",
+    "demo": "નમસ્તે, તમે કેમ છો?"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-se-x-cfg-network",
+    "voiceName": "Voice 8",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "BA",
+    "name": "Bosnia & Herzegovina",
+    "voice": "bs-ba-x-bsm-network",
+    "voiceName": "Voice 3",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "FI",
+    "name": "Finland",
+    "voice": "fi-fi-x-afi-network",
+    "voiceName": "Voice 3",
+    "demo": "Hei, mitä kuuluu?"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "yue-hk-x-yuc-local",
+    "voiceName": "Voice 10",
+    "demo": "你好，你好嗎？"
+  },
+  {
+    "code": "LV",
+    "name": "Latvia",
+    "voice": "lv-lv-x-imr-local",
+    "voiceName": "Voice 2",
+    "demo": "Sveiki, kā jums klājas?"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "voice": "it-it-x-itc-network",
+    "voiceName": "Voice 7",
+    "demo": "Ciao, come stai?"
+  },
+  {
+    "code": "SK",
+    "name": "Slovakia",
+    "voice": "sk-SK-language",
+    "voiceName": "Voice 3",
+    "demo": "Ahoj, ako sa máš?"
+  },
+  {
+    "code": "UA",
+    "name": "Ukraine",
+    "voice": "uk-ua-x-hfd-network",
+    "voiceName": "Voice 3",
+    "demo": "Привіт, як справи?"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "cmn-cn-x-ccd-local",
+    "voiceName": "Voice 8"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ms-my-x-msd-local",
+    "voiceName": "Voice 6",
+    "demo": "Halo, apa khabar?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-tr-x-ama-local",
+    "voiceName": "Voice 9",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "te-in-x-teg-network",
+    "voiceName": "Voice 70",
+    "demo": "నమస్తే, మీరు ఎలా ఉన్నారు?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-fr-x-frb-network",
+    "voiceName": "Voice 8",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "te-in-x-tee-local",
+    "voiceName": "Voice 71",
+    "demo": "నమస్తే, మీరు ఎలా ఉన్నారు?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-nl-x-tfb-local",
+    "voiceName": "Voice 7",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-gb-x-gbg-network",
+    "voiceName": "Voice 16",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "SI",
+    "name": "Slovenia",
+    "voice": "sl-si-x-frm-local",
+    "voiceName": "Voice 1",
+    "demo": "Živjo, kako si?"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-se-x-cmh-local",
+    "voiceName": "Voice 9",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mr-in-x-mra-local",
+    "voiceName": "Voice 72",
+    "demo": "नमस्कार, तुम्ही कसे आहात?"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "voice": "it-it-x-itb-network",
+    "voiceName": "Voice 8",
+    "demo": "Ciao, come stai?"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "voice": "da-dk-x-vfb-local",
+    "voiceName": "Voice 8",
+    "demo": "Hej, har du det godt?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ta-in-x-tad-local",
+    "voiceName": "Voice 73",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-no-x-tmg-local",
+    "voiceName": "Voice 8",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "voice": "ru-ru-x-dfc-network",
+    "voiceName": "Voice 11",
+    "demo": "Здравствуйте, как вы?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mai-IN-language",
+    "voiceName": "Voice 74",
+    "demo": "नमस्कार, अहाँ केहन छी?"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-de-x-deg-local",
+    "voiceName": "Voice 6",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "voice": "fr-ca-x-cad-network",
+    "voiceName": "Voice 9",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "voice": "el-gr-x-vfz-network",
+    "voiceName": "Voice 3",
+    "demo": "Γειά σου, είσαι καλά;"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-nl-x-bmh-network",
+    "voiceName": "Voice 8",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "voice": "he-il-x-hed-local",
+    "voiceName": "Voice 8",
+    "demo": "שלום, מה שלומך?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-tpf-network",
+    "voiceName": "Voice 22",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "en-gb-x-gbd-network",
+    "voiceName": "Voice 6",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "voice": "hr-hr-x-hrb-local",
+    "voiceName": "Voice 5",
+    "demo": "Zdravo, kako si?"
+  },
+  {
+    "code": "AL",
+    "name": "Albania",
+    "voice": "sq-al-x-sqm-local",
+    "voiceName": "Voice 3",
+    "demo": "Përshëndetje, si jeni?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "kn-in-x-knc-network",
+    "voiceName": "Voice 75",
+    "demo": "ಹಲೋ, ನೀವು ಹೇಗಿದ್ದೀರಿ?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "hi-in-x-hic-local",
+    "voiceName": "Voice 76",
+    "demo": "नमस्ते, आप कैसे हैं?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-no-x-tfs-network",
+    "voiceName": "Voice 9",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-vn-x-vif-local",
+    "voiceName": "Voice 9",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "ca-es-x-caf-local",
+    "voiceName": "Voice 11",
+    "demo": "Hola, com estàs?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "en-IN-language",
+    "voiceName": "Voice 77",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-de-x-nfh-local",
+    "voiceName": "Voice 7",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "kn-IN-language",
+    "voiceName": "Voice 78",
+    "demo": "ಹಲೋ, ನೀವು ಹೇಗಿದ್ದೀರಿ?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "sd-in-x-end-local",
+    "voiceName": "Voice 79",
+    "demo": "नमस्कार, तुसीं केंहो?"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-vn-x-vid-network",
+    "voiceName": "Voice 10",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ms-my-x-msd-network",
+    "voiceName": "Voice 7",
+    "demo": "Halo, apa khabar?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "te-in-x-tee-network",
+    "voiceName": "Voice 80",
+    "demo": "నమస్తే, మీరు ఎలా ఉన్నారు?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-fr-x-fra-network",
+    "voiceName": "Voice 9",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "pa-in-x-pad-network",
+    "voiceName": "Voice 81",
+    "demo": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ?"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-se-x-lfs-network",
+    "voiceName": "Voice 10",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "voice": "ur-pk-x-urm-local",
+    "voiceName": "Voice 4",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "voice": "ur-pk-x-urm-network",
+    "voiceName": "Voice 5",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "voice": "ur-pk-x-cfn-network",
+    "voiceName": "Voice 3",
+    "demo": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ta-in-x-tac-local",
+    "voiceName": "Voice 82",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "voice": "da-dk-x-sfp-local",
+    "voiceName": "Voice 9",
+    "demo": "Hej, har du det godt?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-tr-x-cfs-network",
+    "voiceName": "Voice 10",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "pa-in-x-pae-network",
+    "voiceName": "Voice 83",
+    "demo": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ?"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ms-my-x-msc-network",
+    "voiceName": "Voice 8",
+    "demo": "Halo, apa khabar?"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "voice": "nl-be-x-bed-local",
+    "voiceName": "Voice 4",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "LT",
+    "name": "Lithuania",
+    "voice": "lt-lt-x-amc-local",
+    "voiceName": "Voice 3",
+    "demo": "Labas, kaip sekasi?"
+  },
+  {
+    "code": "KH",
+    "name": "Cambodia",
+    "voice": "km-kh-x-khm-local",
+    "voiceName": "Voice 3",
+    "demo": "សួស្តី អ្នកសុខសប្បាយទេ?"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "voice": "pt-br-x-pte-network",
+    "voiceName": "Voice 5",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-nl-x-bmh-local",
+    "voiceName": "Voice 9",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "voice": "he-il-x-hec-local",
+    "voiceName": "Voice 9",
+    "demo": "שלום, מה שלומך?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-no-x-cmj-local",
+    "voiceName": "Voice 10",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "voice": "ko-kr-x-kob-local",
+    "voiceName": "Voice 8",
+    "demo": "안녕하세요, 잘 지내세요?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ta-in-x-tac-network",
+    "voiceName": "Voice 84",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-fr-x-vlf-local",
+    "voiceName": "Voice 10",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-iog-local",
+    "voiceName": "Voice 23",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "voice": "cmn-tw-x-ctd-local",
+    "voiceName": "Voice 6"
+  },
+  {
+    "code": "",
+    "name": "Arabic",
+    "voice": "ar-xa-x-arz-network",
+    "voiceName": "Voice 8",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "BG",
+    "name": "Bulgaria",
+    "voice": "bg-bg-language",
+    "voiceName": "Voice 3",
+    "demo": "Здравей, как си?"
+  },
+  {
+    "code": "",
+    "name": "Arabic",
+    "voice": "ar-xa-x-arc-network",
+    "voiceName": "Voice 9",
+    "demo": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-de-x-nfh-network",
+    "voiceName": "Voice 8",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "voice": "pl-pl-x-bmg-local",
+    "voiceName": "Voice 11",
+    "demo": "Cześć, jak się masz?"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "voice": "ko-kr-x-ism-network",
+    "voiceName": "Voice 9",
+    "demo": "안녕하세요, 잘 지내세요?"
+  },
+  {
+    "code": "GB",
+    "name": "English",
+    "voice": "cy-GB-language",
+    "voiceName": "Voice 13",
+    "demo": "Helo, sut wyt ti?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "en-in-x-ena-local",
+    "voiceName": "Voice 85",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "CZ",
+    "name": "Czechia",
+    "voice": "cs-CZ-language",
+    "voiceName": "Voice 3",
+    "demo": "Ahoj, jak se máš?"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "voice": "fr-fr-x-frd-local",
+    "voiceName": "Voice 11",
+    "demo": "Bonjour, comment ça va?"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "voice": "pt-br-x-ptd-network",
+    "voiceName": "Voice 6",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "pa-in-x-pad-local",
+    "voiceName": "Voice 86",
+    "demo": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ?"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "voice": "jv-ID-language",
+    "voiceName": "Voice 15",
+    "demo": "Halo, piye kabarmu?"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "voice": "de-de-x-dea-local",
+    "voiceName": "Voice 9",
+    "demo": "Hallo, wie geht es dir?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "kok-IN-language",
+    "voiceName": "Voice 87",
+    "demo": "नमस्कार, हाँव कितें?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "mr-in-x-mrc-network",
+    "voiceName": "Voice 88",
+    "demo": "नमस्कार, तुम्ही कसे आहात?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-NL-language",
+    "voiceName": "Voice 10",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "voice": "nb-no-x-tmg-network",
+    "voiceName": "Voice 11",
+    "demo": "Hei, hvordan har du det?"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "voice": "ja-jp-x-jab-local",
+    "voiceName": "Voice 9",
+    "demo": "こんにちは、お元気ですか？"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-tpc-local",
+    "voiceName": "Voice 24",
+    "demo": "Hello, how are you?"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "voice": "vi-vn-x-vic-network",
+    "voiceName": "Voice 11",
+    "demo": "Xin chào, bạn có khỏe không?"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "voice": "es-es-x-eec-local",
+    "voiceName": "Voice 12",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "RO",
+    "name": "Romania",
+    "voice": "ro-ro-x-vfv-local",
+    "voiceName": "Voice 3",
+    "demo": "Bună, ce mai faci?"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "voice": "pt-br-x-ptd-local",
+    "voiceName": "Voice 7",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "voice": "tr-tr-x-mfm-network",
+    "voiceName": "Voice 11",
+    "demo": "Merhaba, nasılsın?"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "voice": "sw-ke-language",
+    "voiceName": "Voice 3",
+    "demo": "Jambo, hujambo?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "es-us-x-esd-network",
+    "voiceName": "Voice 25",
+    "demo": "Hola, ¿cómo estás?"
+  },
+  {
+    "code": "SI",
+    "name": "Slovenia",
+    "voice": "sl-SI-language",
+    "voiceName": "Voice 2",
+    "demo": "Živjo, kako si?"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "voice": "ms-my-x-mse-local",
+    "voiceName": "Voice 9",
+    "demo": "Halo, apa khabar?"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "voice": "sv-SE-language",
+    "voiceName": "Voice 11",
+    "demo": "Hej, hur mår du?"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "voice": "pt-pt-x-jfb-local",
+    "voiceName": "Voice 9",
+    "demo": "Olá, como vai você?"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "voice": "cmn-cn-x-cce-local",
+    "voiceName": "Voice 9"
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "voice": "cmn-tw-x-cte-network",
+    "voiceName": "Voice 7"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "voice": "it-it-x-itd-network",
+    "voiceName": "Voice 9",
+    "demo": "Ciao, come stai?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "as-IN-language",
+    "voiceName": "Voice 89",
+    "demo": "নমস্কাৰ, আপুনি কেনে আছো?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ml-in-x-mle-network",
+    "voiceName": "Voice 90",
+    "demo": "നമസ്കാരം, സുഖമാണോ?"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "voice": "nl-nl-x-dma-local",
+    "voiceName": "Voice 11",
+    "demo": "Hallo, hoe gaat het?"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "voice": "ta-in-x-tad-network",
+    "voiceName": "Voice 91",
+    "demo": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "voice": "yue-hk-x-yue-network",
+    "voiceName": "Voice 11",
+    "demo": "你好，你好嗎？"
+  },
+  {
+    "code": "LV",
+    "name": "Latvia",
+    "voice": "lv-lv-x-imr-network",
+    "voiceName": "Voice 3",
+    "demo": "Sveiki, kā jums klājas?"
+  },
+  {
+    "code": "US",
+    "name": "American",
+    "voice": "en-us-x-iol-local",
+    "voiceName": "Voice 26",
+    "demo": "Hello, how are you?"
+  }
+]

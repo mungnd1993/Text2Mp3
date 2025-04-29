@@ -1,0 +1,145 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="icu.xmc.edgettslib.test" >
+4
+5    <uses-sdk
+5-->D:\AllApp\TTSApp\edgettslib\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest11734629731137308598.xml:5:5-74
+6        android:minSdkVersion="21"
+6-->D:\AllApp\TTSApp\edgettslib\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest11734629731137308598.xml:5:15-41
+7        android:targetSdkVersion="33" />
+7-->D:\AllApp\TTSApp\edgettslib\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest11734629731137308598.xml:5:42-71
+8
+9    <instrumentation
+9-->D:\AllApp\TTSApp\edgettslib\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest11734629731137308598.xml:11:5-15:73
+10        android:name="androidx.test.runner.AndroidJUnitRunner"
+10-->D:\AllApp\TTSApp\edgettslib\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest11734629731137308598.xml:11:22-76
+11        android:functionalTest="false"
+11-->D:\AllApp\TTSApp\edgettslib\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest11734629731137308598.xml:14:22-52
+12        android:handleProfiling="false"
+12-->D:\AllApp\TTSApp\edgettslib\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest11734629731137308598.xml:13:22-53
+13        android:label="Tests for icu.xmc.edgettslib.test"
+13-->D:\AllApp\TTSApp\edgettslib\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest11734629731137308598.xml:15:22-71
+14        android:targetPackage="icu.xmc.edgettslib.test" />
+14-->D:\AllApp\TTSApp\edgettslib\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest11734629731137308598.xml:12:22-69
+15
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[:edgettslib] D:\AllApp\TTSApp\edgettslib\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-67
+16-->[:edgettslib] D:\AllApp\TTSApp\edgettslib\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:22-64
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->[:edgettslib] D:\AllApp\TTSApp\edgettslib\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:5-81
+17-->[:edgettslib] D:\AllApp\TTSApp\edgettslib\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:22-78
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->[:edgettslib] D:\AllApp\TTSApp\edgettslib\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:5-80
+18-->[:edgettslib] D:\AllApp\TTSApp\edgettslib\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:22-77
+19
+20    <queries>
+20-->[androidx.test:runner:1.5.2] C:\Users\ADMIN\.gradle\caches\8.9\transforms\514d03605a5d6349226eda3929995ac9\transformed\runner-1.5.2\AndroidManifest.xml:24:5-28:15
+21        <package android:name="androidx.test.orchestrator" />
+21-->[androidx.test:runner:1.5.2] C:\Users\ADMIN\.gradle\caches\8.9\transforms\514d03605a5d6349226eda3929995ac9\transformed\runner-1.5.2\AndroidManifest.xml:25:9-62
+21-->[androidx.test:runner:1.5.2] C:\Users\ADMIN\.gradle\caches\8.9\transforms\514d03605a5d6349226eda3929995ac9\transformed\runner-1.5.2\AndroidManifest.xml:25:18-59
+22        <package android:name="androidx.test.services" />
+22-->[androidx.test:runner:1.5.2] C:\Users\ADMIN\.gradle\caches\8.9\transforms\514d03605a5d6349226eda3929995ac9\transformed\runner-1.5.2\AndroidManifest.xml:26:9-58
+22-->[androidx.test:runner:1.5.2] C:\Users\ADMIN\.gradle\caches\8.9\transforms\514d03605a5d6349226eda3929995ac9\transformed\runner-1.5.2\AndroidManifest.xml:26:18-55
+23        <package android:name="com.google.android.apps.common.testing.services" />
+23-->[androidx.test:runner:1.5.2] C:\Users\ADMIN\.gradle\caches\8.9\transforms\514d03605a5d6349226eda3929995ac9\transformed\runner-1.5.2\AndroidManifest.xml:27:9-83
+23-->[androidx.test:runner:1.5.2] C:\Users\ADMIN\.gradle\caches\8.9\transforms\514d03605a5d6349226eda3929995ac9\transformed\runner-1.5.2\AndroidManifest.xml:27:18-80
+24    </queries>
+25
+26    <uses-permission android:name="android.permission.REORDER_TASKS" />
+26-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:24:5-72
+26-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:24:22-69
+27
+28    <permission
+28-->[androidx.core:core:1.9.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\1afa1f5ec06cb96a39b5f79feeff0029\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+29        android:name="icu.xmc.edgettslib.test.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.9.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\1afa1f5ec06cb96a39b5f79feeff0029\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.9.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\1afa1f5ec06cb96a39b5f79feeff0029\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="icu.xmc.edgettslib.test.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.9.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\1afa1f5ec06cb96a39b5f79feeff0029\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.9.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\1afa1f5ec06cb96a39b5f79feeff0029\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+33
+34    <application
+34-->D:\AllApp\TTSApp\edgettslib\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest11734629731137308598.xml:7:5-9:19
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.9.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\1afa1f5ec06cb96a39b5f79feeff0029\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+36        android:debuggable="true"
+37        android:extractNativeLibs="true" >
+38        <uses-library android:name="android.test.runner" />
+38-->D:\AllApp\TTSApp\edgettslib\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest11734629731137308598.xml:8:9-60
+38-->D:\AllApp\TTSApp\edgettslib\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest11734629731137308598.xml:8:23-57
+39
+40        <activity
+40-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:27:9-34:20
+41            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+41-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:28:13-99
+42            android:exported="true"
+42-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:29:13-36
+43            android:theme="@style/WhiteBackgroundTheme" >
+43-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:30:13-56
+44            <intent-filter android:priority="-100" >
+44-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:31:13-33:29
+44-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:31:28-51
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:32:17-77
+45-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:32:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity
+48-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:35:9-42:20
+49            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+49-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:36:13-95
+50            android:exported="true"
+50-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:37:13-36
+51            android:theme="@style/WhiteBackgroundTheme" >
+51-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:38:13-56
+52            <intent-filter android:priority="-100" >
+52-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:31:13-33:29
+52-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:31:28-51
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:32:17-77
+53-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:32:27-74
+54            </intent-filter>
+55        </activity>
+56        <activity
+56-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:43:9-50:20
+57            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+57-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:44:13-103
+58            android:exported="true"
+58-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:45:13-36
+59            android:theme="@style/WhiteBackgroundDialogTheme" >
+59-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:46:13-62
+60            <intent-filter android:priority="-100" >
+60-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:31:13-33:29
+60-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:31:28-51
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:32:17-77
+61-->[androidx.test:core:1.5.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\a2b8c7bb7b9611cc9b671a57ccf6baf5\transformed\core-1.5.0\AndroidManifest.xml:32:27-74
+62            </intent-filter>
+63        </activity>
+64
+65        <provider
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\d1915f3e2bc1f6500fb9347fa0c05344\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+66            android:name="androidx.startup.InitializationProvider"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\d1915f3e2bc1f6500fb9347fa0c05344\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+67            android:authorities="icu.xmc.edgettslib.test.androidx-startup"
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\d1915f3e2bc1f6500fb9347fa0c05344\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+68            android:exported="false" >
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\d1915f3e2bc1f6500fb9347fa0c05344\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+69            <meta-data
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\d1915f3e2bc1f6500fb9347fa0c05344\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\d1915f3e2bc1f6500fb9347fa0c05344\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+71                android:value="androidx.startup" />
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\8.9\transforms\d1915f3e2bc1f6500fb9347fa0c05344\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ADMIN\.gradle\caches\8.9\transforms\1bc3aa8bce72d6b65992f9d89c724af6\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+73                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+73-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ADMIN\.gradle\caches\8.9\transforms\1bc3aa8bce72d6b65992f9d89c724af6\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+74                android:value="androidx.startup" />
+74-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ADMIN\.gradle\caches\8.9\transforms\1bc3aa8bce72d6b65992f9d89c724af6\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+75        </provider>
+76    </application>
+77
+78</manifest>
