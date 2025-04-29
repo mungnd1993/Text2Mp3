@@ -69,7 +69,7 @@ class VoiceBottomSheet(
 
     override fun onDestroyView() {
         super.onDestroyView()
-        deleteTTSCacheDir()
+        resetCache()
     }
 
     companion object {
@@ -99,7 +99,6 @@ class VoiceBottomSheet(
             adapter.notifyDataSetChanged()
         } else {
             val demoText = languageList.find { it.voice == voice.name }?.demo ?: HELLO
-
             voices.forEach { it.isPlaying = false }
             voices.find { it.name == voice.name }?.isPlaying = true
             adapter.notifyDataSetChanged()
@@ -114,7 +113,7 @@ class VoiceBottomSheet(
                 textToSpeech.speak(demoText, TextToSpeech.QUEUE_FLUSH, null, null)
                 Coroutines.main {
                     kotlinx.coroutines.delay(2000)
-                    voices.forEach { it.isPlaying = false }
+                    voices.forEach { if (it.name == voice.name) it.isPlaying = false }
                     adapter.notifyDataSetChanged()
                 }
             } else {
@@ -151,7 +150,7 @@ class VoiceBottomSheet(
         }
     }
 
-    private fun deleteTTSCacheDir() {
+    private fun resetCache() {
         val ttsCacheDir = File(requireContext().cacheDir, "TTS")
         if (ttsCacheDir.exists()) {
             ttsCacheDir.deleteRecursively()

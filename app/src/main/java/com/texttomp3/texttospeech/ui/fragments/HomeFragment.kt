@@ -87,7 +87,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), ProjectAdapter.OnClick
                         tvTrial.typeface = ResourcesCompat.getFont(requireContext(), R.font.roboto_regular)
                         tvPro.typeface = ResourcesCompat.getFont(requireContext(), R.font.roboto_black)
                     } else {
-//                        Utils.setGradientText(tvTrial)
+                        Utils.setGradientText(tvTrial)
                         tvTrial.typeface = ResourcesCompat.getFont(requireContext(), R.font.roboto_black)
                         tvPro.typeface = ResourcesCompat.getFont(requireContext(), R.font.roboto_regular)
                     }

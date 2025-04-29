@@ -12,6 +12,7 @@ import com.texttomp3.texttospeech.base.BaseFragment
 import com.texttomp3.texttospeech.databinding.FragmentWelcomeBinding
 import com.texttomp3.texttospeech.utils.Constants.LINK_PRIVACY
 import com.texttomp3.texttospeech.utils.Constants.LINK_TERM
+import androidx.core.net.toUri
 
 class WelcomeFragment : BaseFragment<FragmentWelcomeBinding>() {
     override fun createBinding(
@@ -53,13 +54,13 @@ class WelcomeFragment : BaseFragment<FragmentWelcomeBinding>() {
 
             tvPolicy.setOnClickListener {
                 startActivity(
-                    Intent(Intent.ACTION_VIEW, Uri.parse(LINK_PRIVACY))
+                    Intent(Intent.ACTION_VIEW, LINK_PRIVACY.toUri())
                 )
             }
 
             tvTerm.setOnClickListener {
                 startActivity(
-                    Intent(Intent.ACTION_VIEW, Uri.parse(LINK_TERM))
+                    Intent(Intent.ACTION_VIEW, LINK_TERM.toUri())
                 )
             }
         }

@@ -101,7 +101,7 @@ class GoogleBillingManager(
     /**
      * Kiểm tra lifetime trước, nếu không có thì kiểm tra subs
      */
-    private fun queryPurchases() {
+    fun queryPurchases() {
         val lifetimeParams = QueryPurchasesParams.newBuilder()
             .setProductType(ProductType.INAPP)
             .build()

@@ -36,7 +36,7 @@ class VoiceAdapter(private val mode: String,private val listener: OnClickListene
         val languages = LanguageHelper(binding.root.context).getLanguageList()
         with(binding) {
             if (mode == ANDROID) {
-                tvName.text = "Voice ${item.displayIndex}"
+                tvName.text = "${root.context.getString(R.string.voice)} ${item.displayIndex}"
             } else {
                 tvName.text = languages.find { it.voice == item.name }?.voiceName
             }

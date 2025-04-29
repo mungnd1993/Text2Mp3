@@ -53,7 +53,7 @@ class SplashScreenActivity : AppCompatActivity(), GoogleBillingManager.OnPurchas
         }
         hideNavigationBar()
         billingManager = GoogleBillingManager(this, this, this, settingViewModel)
-        billingManager.getProductDetail()
+        billingManager.queryPurchases()
         isFirstOpenApp = PreferenceHelper.getInstance(this).getBoolean(IS_FIRST_OPEN_APP, true)
         setupUMP()
     }
@@ -85,7 +85,7 @@ class SplashScreenActivity : AppCompatActivity(), GoogleBillingManager.OnPurchas
 
             if (settingViewModel.proVersion.value) {
                 lifecycleScope.launch {
-                    delay(1500)
+                    delay(1000)
                     openMainActivity()
                 }
             } else {

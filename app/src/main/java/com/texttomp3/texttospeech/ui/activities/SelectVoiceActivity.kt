@@ -107,7 +107,7 @@ class SelectVoiceActivity : BaseActivity<ActivitySelectVoiceBinding>(),
                     if (it.mode == ANDROID) {
                         tvMode.text = getString(R.string.default_voice_engine)
                         ivMode.setImageResource(R.drawable.ic_android)
-                        tvVoice.text = "Voice ${it.voice.displayIndex}"
+                        tvVoice.text = "${getString(R.string.voice)} ${it.voice.displayIndex}"
                     } else {
                         tvMode.text = getString(R.string.edge_text_to_speech)
                         ivMode.setImageResource(R.drawable.ic_edge)

@@ -169,7 +169,7 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
                     selectedSetting = it.copy()
                     tvLanguage.text = languageList.find { l -> l.code == it.language }?.name
                     if (it.mode == ANDROID) {
-                        tvVoice.text = "Voice ${it.voice.displayIndex}"
+                        tvVoice.text = "${getString(R.string.voice)} ${it.voice.displayIndex}"
                     } else {
                         tvVoice.text =
                             languageList.find { l -> l.voice == it.voice.name }?.voiceName
@@ -193,9 +193,12 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
             lifecycleScope.launch {
                 ttsViewModel.path.collect {
                     if (it.isNotEmpty()) {
-                        supportFragmentManager.popBackStack()
                         if (!settingViewModel.proVersion.value) {
+                            supportFragmentManager.popBackStack()
                             LoadInterstitialAds.getInstance().showInterstitial(this@TTSActivity)
+                        } else {
+                            delay(200)
+                            supportFragmentManager.popBackStack()
                         }
                         clAudio.visibility = View.VISIBLE
                         btGenerate.text = getString(R.string.re_generate)
