@@ -1,9 +1,11 @@
 package com.texttomp3.texttospeech.ui.fragments
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.texttomp3.texttospeech.base.BaseBottomSheetFragment
 import com.texttomp3.texttospeech.databinding.FragmentThankBottomSheetBinding
+import com.texttomp3.texttospeech.ui.activities.MainActivity
 import com.texttomp3.texttospeech.utils.Constants.RATE_BOTTOM_SHEET
 
 class ThankBottomSheet : BaseBottomSheetFragment<FragmentThankBottomSheetBinding>() {
@@ -26,8 +28,9 @@ class ThankBottomSheet : BaseBottomSheetFragment<FragmentThankBottomSheetBinding
         with(binding) {
             btOk.setOnClickListener {
                 dismiss()
-                val rateBottomSheet = RateBottomSheet.newInstance()
-                rateBottomSheet.show(parentFragmentManager, RATE_BOTTOM_SHEET)
+//                val rateBottomSheet = RateBottomSheet.newInstance()
+//                rateBottomSheet.show(parentFragmentManager, RATE_BOTTOM_SHEET)
+                requireActivity().finish()
             }
         }
     }

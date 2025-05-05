@@ -11,13 +11,19 @@ import com.texttomp3.texttospeech.ui.activities.FeedbackActivity
 import com.texttomp3.texttospeech.utils.Constants.LINK_GOOGLE_PLAY
 import com.texttomp3.texttospeech.utils.Constants.LINK_PRIVACY
 import com.texttomp3.texttospeech.utils.Constants.LINK_SEARCH_GOOGLE_PLAY
-import com.texttomp3.texttospeech.utils.Constants.NORMAL
 import com.texttomp3.texttospeech.utils.Constants.QUERY_APP
 import com.texttomp3.texttospeech.utils.Constants.RATE_BOTTOM_SHEET
 import com.texttomp3.texttospeech.utils.Constants.SET_PACKAGE
 import com.texttomp3.texttospeech.utils.Utils
+import androidx.core.net.toUri
+import com.texttomp3.texttospeech.viewmodels.SettingViewModel
+import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 class SettingFragment : BaseFragment<FragmentSettingBinding>() {
+    private val settingViewModel: SettingViewModel by lazy {
+        getViewModel<SettingViewModel>()
+    }
+
     override fun createBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -42,14 +48,18 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
     private fun initEvent() {
         with(binding) {
             btTry.setOnClickListener {
-                requireActivity().supportFragmentManager.beginTransaction()
-                    .add(R.id.fcv_main2, Upgrade2Fragment.newInstance(NORMAL))
-                    .addToBackStack(null)
-                    .commit()
+               if (settingViewModel.proVersion.value) {
+                   Utils.toast(requireContext(), getString(R.string.already_subscribed))
+               } else {
+                   requireActivity().supportFragmentManager.beginTransaction()
+                       .add(R.id.fcv_main2, Upgrade2Fragment.newInstance())
+                       .addToBackStack(null)
+                       .commit()
+               }
             }
 
             clPrivacy.setOnClickListener {
-                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(LINK_PRIVACY)))
+                startActivity(Intent(Intent.ACTION_VIEW, LINK_PRIVACY.toUri()))
             }
 
             clFeedback.setOnClickListener {
@@ -93,9 +103,7 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
     private fun openListAppCHPlay() {
         try {
             val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(
-                LINK_SEARCH_GOOGLE_PLAY + QUERY_APP
-            )
+            intent.data = (LINK_SEARCH_GOOGLE_PLAY + QUERY_APP).toUri()
             intent.setPackage(SET_PACKAGE)
             startActivity(intent)
         } catch (e: java.lang.Exception) {

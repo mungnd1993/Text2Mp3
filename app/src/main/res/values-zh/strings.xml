@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TTS应用</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">你好，空白片段</string>
+    <string name="app_title" translatable="false">Text to speech</string>
+    <string name="new_project">新项目</string>
+    <string name="welcome_title">欢迎来到讲话</string>
+    <string name="welcome_subtitle">将文本转换为语音，比以往任何时候都更容易。</string>
+    <string name="continue_button">继续</string>
+    <string name="next_button">下一个</string>
+    <string name="by_continue">通过继续，您同意我们的</string>
+    <string name="policy">隐私政策</string>
+    <string name="and">和</string>
+    <string name="terms_of_use">使用条款</string>
+    <string name="and_symbol">＆amp;</string>
+    <string name="use_preferred_voice">使用首选的语音</string>
+    <string name="listen_to_text">听文字更快，了解更多</string>
+    <string name="available_in_100_languages">有100多种语言可用</string>
+    <string name="high_quality_natural_voices_and_celebrity_voices">高质量的自然声音和名人声音</string>
+    <string name="text_to_speech_pro">文字到语音专业</string>
+    <string name="read_anything_aloud_in_top_quality_voices">在高质量的声音中大声朗读任何内容</string>
+    <string name="support_more_than_100_languages">支持100多种语言</string>
+    <string name="remove_ads">删除广告</string>
+    <string name="use_the_application_without_being_bothered_by_ads">使用该应用程序而不会被广告打扰</string>
+    <string name="load_audio_file">加载音频文件</string>
+    <string name="all_your_documents_pdfs_and_more_are_read_to_you">您的所有文档，PDF和更多文档都会阅读给您</string>
+    <string name="weekly">每周</string>
+    <string name="billed_weekly">每周收费</string>
+    <string name="annual">年度的</string>
+    <string name="save_30">节省30％</string>
+    <string name="original">原始的7,500,000/年</string>
+    <string name="secured_with_app_store">用App Store保证</string>
+    <string name="home">家</string>
+    <string name="setting">环境</string>
+    <string name="project">项目</string>
+    <string name="you_don_t_have_any_projects_yet">您还没有任何项目。</string>
+    <string name="try_package" translatable="false">Try</string>
+    <string name="pro" translatable="false">Pro</string>
+    <string name="more_than_100_languages">超过100种语言</string>
+    <string name="free_trial_enabled">启用免费试用</string>
+    <string name="three_days_free_trial_auto_renewal">3天免费试用，自动更新</string>
+    <string name="billed_week">一周，自动更新</string>
+    <string name="cancel_anytime">，随时取消</string>
+    <string name="billed_year">一年，自动更新</string>
+    <string name="yearly_price">200.000° /年</string>
+    <string name="try_for_free">免费尝试</string>
+    <string name="download_audio">下载音频</string>
+    <string name="listen_with_best_voices">聆听没有互联网连接的最好的声音</string>
+    <string name="rename_file">重命名文件</string>
+    <string name="delete_file">删除文件</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="are_you_sure_you_want_to_delete">您确定要删除吗</string>
+    <string name="this_action_cannot_be_undone">该动作不能撤消。</string>
+    <string name="save">节省</string>
+    <string name="please_enter_or_paste_your_text">请输入或粘贴您的文字...</string>
+    <string name="clear">清除</string>
+    <string name="audio_control">音频控制</string>
+    <string name="pitch">沥青</string>
+    <string name="speed">速度</string>
+    <string name="volume">体积</string>
+    <string name="generate">产生</string>
+    <string name="re_generate">再生</string>
+    <string name="loading_audio">加载音频，请等待...</string>
+    <string name="select_voice">选择语音</string>
+    <string name="voice_apparatus">语音设备</string>
+    <string name="default_voice_engine">默认语音引擎</string>
+    <string name="edge_text_to_speech" translatable="false">Edge Text To Speech</string>
+    <string name="language">语言</string>
+    <string name="voice">嗓音</string>
+    <string name="new_to_old">（新老）</string>
+    <string name="old_to_new">（旧到新）</string>
+    <string name="a_z">（A-Z）</string>
+    <string name="z_a">（Z-A）</string>
+    <string name="last_modified">最后修改</string>
+    <string name="name">姓名</string>
+    <string name="get_pro">获取专业人士</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="feedback">反馈</string>
+    <string name="rate_app">费率应用程序</string>
+    <string name="app_theme">应用主题</string>
+    <string name="share_app">共享应用程序</string>
+    <string name="more_apps">更多应用程序</string>
+    <string name="downloading_audio">下载音频...</string>
+    <string name="downloaded_successfully">成功下载</string>
+    <string name="how_can_we_help_you">我们该如何帮助您？</string>
+    <string name="tell_us_the_problem_you_encountered">告诉我们您遇到的问题</string>
+    <string name="please_provide_as_much_detail_as_you_can">请提供尽可能多的细节...</string>
+    <string name="submit">提交</string>
+    <string name="we_will_try_our_best_to_improve_it">我们将尽力改善它。</string>
+    <string name="thanks_for_your_feedback">感谢您的反馈</string>
+    <string name="sorry_for_the_inconvenience">带来不便敬请谅解。</string>
+    <string name="ok">好的</string>
+    <string name="rate_your_experience">评分您的经验</string>
+    <string name="your_good_rating_is_very_valuable_for_us">您的良好评分对我们来说非常有价值。</string>
+    <string name="please_take_a_minute_to_rate_us">请花一分钟的时间对我们进行评分。</string>
+    <string name="i_will_do_it_later">我稍后再做</string>
+    <string name="send_review">发送评论</string>
+    <string name="user_interface">用户界面</string>
+    <string name="private_folder">私人文件夹</string>
+    <string name="notification">通知</string>
+    <string name="support">支持</string>
+    <string name="other">其他</string>
+    <string name="text_rate_google_play">请在Google Play上对我们评分5*。谢谢你！</string>
+    <string name="text_need_feedback">请反馈。</string>
+    <string name="text_share_app_title">我的申请名称</string>
+    <string name="text_recommend">我设法使用此应用程序将文本转换为语音 - 想尝试一下吗？</string>
+    <string name="text_choose_tools_share_app">通过…共享应用程序</string>
+    <string name="text_feedback_from_app" translatable="false">Feedback from app %1$s</string>
+    <string name="text_email_device" translatable="false">Device:</string>
+    <string name="text_email_sdk" translatable="false">Android SDK:</string>
+    <string name="text_choose_tools" translatable="false">Send email via…</string>
+    <string name="version">版本</string>
+    <string name="database">数据库</string>
+    <string name="search">搜索...</string>
+    <string name="try_now">现在尝试</string>
+    <string name="continue_with_ads">继续广告</string>
+    <string name="already_subscribed">已经订阅了</string>
+    <string name="error_try_again">错误！再试一次</string>
+    <string name="text_month">1个月</string>
+    <string name="text_year">1年</string>
+    <string name="text_unknown">未知</string>
+    <string name="week">星期</string>
+    <string name="year">年</string>
+    <string name="name_is_not_null">名称不能为空</string>
+    <string name="rename_success">重命名成功！</string>
+    <string name="name_duplicate">名称重复！</string>
+</resources>

@@ -11,12 +11,18 @@ import com.texttomp3.texttospeech.databinding.FragmentMoreBottomSheetBinding
 import com.texttomp3.texttospeech.utils.Constants.DELETE_BOTTOM_SHEET
 import com.texttomp3.texttospeech.utils.Constants.RENAME_BOTTOM_SHEET
 import com.texttomp3.texttospeech.utils.Utils
+import com.texttomp3.texttospeech.viewmodels.SettingViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.koin.androidx.viewmodel.ext.android.getViewModel
 import java.io.File
 
 class MoreBottomSheet(private val project: Project) : BaseBottomSheetFragment<FragmentMoreBottomSheetBinding>() {
+    private val settingViewModel: SettingViewModel by lazy {
+        getViewModel<SettingViewModel>()
+    }
+
     override fun createBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -46,21 +52,29 @@ class MoreBottomSheet(private val project: Project) : BaseBottomSheetFragment<Fr
             }
 
             clDownload.setOnClickListener {
-                dialog?.window?.decorView?.visibility = View.GONE
-                val loadingFragment = Utils.showLoadingFragment(
-                    requireActivity().supportFragmentManager,
-                    R.id.fcv_main2,
-                    getString(R.string.downloading_audio)
-                )
+                if (settingViewModel.proVersion.value) {
+                    dialog?.window?.decorView?.visibility = View.GONE
+                    val loadingFragment = Utils.showLoadingFragment(
+                        requireActivity().supportFragmentManager,
+                        R.id.fcv_main2,
+                        getString(R.string.downloading_audio)
+                    )
 
-                lifecycleScope.launch {
-                    val success = withContext(Dispatchers.IO) {
-                        Utils.saveMp3ToMediaStore(requireContext(), File(project.filePath))
+                    lifecycleScope.launch {
+                        val success = withContext(Dispatchers.IO) {
+                            Utils.saveMp3ToMediaStore(requireContext(), File(project.filePath))
+                        }
+                        if (success) {
+                            loadingFragment.showSuccessAndDismiss()
+                            dismiss()
+                        }
                     }
-                    if (success) {
-                        loadingFragment.showSuccessAndDismiss()
-                        dismiss()
-                    }
+                } else {
+                    val upgrade2Fragment = Upgrade2Fragment.newInstance()
+                        requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.fcv_main2, upgrade2Fragment)
+                        .addToBackStack(null)
+                        .commit()
                 }
 
             }

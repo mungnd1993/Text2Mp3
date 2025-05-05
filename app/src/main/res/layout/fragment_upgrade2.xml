@@ -211,45 +211,44 @@
                       android:layout_marginTop="32dp"
                       android:orientation="vertical">
 
-                      <androidx.constraintlayout.widget.ConstraintLayout
-                          android:id="@+id/cl_try"
-                          android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:background="@drawable/bg_grey_rounded"
-                          android:paddingHorizontal="16dp"
-                          android:paddingVertical="10dp"
-                          android:layout_marginBottom="12dp"
-                          android:visibility="gone">
+<!--                      <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                          android:id="@+id/cl_try"-->
+<!--                          android:layout_width="match_parent"-->
+<!--                          android:layout_height="wrap_content"-->
+<!--                          android:background="@drawable/bg_grey_rounded"-->
+<!--                          android:paddingHorizontal="16dp"-->
+<!--                          android:paddingVertical="10dp"-->
+<!--                          android:layout_marginBottom="12dp">-->
 
-                          <androidx.appcompat.widget.AppCompatTextView
-                              android:id="@+id/tv_try"
-                              android:layout_width="wrap_content"
-                              android:layout_height="wrap_content"
-                              android:fontFamily="@font/roboto_bold"
-                              android:text="@string/free_trial_enabled"
-                              android:textColor="@color/black"
-                              android:textSize="14sp"
-                              app:layout_constraintBottom_toBottomOf="parent"
-                              app:layout_constraintStart_toStartOf="parent"
-                              app:layout_constraintTop_toTopOf="parent" />
+<!--                          <androidx.appcompat.widget.AppCompatTextView-->
+<!--                              android:id="@+id/tv_try"-->
+<!--                              android:layout_width="wrap_content"-->
+<!--                              android:layout_height="wrap_content"-->
+<!--                              android:fontFamily="@font/roboto_bold"-->
+<!--                              android:text="@string/free_trial_enabled"-->
+<!--                              android:textColor="@color/black"-->
+<!--                              android:textSize="14sp"-->
+<!--                              app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                              app:layout_constraintStart_toStartOf="parent"-->
+<!--                              app:layout_constraintTop_toTopOf="parent" />-->
 
-                          <io.github.vejei.cupertinoswitch.CupertinoSwitch
-                              android:id="@+id/sw_free"
-                              android:layout_width="wrap_content"
-                              android:layout_height="wrap_content"
-                              app:layout_constraintBottom_toBottomOf="parent"
-                              app:layout_constraintEnd_toEndOf="parent"
-                              app:layout_constraintTop_toTopOf="parent"
-                              app:sliderColor="@color/white"
-                              app:sliderShadowColor="#40000000"
-                              app:sliderShadowEnabled="true"
-                              app:switchHeight="32dp"
-                              app:switchWidth="56dp"
-                              app:trackOffColor="#9B9B9C"
-                              android:checked="true"
-                              app:trackOnColor="#12BE50" />
+<!--                          <io.github.vejei.cupertinoswitch.CupertinoSwitch-->
+<!--                              android:id="@+id/sw_free"-->
+<!--                              android:layout_width="wrap_content"-->
+<!--                              android:layout_height="wrap_content"-->
+<!--                              app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                              app:layout_constraintEnd_toEndOf="parent"-->
+<!--                              app:layout_constraintTop_toTopOf="parent"-->
+<!--                              app:sliderColor="@color/white"-->
+<!--                              app:sliderShadowColor="#40000000"-->
+<!--                              app:sliderShadowEnabled="true"-->
+<!--                              app:switchHeight="32dp"-->
+<!--                              app:switchWidth="56dp"-->
+<!--                              app:trackOffColor="#9B9B9C"-->
+<!--                              android:checked="true"-->
+<!--                              app:trackOnColor="#12BE50" />-->
 
-                      </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                      </androidx.constraintlayout.widget.ConstraintLayout>-->
 
                       <androidx.constraintlayout.widget.ConstraintLayout
                           android:id="@+id/cl_week"
@@ -320,6 +319,7 @@
                               app:layout_constraintEnd_toEndOf="parent"
                               android:paddingHorizontal="12dp"
                               android:paddingVertical="6dp"
+                              android:visibility="invisible"
                               android:background="@drawable/bg_upgrade_discount">
 
                               <androidx.appcompat.widget.AppCompatTextView
@@ -502,16 +502,16 @@
 
           </ScrollView>
 
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/iv_close"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               app:layout_constraintTop_toTopOf="parent"
-               app:layout_constraintStart_toStartOf="parent"
-               android:layout_marginStart="20dp"
-               android:layout_marginTop="47dp"
-               android:src="@drawable/ic_close"
-               android:visibility="gone"/>
+<!--           <androidx.appcompat.widget.AppCompatImageView-->
+<!--               android:id="@+id/iv_close"-->
+<!--               android:layout_width="wrap_content"-->
+<!--               android:layout_height="wrap_content"-->
+<!--               app:layout_constraintTop_toTopOf="parent"-->
+<!--               app:layout_constraintStart_toStartOf="parent"-->
+<!--               android:layout_marginStart="20dp"-->
+<!--               android:layout_marginTop="47dp"-->
+<!--               android:src="@drawable/ic_close"-->
+<!--               android:visibility="gone"/>-->
 
        </androidx.constraintlayout.widget.ConstraintLayout>
 

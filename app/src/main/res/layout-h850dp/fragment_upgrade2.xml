@@ -309,19 +309,20 @@
                               app:layout_constraintEnd_toEndOf="parent"
                               android:paddingHorizontal="12dp"
                               android:paddingVertical="6dp"
+                              android:visibility="invisible"
                               android:background="@drawable/bg_upgrade_discount">
 
                               <androidx.appcompat.widget.AppCompatTextView
-                                  android:layout_width="wrap_content"
-                                  android:layout_height="wrap_content"
-                                  app:layout_constraintTop_toTopOf="parent"
-                                  app:layout_constraintStart_toStartOf="parent"
-                                  app:layout_constraintEnd_toEndOf="parent"
-                                  app:layout_constraintBottom_toBottomOf="parent"
-                                  android:text="@string/save_30"
-                                  android:textSize="10sp"
-                                  android:textColor="@color/white"
+                                  android:layout_width="47dp"
+                                  android:layout_height="11dp"
                                   android:fontFamily="@font/roboto_bold"
+                                  android:text="@string/save_30"
+                                  android:textColor="@color/white"
+                                  android:textSize="10sp"
+                                  app:layout_constraintBottom_toBottomOf="parent"
+                                  app:layout_constraintEnd_toEndOf="parent"
+                                  app:layout_constraintStart_toStartOf="parent"
+                                  app:layout_constraintTop_toTopOf="parent"
                                   tools:ignore="SmallSp" />
 
                           </androidx.constraintlayout.widget.ConstraintLayout>

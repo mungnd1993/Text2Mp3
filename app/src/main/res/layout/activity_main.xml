@@ -58,7 +58,7 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_home"
-                android:layout_width="88dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/iv_home"
                 app:layout_constraintStart_toStartOf="parent"
@@ -102,7 +102,7 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_setting"
-                android:layout_width="88dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/iv_setting"
                 app:layout_constraintStart_toStartOf="parent"
@@ -134,8 +134,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:visibility="gone">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <FrameLayout
             android:id="@+id/fl_loading"
@@ -144,8 +143,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:background="@color/white"
-            android:visibility="gone">
+            android:background="@color/white">
             <include layout="@layout/layout_ads_native_custom_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

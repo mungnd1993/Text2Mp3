@@ -20,7 +20,6 @@ import com.texttomp3.texttospeech.ui.fragments.Upgrade2Fragment
 import com.texttomp3.texttospeech.utils.Constants.ANDROID
 import com.texttomp3.texttospeech.utils.Constants.CONTENT
 import com.texttomp3.texttospeech.utils.Constants.DISPLAY_INDEX
-import com.texttomp3.texttospeech.utils.Constants.DOWNLOAD
 import com.texttomp3.texttospeech.utils.Constants.FILE_PATH
 import com.texttomp3.texttospeech.utils.Constants.GB
 import com.texttomp3.texttospeech.utils.Constants.GENDER
@@ -28,7 +27,6 @@ import com.texttomp3.texttospeech.utils.Constants.ID
 import com.texttomp3.texttospeech.utils.Constants.LANGUAGE
 import com.texttomp3.texttospeech.utils.Constants.MODE
 import com.texttomp3.texttospeech.utils.Constants.MORE_BOTTOM_SHEET
-import com.texttomp3.texttospeech.utils.Constants.NORMAL
 import com.texttomp3.texttospeech.utils.Constants.PITCH
 import com.texttomp3.texttospeech.utils.Constants.SPEED
 import com.texttomp3.texttospeech.utils.Constants.VOICE
@@ -197,7 +195,7 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
                             supportFragmentManager.popBackStack()
                             LoadInterstitialAds.getInstance().showInterstitial(this@TTSActivity)
                         } else {
-                            delay(200)
+                            delay(500)
                             supportFragmentManager.popBackStack()
                         }
                         clAudio.visibility = View.VISIBLE
@@ -334,7 +332,7 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
                         }
                     }
                 } else {
-                    val upgrade2Fragment = Upgrade2Fragment.newInstance(DOWNLOAD)
+                    val upgrade2Fragment = Upgrade2Fragment.newInstance()
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fcv_main2, upgrade2Fragment)
                         .addToBackStack(null)

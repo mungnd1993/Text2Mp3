@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.LinearInterpolator
 import com.texttomp3.texttospeech.databinding.FragmentLoadingBinding
+import com.texttomp3.texttospeech.utils.Coroutines
+import kotlinx.coroutines.delay
 
 class LoadingFragment : Fragment() {
     private lateinit var binding: FragmentLoadingBinding

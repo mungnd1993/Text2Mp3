@@ -19,9 +19,10 @@ import com.texttomp3.texttospeech.utils.Constants.IS_FIRST_OPEN_APP
 import com.texttomp3.texttospeech.utils.Constants.LINK_PRIVACY
 import com.texttomp3.texttospeech.utils.Constants.LINK_TERM
 import com.texttomp3.texttospeech.utils.Coroutines
-import com.texttomp3.texttospeech.utils.Utils
 import com.texttomp3.texttospeech.viewmodels.SettingViewModel
 import org.koin.androidx.viewmodel.ext.android.getViewModel
+import androidx.core.net.toUri
+import com.texttomp3.texttospeech.utils.Utils
 
 class UpgradeFragment : BaseFragment<FragmentUpgradeBinding>(), GoogleBillingManager.OnPurchaseStateChangeListener {
     private lateinit var billingManager: GoogleBillingManager
@@ -78,13 +79,13 @@ class UpgradeFragment : BaseFragment<FragmentUpgradeBinding>(), GoogleBillingMan
 
             tvPolicy.setOnClickListener {
                 startActivity(
-                    Intent(Intent.ACTION_VIEW, Uri.parse(LINK_PRIVACY))
+                    Intent(Intent.ACTION_VIEW, LINK_PRIVACY.toUri())
                 )
             }
 
             tvTerm.setOnClickListener {
                 startActivity(
-                    Intent(Intent.ACTION_VIEW, Uri.parse(LINK_TERM))
+                    Intent(Intent.ACTION_VIEW, LINK_TERM.toUri())
                 )
             }
 
@@ -105,24 +106,47 @@ class UpgradeFragment : BaseFragment<FragmentUpgradeBinding>(), GoogleBillingMan
         Coroutines.main {
             val list = productDetails!!.subscriptionOfferDetails
             if (list != null) {
-                binding.tvPrice1.text = list[1].pricingPhases.pricingPhaseList[0].formattedPrice
-                binding.tvPrice2.text = list[3].pricingPhases.pricingPhaseList[0].formattedPrice
+                if (list.size == 4) {
+                    binding.tvPrice1.text = list[1].pricingPhases.pricingPhaseList[0].formattedPrice
+                    binding.tvPrice2.text = list[3].pricingPhases.pricingPhaseList[0].formattedPrice
 
-                this.productDetails = productDetails
-                offerToken = list[1].offerToken
-
-                binding.clWeek.setOnClickListener {
-                    binding.clWeek.setBackgroundResource(R.drawable.bg_upgrade_active)
-                    binding.clAnnu.setBackgroundResource(R.drawable.bg_upgrade_unactive)
                     this.productDetails = productDetails
                     offerToken = list[1].offerToken
-                }
 
-                binding.clAnnu.setOnClickListener {
-                    binding.clWeek.setBackgroundResource(R.drawable.bg_upgrade_unactive)
-                    binding.clAnnu.setBackgroundResource(R.drawable.bg_upgrade_active)
+                    binding.clWeek.setOnClickListener {
+                        binding.clWeek.setBackgroundResource(R.drawable.bg_upgrade_active)
+                        binding.clAnnu.setBackgroundResource(R.drawable.bg_upgrade_unactive)
+                        this.productDetails = productDetails
+                        offerToken = list[1].offerToken
+                    }
+
+                    binding.clAnnu.setOnClickListener {
+                        binding.clWeek.setBackgroundResource(R.drawable.bg_upgrade_unactive)
+                        binding.clAnnu.setBackgroundResource(R.drawable.bg_upgrade_active)
+                        this.productDetails = productDetails
+                        offerToken = list[3].offerToken
+                    }
+                }
+                else if (list.size == 2) {
+                    binding.tvPrice1.text = list[0].pricingPhases.pricingPhaseList[0].formattedPrice
+                    binding.tvPrice2.text = list[1].pricingPhases.pricingPhaseList[0].formattedPrice
+
                     this.productDetails = productDetails
-                    offerToken = list[3].offerToken
+                    offerToken = list[0].offerToken
+
+                    binding.clWeek.setOnClickListener {
+                        binding.clWeek.setBackgroundResource(R.drawable.bg_upgrade_active)
+                        binding.clAnnu.setBackgroundResource(R.drawable.bg_upgrade_unactive)
+                        this.productDetails = productDetails
+                        offerToken = list[0].offerToken
+                    }
+
+                    binding.clAnnu.setOnClickListener {
+                        binding.clWeek.setBackgroundResource(R.drawable.bg_upgrade_unactive)
+                        binding.clAnnu.setBackgroundResource(R.drawable.bg_upgrade_active)
+                        this.productDetails = productDetails
+                        offerToken = list[1].offerToken
+                    }
                 }
             }
         }
@@ -134,26 +158,24 @@ class UpgradeFragment : BaseFragment<FragmentUpgradeBinding>(), GoogleBillingMan
     }
 
     override fun onNewSubscribe() {
-        val intent = Intent(requireActivity(), MainActivity::class.java)
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-        intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
-        startActivity(intent)
+        Utils.log("okokokokok", "onNewSubscribe")
     }
 
     override fun onAlreadySubscribed() {
-
+        Utils.log("okokokokok", "onAlreadySubscribed")
     }
 
     override fun onHaveNotSubscribed() {
-
+        Utils.log("okokokokok", "onHaveNotSubscribed")
     }
 
     override fun onFreeTrialActive(remainingDays: Int) {
-
+        val intent = Intent(requireContext(), MainActivity::class.java)
+        startActivity(intent)
     }
 
     override fun onPurchasePending() {
-
+        Utils.log("okokokokok", "onPurchasePending")
     }
 
     override fun onDestroyView() {

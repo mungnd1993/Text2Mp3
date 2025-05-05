@@ -351,6 +351,7 @@
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     android:paddingVertical="6dp"
                                     android:paddingHorizontal="10dp"
+                                    android:visibility="invisible"
                                     android:background="@drawable/bg_upgrade_discount">
 
                                     <androidx.appcompat.widget.AppCompatTextView

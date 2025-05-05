@@ -2,6 +2,7 @@ package com.texttomp3.texttospeech.ui.fragments
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import com.texttomp3.texttospeech.R
 import com.texttomp3.texttospeech.data.models.Project
 import com.texttomp3.texttospeech.base.BaseBottomSheetFragment
 import com.texttomp3.texttospeech.databinding.FragmentRenameBottomSheetBinding
@@ -45,12 +46,16 @@ class RenameBottomSheet(private val project: Project) : BaseBottomSheetFragment<
             }
 
             btSave.setOnClickListener {
-                val result = homeViewModel.updateProject(project.copy(name = etName.text.toString(), time = System.currentTimeMillis()))
-                if (result) {
-                    Utils.toast(requireContext(), "Renamed success!!")
-                    dismiss()
+                if (etName.text.isNullOrEmpty()) {
+                    Utils.toast(requireContext(), requireContext().getString(R.string.name_is_not_null))
                 } else {
-                    Utils.toast(requireContext(), "Name duplicated!!")
+                    val result = homeViewModel.updateProject(project.copy(name = etName.text.toString(), time = System.currentTimeMillis()))
+                    if (result) {
+                        Utils.toast(requireContext(), requireContext().getString(R.string.rename_success))
+                        dismiss()
+                    } else {
+                        Utils.toast(requireContext(), requireContext().getString(R.string.name_duplicate))
+                    }
                 }
             }
         }

@@ -24,7 +24,6 @@ import com.texttomp3.texttospeech.utils.Constants.ID
 import com.texttomp3.texttospeech.utils.Constants.LANGUAGE
 import com.texttomp3.texttospeech.utils.Constants.MODE
 import com.texttomp3.texttospeech.utils.Constants.MORE_BOTTOM_SHEET
-import com.texttomp3.texttospeech.utils.Constants.NORMAL
 import com.texttomp3.texttospeech.utils.Constants.PITCH
 import com.texttomp3.texttospeech.utils.Constants.SPEED
 import com.texttomp3.texttospeech.utils.Constants.VOICE
@@ -32,9 +31,9 @@ import com.texttomp3.texttospeech.utils.Constants.VOLUME
 import com.texttomp3.texttospeech.utils.Utils
 import com.texttomp3.texttospeech.viewmodels.HomeViewModel
 import com.texttomp3.texttospeech.viewmodels.SettingViewModel
-import com.texttomp3.texttospeech.viewmodels.TTSViewModel
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.getViewModel
+import androidx.core.view.isVisible
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>(), ProjectAdapter.OnClickListener,
     SortAdapter.OnClickListener {
@@ -123,17 +122,21 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), ProjectAdapter.OnClick
             }
 
             clUserMode.setOnClickListener {
-                requireActivity().supportFragmentManager.beginTransaction()
-                    .add(R.id.fcv_main2, Upgrade2Fragment.newInstance(NORMAL))
-                    .addToBackStack(null)
-                    .commit()
+                if (settingViewModel.proVersion.value) {
+                    Utils.toast(requireContext(), getString(R.string.already_subscribed))
+                } else {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .add(R.id.fcv_main2, Upgrade2Fragment.newInstance())
+                        .addToBackStack(null)
+                        .commit()
+                }
             }
 
             ivFilter.setOnClickListener {
                 clFilter.visibility =
-                    if (clFilter.visibility == View.VISIBLE) View.INVISIBLE else View.VISIBLE
+                    if (clFilter.isVisible) View.INVISIBLE else View.VISIBLE
                 vOverlay.visibility =
-                    if (clFilter.visibility == View.VISIBLE) View.VISIBLE else View.GONE
+                    if (clFilter.isVisible) View.VISIBLE else View.GONE
             }
 
             vOverlay.setOnClickListener {

@@ -362,6 +362,7 @@
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     android:paddingVertical="6dp"
                                     android:paddingHorizontal="10dp"
+                                    android:visibility="invisible"
                                     android:background="@drawable/bg_upgrade_discount">
 
                                     <androidx.appcompat.widget.AppCompatTextView
@@ -399,13 +400,12 @@
                                 app:layout_constraintTop_toBottomOf="@+id/tv_price2"
                                 app:layout_constraintStart_toStartOf="parent"
                                 android:layout_marginVertical="2dp"
-                                android:text="@string/original"
+                                android:text="@string/billed_year"
                                 android:textColor="#6E727D"
                                 android:textSize="12sp"
                                 android:fontFamily="@font/roboto_medium"/>
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 

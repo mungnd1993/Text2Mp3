@@ -35,6 +35,7 @@ import java.text.DecimalFormatSymbols
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+import androidx.core.graphics.toColorInt
 
 object Utils {
     fun log(content: String) {
@@ -56,8 +57,8 @@ object Utils {
 
             val linearGradient = LinearGradient(
                 0f, 0f, width, 0f,
-                Color.parseColor("#0E2BC5"),
-                Color.parseColor("#9000FF"),
+                "#0E2BC5".toColorInt(),
+                "#9000FF".toColorInt(),
                 Shader.TileMode.CLAMP
             )
 
@@ -140,7 +141,7 @@ object Utils {
         val contentValues = ContentValues().apply {
             put(MediaStore.Audio.Media.DISPLAY_NAME, fileName)
             put(MediaStore.Audio.Media.MIME_TYPE, "audio/mpeg")
-            put(MediaStore.Audio.Media.RELATIVE_PATH, "Download/TextToMP3") // Thư mục trong Music
+            put(MediaStore.Audio.Media.RELATIVE_PATH, "Music/TextToMP3") // Thư mục trong Music
             put(MediaStore.Audio.Media.IS_PENDING, 1)
         }
 

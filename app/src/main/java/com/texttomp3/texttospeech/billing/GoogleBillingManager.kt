@@ -290,6 +290,7 @@ class GoogleBillingManager(
                 Utils.log("billing", "Đang trả kết quả về 1")
                 settingViewModel?.setProVersion(true)
                 listener?.onFreeTrialActive(2)
+                listener?.onNewSubscribe()
                 if (!purchase.isAcknowledged) {
                     val acknowledgePurchaseParams = AcknowledgePurchaseParams.newBuilder()
                         .setPurchaseToken(purchase.purchaseToken)

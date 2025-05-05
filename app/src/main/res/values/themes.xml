@@ -23,7 +23,7 @@
     </style>
 
     <style name="CustomEditTextStyle" parent="Widget.AppCompat.EditText">
-        <item name="android:textColorHighlight">#D9EAFF</item>
+        <item name="android:textColorHighlight">#BBD9FF</item>
     </style>
 
 

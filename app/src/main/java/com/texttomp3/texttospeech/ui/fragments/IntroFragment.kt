@@ -16,13 +16,16 @@ import com.texttomp3.texttospeech.ads.NativeAds
 import com.texttomp3.texttospeech.ads.NativeAdsListener
 import com.texttomp3.texttospeech.base.BaseFragment
 import com.texttomp3.texttospeech.databinding.FragmentIntroBinding
+import com.texttomp3.texttospeech.helpers.PreferenceHelper
 import com.texttomp3.texttospeech.ui.activities.MainActivity
+import com.texttomp3.texttospeech.utils.Constants.IS_FIRST_OPEN_APP
 import com.texttomp3.texttospeech.viewmodels.SettingViewModel
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 class IntroFragment : BaseFragment<FragmentIntroBinding>() {
     private var isLayout = 1
+    private var loadAdsSuccess = true
     private val settingViewModel: SettingViewModel by lazy {
         getViewModel()
     }
@@ -63,8 +66,15 @@ class IntroFragment : BaseFragment<FragmentIntroBinding>() {
         with(binding) {
             btContinue.setOnClickListener {
                 if (isLayout == 1) {
+                    isLayout = 2
+                    vpIntro.currentItem += 1
+                    btContinue.text = getString(R.string.continue_button)
+                    btContinue.setTextColor(getColor(requireContext(), R.color.blue_bold))
+                    btContinue.backgroundTintList =
+                        ColorStateList.valueOf(getColor(requireContext(), R.color.blue_light))
+                    clContainAd.visibility = View.VISIBLE
 
-                    if (!settingViewModel.proVersion.value) {
+                    if (!settingViewModel.proVersion.value && loadAdsSuccess) {
                         val metrics = Resources.getSystem().displayMetrics
                         val heightDp = metrics.heightPixels / metrics.density
 
@@ -87,17 +97,10 @@ class IntroFragment : BaseFragment<FragmentIntroBinding>() {
                         ).toInt()
                         binding.diIndicator.layoutParams = layoutParams
                     }
-
-                    isLayout = 2
-                    vpIntro.currentItem += 1
-                    btContinue.text = getString(R.string.continue_button)
-                    btContinue.setTextColor(getColor(requireContext(), R.color.blue_bold))
-                    btContinue.backgroundTintList =
-                        ColorStateList.valueOf(getColor(requireContext(), R.color.blue_light))
-                    clContainAd.visibility = View.VISIBLE
                 } else {
                     if (settingViewModel.proVersion.value) {
                         // Nếu đã pro -> Mở MainActivity
+                        PreferenceHelper.getInstance(requireContext()).putBoolean(IS_FIRST_OPEN_APP, false)
                         val intent = Intent(requireContext(), MainActivity::class.java)
                         startActivity(intent)
                         requireActivity().finish()
@@ -121,10 +124,12 @@ class IntroFragment : BaseFragment<FragmentIntroBinding>() {
                 override fun onFail() {
                     binding.clContainAd.visibility = View.GONE
                     binding.vDivider1.visibility = View.GONE
+                    loadAdsSuccess = false
                 }
 
                 override fun onSuccess() {
                     binding.flLoading.visibility = View.GONE
+                    loadAdsSuccess = true
                 }
 
             })

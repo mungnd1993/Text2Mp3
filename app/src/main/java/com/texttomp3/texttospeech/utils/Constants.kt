@@ -13,11 +13,11 @@ object Constants {
     const val LINK_GOOGLE_PLAY = "https://play.google.com/store/apps/details?id="
     const val SET_PACKAGE = "com.android.vending"
     const val LINK_SEARCH_GOOGLE_PLAY = "https://play.google.com/store/search?q="
-    const val QUERY_APP = "pub:FFToolsssss"
-    const val EMAIL = "haqt2003@gmail.com"
+    const val QUERY_APP = "pub:Simpfox"
+    const val EMAIL = "feedback.simpfox@gmail.com"
 
-    const val LINK_TERM = "https://fftools1993.github.io/file_recovery/"
-    const val LINK_PRIVACY = "https://fftools1993.github.io/file_recovery/"
+    const val LINK_TERM = "https://simpfox.com/privacy_policy.html"
+    const val LINK_PRIVACY = "https://simpfox.com/privacy_policy.html"
 
     const val SUBSCRIPTION_PRODUCT_ID = "pro"
     const val SUBSCRIPTION_PRODUCT_ID_PRO_WEEK = "pro-w"
@@ -58,6 +58,4 @@ object Constants {
     const val RATE_BOTTOM_SHEET = "rate_bottom_sheet"
     const val HELLO = "hello"
     const val DISPLAY_INDEX = "display_index"
-    const val DOWNLOAD = "download"
-    const val NORMAL = "normal"
 }
