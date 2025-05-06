@@ -126,5 +126,7 @@
     <string name="billing_cycle">請求サイクル</string>
     <string name="status">状態</string>
     <string name="active">アクティブ</string>
+    <string name="auto_renew">自動更新日:</string>
+    <string name="billed_yearly">年単位で請求</string>
 
 </resources>

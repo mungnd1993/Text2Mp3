@@ -125,5 +125,7 @@
     <string name="billing_cycle">Ciclo de facturación</string>
     <string name="status">Estado</string>
     <string name="active">Activo</string>
+    <string name="auto_renew">Se renueva automáticamente el</string>
+    <string name="billed_yearly">Facturado anualmente</string>
 
 </resources>

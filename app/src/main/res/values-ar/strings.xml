@@ -129,5 +129,7 @@
     <string name="billing_cycle">دورة الفواتير</string>
     <string name="status">حالة</string>
     <string name="active">نشيط</string>
+    <string name="auto_renew">يتم التجديد التلقائي في</string>
+    <string name="billed_yearly">يتم الفوترة سنويًا</string>
 
 </resources>

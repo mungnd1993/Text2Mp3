@@ -20,7 +20,11 @@ import com.android.billingclient.api.QueryPurchasesParams
 import com.android.billingclient.api.queryProductDetails
 import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collect.ImmutableList
 import com.texttomp3.texttospeech.R
+import com.texttomp3.texttospeech.helpers.PreferenceHelper
 import com.texttomp3.texttospeech.utils.Constants
+import com.texttomp3.texttospeech.utils.Constants.CYCLE
+import com.texttomp3.texttospeech.utils.Constants.PLAN
+import com.texttomp3.texttospeech.utils.Constants.PRICE
 import com.texttomp3.texttospeech.utils.Constants.SUBSCRIPTION_PRODUCT_ID
 import com.texttomp3.texttospeech.utils.Utils
 import com.texttomp3.texttospeech.viewmodels.SettingViewModel
@@ -31,7 +35,8 @@ class GoogleBillingManager(
     private val listener: OnPurchaseStateChangeListener? = null,
     private val settingViewModel: SettingViewModel? = null
 ) : PurchasesUpdatedListener {
-    private val params = PendingPurchasesParams.newBuilder().enableOneTimeProducts().enablePrepaidPlans().build()
+    private val params =
+        PendingPurchasesParams.newBuilder().enableOneTimeProducts().enablePrepaidPlans().build()
     private var billingClient: BillingClient =
         BillingClient.newBuilder(context).enablePendingPurchases(params).setListener(this).build()
 
@@ -75,7 +80,10 @@ class GoogleBillingManager(
                         }
                     }
                 } else {
-                    Utils.log("billing", "billingResult.responseCode = ${billingResult.responseCode}")
+                    Utils.log(
+                        "billing",
+                        "billingResult.responseCode = ${billingResult.responseCode}"
+                    )
                 }
             }
         })
@@ -151,6 +159,7 @@ class GoogleBillingManager(
                             listener?.onAlreadySubscribed()
                         }
                     }
+
                     else -> {
                         Utils.log("duckaaa", "querySubscriptionPurchases set ProVersion = false1")
                         settingViewModel?.setProVersion(false)
@@ -165,7 +174,10 @@ class GoogleBillingManager(
         }
     }
 
-    private fun queryProductDetails(productIds: List<String>, callback: ((Pair<String, String>) -> Unit)? = null) {
+    private fun queryProductDetails(
+        productIds: List<String>,
+        callback: ((Pair<String, String>) -> Unit)? = null
+    ) {
         val params = QueryProductDetailsParams.newBuilder()
             .setProductList(
                 productIds.map {
@@ -215,12 +227,45 @@ class GoogleBillingManager(
      *
      * @param productDetails gói sản phẩm đã chọn: one time purchase, subscription
      * @param offerToken     offerToken của subscription, nếu là one time purchase thì offerToken = null
-     * @param offerPeriod    chu kì: tháng/năm/trọn đời
      */
     fun upgradeToProVersion(
         productDetails: ProductDetails,
         offerToken: String?,
     ) {
+        PreferenceHelper.getInstance(context).putString(PLAN, context.getString(R.string.pro))
+        if (productDetails.subscriptionOfferDetails!!.size == 4) {
+            for (i in productDetails.subscriptionOfferDetails!!) {
+                if (offerToken == i.offerToken) {
+                    if (i.basePlanId == "pro-w") {
+                        PreferenceHelper.getInstance(context).putString(PRICE, "${i.pricingPhases.pricingPhaseList[1].formattedPrice}/${context.getString(R.string.week)}")
+                        val tenDaysMillis = 10 * 24 * 60 * 60 * 1000L
+                        val futureTime = System.currentTimeMillis() + tenDaysMillis
+                        PreferenceHelper.getInstance(context).putLong(CYCLE, futureTime)
+                    } else {
+                        PreferenceHelper.getInstance(context).putString(PRICE, "${i.pricingPhases.pricingPhaseList[1].formattedPrice}/${context.getString(R.string.year)}")
+                        val oneYearMillis = 368 * 24 * 60 * 60 * 1000L
+                        val futureTime = System.currentTimeMillis() + oneYearMillis
+                        PreferenceHelper.getInstance(context).putLong(CYCLE, futureTime)
+                    }
+                }
+            }
+        } else {
+            for (i in productDetails.subscriptionOfferDetails!!) {
+                if (offerToken == i.offerToken) {
+                    if (i.basePlanId == "pro-w") {
+                        PreferenceHelper.getInstance(context).putString(PRICE, "${i.pricingPhases.pricingPhaseList[0].formattedPrice}/${context.getString(R.string.week)}")
+                        val sevenDaysMillis = 7 * 24 * 60 * 60 * 1000L
+                        val futureTime = System.currentTimeMillis() + sevenDaysMillis
+                        PreferenceHelper.getInstance(context).putLong(CYCLE, futureTime)
+                    } else {
+                        PreferenceHelper.getInstance(context).putString(PRICE, "${i.pricingPhases.pricingPhaseList[0].formattedPrice}/${context.getString(R.string.year)}")
+                        val oneYearMillis = 365 * 24 * 60 * 60 * 1000L
+                        val futureTime = System.currentTimeMillis() + oneYearMillis
+                        PreferenceHelper.getInstance(context).putLong(CYCLE, futureTime)
+                    }
+                }
+            }
+        }
         try {
             val productDetailsParamsList: ImmutableList<ProductDetailsParams> =
                 if (offerToken != null) {
@@ -283,7 +328,10 @@ class GoogleBillingManager(
         billingResult: BillingResult,
         purchases: MutableList<Purchase>?
     ) {
-        Utils.log("billing", "Đang trả kết quả về billingResult.responseCode = ${billingResult.responseCode}")
+        Utils.log(
+            "billing",
+            "Đang trả kết quả về billingResult.responseCode = ${billingResult.responseCode}"
+        )
         if (billingResult.responseCode == BillingClient.BillingResponseCode.OK && purchases != null) {
             val purchase = purchases[0]
             if (purchase.purchaseState == Purchase.PurchaseState.PURCHASED) {

@@ -126,4 +126,7 @@
     <string name="billing_cycle">Faturalandırma döngüsü</string>
     <string name="status">Durum</string>
     <string name="active">Aktif</string>
+    <string name="auto_renew">Otomatik yenileme tarihi</string>
+    <string name="billed_yearly">Yıllık faturalandırılır</string>
+
 </resources>

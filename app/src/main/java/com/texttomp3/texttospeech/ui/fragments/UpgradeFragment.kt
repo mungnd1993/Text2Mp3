@@ -49,9 +49,9 @@ class UpgradeFragment : BaseFragment<FragmentUpgradeBinding>(), GoogleBillingMan
         billingManager = GoogleBillingManager(requireContext(), requireActivity(), this, settingViewModel)
         billingManager.getProductDetail()
 
-        val textDiscount = getString(R.string.original)
-        val spannableString = SpannableString(textDiscount)
-        spannableString.setSpan(StrikethroughSpan(), 0, textDiscount.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+//        val textDiscount = getString(R.string.original)
+//        val spannableString = SpannableString(textDiscount)
+//        spannableString.setSpan(StrikethroughSpan(), 0, textDiscount.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
 
         val textPolicy = getString(R.string.policy)
         val spannableString2 = SpannableString(textPolicy)
@@ -62,7 +62,7 @@ class UpgradeFragment : BaseFragment<FragmentUpgradeBinding>(), GoogleBillingMan
         spannableString3.setSpan(UnderlineSpan(), 0, textTerm.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
 
         with(binding) {
-            tvSub2.text = spannableString
+//            tvSub2.text = spannableString
             tvPolicy.text = spannableString2
             tvTerm.text = spannableString3
         }

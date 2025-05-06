@@ -22,9 +22,9 @@
     <string name="use_the_application_without_being_bothered_by_ads">Sử dụng ứng dụng mà không bị làm phiền bởi quảng cáo</string>
     <string name="load_audio_file">Tải tệp âm thanh của bạn</string>
     <string name="all_your_documents_pdfs_and_more_are_read_to_you">Tất cả tài liệu, PDF và nhiều nội dung khác sẽ được đọc cho bạn</string>
-    <string name="weekly">Theo tuần</string>
+    <string name="weekly">Hàng tuần</string>
     <string name="billed_weekly">Thanh toán hàng tuần</string>
-    <string name="annual">Theo năm</string>
+    <string name="annual">Hàng năm</string>
     <string name="save_30">TIẾT KIỆM 30%</string>
     <string name="original">Giá gốc đ7.500.000/năm</string>
     <string name="secured_with_app_store">Bảo mật bởi App Store</string>
@@ -125,4 +125,7 @@
     <string name="billing_cycle">Chu kỳ thanh toán</string>
     <string name="status">Trạng thái</string>
     <string name="active">Hoạt động</string>
+    <string name="auto_renew">Tự động gia hạn vào</string>
+    <string name="billed_yearly">Tính phí hàng năm</string>
+
 </resources>

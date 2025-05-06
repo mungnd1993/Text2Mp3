@@ -58,4 +58,7 @@ object Constants {
     const val RATE_BOTTOM_SHEET = "rate_bottom_sheet"
     const val HELLO = "hello"
     const val DISPLAY_INDEX = "display_index"
+    const val PLAN = "plan"
+    const val PRICE = "price"
+    const val CYCLE = "cycle"
 }

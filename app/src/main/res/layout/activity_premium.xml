@@ -184,7 +184,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="8dp"
             android:text="Active"
-            android:textColor="@color/black"
+            android:textColor="#19C369"
             android:textSize="16sp"
             android:fontFamily="@font/roboto_medium"/>
 

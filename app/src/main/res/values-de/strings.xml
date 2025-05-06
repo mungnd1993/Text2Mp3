@@ -125,5 +125,7 @@
     <string name="billing_cycle">Abrechnungszyklus</string>
     <string name="status">Status</string>
     <string name="active">Aktiv</string>
+    <string name="auto_renew">Verlängert sich automatisch am</string>
+    <string name="billed_yearly">Jährlich abgerechnet</string>
 
 </resources>

@@ -1,5 +1,6 @@
 package com.texttomp3.texttospeech.ui.activities
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -13,17 +14,16 @@ import com.texttomp3.texttospeech.databinding.ActivityPremiumBinding
 import androidx.core.net.toUri
 import com.android.billingclient.api.ProductDetails
 import com.texttomp3.texttospeech.billing.GoogleBillingManager
+import com.texttomp3.texttospeech.helpers.PreferenceHelper
+import com.texttomp3.texttospeech.utils.Constants.CYCLE
+import com.texttomp3.texttospeech.utils.Constants.PLAN
+import com.texttomp3.texttospeech.utils.Constants.PRICE
 import com.texttomp3.texttospeech.utils.Coroutines
 import com.texttomp3.texttospeech.utils.Utils
 import com.texttomp3.texttospeech.viewmodels.SettingViewModel
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 
-class PremiumActivity : BaseActivity<ActivityPremiumBinding>(), GoogleBillingManager.OnPurchaseStateChangeListener {
-    private lateinit var billingManager: GoogleBillingManager
-    private val settingViewModel: SettingViewModel by lazy {
-        getViewModel()
-    }
-
+class PremiumActivity : BaseActivity<ActivityPremiumBinding>(){
     override fun createBinding(): ActivityPremiumBinding {
         return ActivityPremiumBinding.inflate(layoutInflater)
     }
@@ -33,10 +33,17 @@ class PremiumActivity : BaseActivity<ActivityPremiumBinding>(), GoogleBillingMan
         initEvent()
     }
 
+    @SuppressLint("SetTextI18n")
     private fun initView() {
-        billingManager = GoogleBillingManager(this, this, this, settingViewModel)
-        billingManager.getProductDetail()
-        billingManager.getSubscriptionData()
+        with(binding) {
+            val plan = PreferenceHelper.getInstance(this@PremiumActivity).getString(PLAN)
+            val price = PreferenceHelper.getInstance(this@PremiumActivity).getString(PRICE)
+            val cycle = PreferenceHelper.getInstance(this@PremiumActivity).getLong(CYCLE)
+
+            tvPlan.text = plan
+            tvPrice.text = price
+            tvCycle.text = "${getString(R.string.auto_renew)} ${Utils.formatToDate(cycle)}"
+        }
     }
 
     private fun initEvent() {
@@ -55,39 +62,4 @@ class PremiumActivity : BaseActivity<ActivityPremiumBinding>(), GoogleBillingMan
             }
         }
     }
-
-    override fun onGetSubscriptionSuccessful(productDetails: ProductDetails?) {
-        Coroutines.main {
-            val list = productDetails!!.subscriptionOfferDetails
-            Utils.log("hshshshss", productDetails.toString())
-            if (list != null) {
-                Utils.log("hshshshss", list.toString())
-            }
-        }
-    }
-
-    override fun onGetProductDetailFailed() {
-        TODO("Not yet implemented")
-    }
-
-    override fun onNewSubscribe() {
-        TODO("Not yet implemented")
-    }
-
-    override fun onAlreadySubscribed() {
-        TODO("Not yet implemented")
-    }
-
-    override fun onHaveNotSubscribed() {
-        TODO("Not yet implemented")
-    }
-
-    override fun onFreeTrialActive(remainingDays: Int) {
-        TODO("Not yet implemented")
-    }
-
-    override fun onPurchasePending() {
-        TODO("Not yet implemented")
-    }
-
 }

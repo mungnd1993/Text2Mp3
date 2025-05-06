@@ -126,5 +126,7 @@
     <string name="billing_cycle">Биллинг -цикл</string>
     <string name="status">Статус</string>
     <string name="active">Активный</string>
+    <string name="auto_renew">Автоматическое продление</string>
+    <string name="billed_yearly">Выставляется ежегодно</string>
 
 </resources>

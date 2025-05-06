@@ -26,7 +26,8 @@
     <string name="all_your_documents_pdfs_and_more_are_read_to_you">All your documents, PDFs and more are read to you</string>
     <string name="weekly">Weekly</string>
     <string name="billed_weekly">Billed weekly</string>
-    <string name="annual">Annual</string>
+    <string name="billed_yearly">Billed annually</string>
+    <string name="annual">Annually</string>
     <string name="save_30">SAVE 30%</string>
     <string name="original">Original đ7,500,000/yr</string>
     <string name="secured_with_app_store">Secured with App Store</string>
@@ -134,4 +135,5 @@
     <string name="billing_cycle">Billing Cycle</string>
     <string name="status">Status</string>
     <string name="active">Active</string>
+    <string name="auto_renew">Auto-renews on</string>
 </resources>

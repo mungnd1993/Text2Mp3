@@ -126,5 +126,7 @@
     <string name="billing_cycle">बिलिंग चक्र</string>
     <string name="status">स्थिति</string>
     <string name="active">सक्रिय</string>
+    <string name="auto_renew">स्वत: नवीकरण होगा</string>
+    <string name="billed_yearly">वार्षिक बिलिंग</string>
 
 </resources>

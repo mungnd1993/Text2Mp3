@@ -125,5 +125,7 @@
     <string name="billing_cycle">Ciclo de cobrança</string>
     <string name="status">Status</string>
     <string name="active">Ativo</string>
+    <string name="auto_renew">Renovação automática em</string>
+    <string name="billed_yearly">Cobrado anualmente</string>
 
 </resources>
