@@ -128,5 +128,5 @@
     <string name="active">सक्रिय</string>
     <string name="auto_renew">स्वत: नवीकरण होगा</string>
     <string name="billed_yearly">वार्षिक बिलिंग</string>
-
+    <string name="undefined">अपरिभाषित</string>
 </resources>

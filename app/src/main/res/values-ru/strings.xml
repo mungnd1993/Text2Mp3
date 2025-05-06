@@ -128,5 +128,5 @@
     <string name="active">Активный</string>
     <string name="auto_renew">Автоматическое продление</string>
     <string name="billed_yearly">Выставляется ежегодно</string>
-
+    <string name="undefined">Неопределено</string>
 </resources>

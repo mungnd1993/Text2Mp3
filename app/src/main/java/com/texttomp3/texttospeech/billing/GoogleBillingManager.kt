@@ -151,6 +151,7 @@ class GoogleBillingManager(
                             queryProductDetails(listOf(productId), callback)
                         }
                         Utils.log("duckaaa", "querySubscriptionPurchases set ProVersion = true")
+                        PreferenceHelper.getInstance(context).putString(PLAN, context.getString(R.string.pro))
                         settingViewModel?.setProVersion(true)
                         val remainingDays = getRemainingTrialDays(purchase)
                         if (remainingDays > 0) {

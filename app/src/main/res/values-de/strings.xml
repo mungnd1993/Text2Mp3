@@ -127,5 +127,5 @@
     <string name="active">Aktiv</string>
     <string name="auto_renew">Verlängert sich automatisch am</string>
     <string name="billed_yearly">Jährlich abgerechnet</string>
-
+    <string name="undefined">Nicht definiert</string>
 </resources>

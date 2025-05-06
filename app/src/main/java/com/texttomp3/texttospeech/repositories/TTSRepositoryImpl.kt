@@ -4,6 +4,7 @@ import android.content.Context
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
 import android.speech.tts.Voice
+import com.texttomp3.texttospeech.R
 import com.texttomp3.texttospeech.data.models.Language
 import com.texttomp3.texttospeech.data.models.Project
 import com.texttomp3.texttospeech.data.rooms.ProjectDatabase
@@ -68,7 +69,7 @@ class TTSRepositoryImpl(private val context: Context) : TTSRepository, TextToSpe
             textToSpeech.setSpeechRate(speed)
             val path = synthesizeToMp3(text)
             val project = Project(
-                name = "Project ${newestProject.id + 1}",
+                name = "${context.getString(R.string.project)} ${newestProject.id + 1}",
                 mode = mode,
                 language = language,
                 voice = voice,
@@ -96,7 +97,7 @@ class TTSRepositoryImpl(private val context: Context) : TTSRepository, TextToSpe
             tts.setVoiceVolume((volume - 0.5f).toInt() * 100)
             val path = tts.findHeadHook().save(text)
             val project = Project(
-                name = "Project ${newestProject.id + 1}",
+                name = "${context.getString(R.string.project)} ${newestProject.id + 1}",
                 mode = mode,
                 language = language,
                 voice = voice,

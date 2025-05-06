@@ -54,14 +54,28 @@ abstract class BaseActivity<VB: ViewBinding>: AppCompatActivity() {
         }
     }
 
-    protected fun addFragment(containerViewId: Int, fragment: Fragment, isReplace: Boolean = false, isAddToBackStack: Boolean = true) {
+    protected fun addFragment(
+        containerViewId: Int,
+        fragment: Fragment,
+        isReplace: Boolean = false,
+        isAddToBackStack: Boolean = true
+    ) {
+        val tag = fragment::class.java.simpleName
+
+        val isInBackStack = supportFragmentManager.findFragmentByTag(tag) != null
+
         supportFragmentManager.commit {
             if (isReplace) {
-                replace(containerViewId, fragment)
+                replace(containerViewId, fragment, tag)
             } else {
-                add(containerViewId, fragment)
+                add(containerViewId, fragment, tag)
             }
-            if (isAddToBackStack) addToBackStack(null)
+
+            // Chỉ addToBackStack nếu chưa có fragment này trong backstack
+            if (isAddToBackStack && !isInBackStack) {
+                addToBackStack(tag)
+            }
         }
     }
+
 }

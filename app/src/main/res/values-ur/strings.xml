@@ -128,5 +128,5 @@
     <string name="active">متحرک</string>
     <string name="auto_renew">خود بخود تجدید کی تاریخ</string>
     <string name="billed_yearly">سالانہ بلنگ کی جاتی ہے</string>
-
+    <string name="undefined">غیر متعین</string>
 </resources>

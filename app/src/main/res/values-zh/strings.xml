@@ -137,5 +137,5 @@
     <string name="active">积极的</string>
     <string name="auto_renew">自动续订日期为</string>
     <string name="billed_yearly">按年计费</string>
-
+    <string name="undefined">未定义</string>
 </resources>

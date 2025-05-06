@@ -83,6 +83,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:paddingVertical="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="0dp"
             android:src="@drawable/ic_more"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -126,6 +126,6 @@
     <string name="status">Trạng thái</string>
     <string name="active">Hoạt động</string>
     <string name="auto_renew">Tự động gia hạn vào</string>
-    <string name="billed_yearly">Tính phí hàng năm</string>
-
+    <string name="billed_yearly">Thanh toán hàng năm</string>
+    <string name="undefined">Không xác định</string>
 </resources>

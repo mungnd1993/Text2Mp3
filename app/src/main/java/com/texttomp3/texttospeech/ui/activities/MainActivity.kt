@@ -2,6 +2,7 @@ package com.texttomp3.texttospeech.ui.activities
 
 import android.content.Intent
 import android.view.View
+import androidx.activity.addCallback
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import com.texttomp3.texttospeech.data.models.Voice
@@ -26,9 +27,7 @@ import com.texttomp3.texttospeech.utils.Constants.PITCH
 import com.texttomp3.texttospeech.utils.Constants.SPEED
 import com.texttomp3.texttospeech.utils.Constants.VOICE_DEFAULT
 import com.texttomp3.texttospeech.utils.Constants.VOLUME
-import com.texttomp3.texttospeech.utils.Utils
 import com.texttomp3.texttospeech.viewmodels.SettingViewModel
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
@@ -89,6 +88,16 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
             addFragment(fcvMain.id, HomeFragment.newInstance(), isReplace = true, true)
         }
+
+        onBackPressedDispatcher.addCallback(this) {
+            val fragmentManager = supportFragmentManager
+            if (fragmentManager.backStackEntryCount > 1) {
+                fragmentManager.popBackStack()
+            } else {
+                finish() // không còn fragment nào, thoát activity
+            }
+        }
+
     }
 
     private fun initEvent() {
