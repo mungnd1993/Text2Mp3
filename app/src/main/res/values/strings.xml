@@ -125,4 +125,13 @@
     <string name="name_is_not_null">Name cannot be empty</string>
     <string name="rename_success">Rename success!</string>
     <string name="name_duplicate">Name duplicated!</string>
+    <string name="subscription_management">Manage Subscription</string>
+    <string name="upgrade_now">Upgrade Now</string>
+    <string name="premium">Premium</string>
+    <string name="current_plan">Current Plan</string>
+    <string name="plan_name">Plan Name</string>
+    <string name="price">Price</string>
+    <string name="billing_cycle">Billing Cycle</string>
+    <string name="status">Status</string>
+    <string name="active">Active</string>
 </resources>

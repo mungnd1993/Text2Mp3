@@ -117,5 +117,14 @@
     <string name="name_is_not_null">名前は空にできません</string>
     <string name="rename_success">名前の変更に成功しました！</string>
     <string name="name_duplicate">名前が重複しています！</string>
+    <string name="subscription_management">サブスクリプションを管理</string>
+    <string name="upgrade_now">今すぐアップグレード</string>
+    <string name="premium">プレミアム</string>
+    <string name="current_plan">現在の計画</string>
+    <string name="plan_name">計画名</string>
+    <string name="price">価格</string>
+    <string name="billing_cycle">請求サイクル</string>
+    <string name="status">状態</string>
+    <string name="active">アクティブ</string>
 
 </resources>

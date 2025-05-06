@@ -19,6 +19,7 @@ import com.texttomp3.texttospeech.databinding.FragmentIntroBinding
 import com.texttomp3.texttospeech.helpers.PreferenceHelper
 import com.texttomp3.texttospeech.ui.activities.MainActivity
 import com.texttomp3.texttospeech.utils.Constants.IS_FIRST_OPEN_APP
+import com.texttomp3.texttospeech.utils.Utils
 import com.texttomp3.texttospeech.viewmodels.SettingViewModel
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.getViewModel
@@ -45,6 +46,7 @@ class IntroFragment : BaseFragment<FragmentIntroBinding>() {
     @SuppressLint("UseCompatLoadingForDrawables")
     private fun initView() {
         with(binding) {
+            clContainAd.visibility = View.GONE
             viewLifecycleOwner.lifecycleScope.launch {
                 settingViewModel.proVersion.collect {
                     if (!it) {
@@ -72,9 +74,10 @@ class IntroFragment : BaseFragment<FragmentIntroBinding>() {
                     btContinue.setTextColor(getColor(requireContext(), R.color.blue_bold))
                     btContinue.backgroundTintList =
                         ColorStateList.valueOf(getColor(requireContext(), R.color.blue_light))
-                    clContainAd.visibility = View.VISIBLE
 
                     if (!settingViewModel.proVersion.value && loadAdsSuccess) {
+                        Utils.log("sjsjsjsss", settingViewModel.proVersion.value.toString())
+                        clContainAd.visibility = View.VISIBLE
                         val metrics = Resources.getSystem().displayMetrics
                         val heightDp = metrics.heightPixels / metrics.density
 

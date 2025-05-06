@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import coil.load
 import com.texttomp3.texttospeech.utils.Constants.AD_UNIT_ID_NATIVE_ADS
 import com.texttomp3.texttospeech.R
@@ -18,6 +19,7 @@ import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.MediaAspectRatio
+import com.google.android.gms.ads.VideoController
 import com.google.android.gms.ads.VideoController.VideoLifecycleCallbacks
 import com.google.android.gms.ads.nativead.MediaView
 import com.google.android.gms.ads.nativead.NativeAd
@@ -128,50 +130,64 @@ class NativeAds {
         adView.bodyView = adView.findViewById(R.id.tv_ad_body)
         adView.callToActionView = adView.findViewById(R.id.bt_ad_call_to_action)
         adView.iconView = adView.findViewById(R.id.iv_ad_app_icon)
-        (adView.headlineView as TextView?)?.text = nativeAd.headline
-        if (nativeAd.body == null) {
-            adView.bodyView?.visibility = View.INVISIBLE
-        } else {
-            adView.bodyView?.visibility = View.VISIBLE
-            (adView.bodyView as TextView?)?.text = nativeAd.body
-        }
-        if (nativeAd.callToAction == null) {
-            adView.callToActionView?.visibility = View.INVISIBLE
-        } else {
-            adView.callToActionView?.visibility = View.VISIBLE
-            (adView.callToActionView as Button?)?.text = nativeAd.callToAction
-        }
-        if (nativeAd.icon == null) {
-            adView.iconView?.visibility = View.GONE
-        } else {
-            if (nativeAd.icon?.drawable == null) {
-                (adView.iconView as ImageView).load(nativeAd.icon!!.uri) {
-                    crossfade(true)
-                }
-            } else {
-                (adView.iconView as ImageView?)!!.setImageDrawable(
-                    nativeAd.icon?.drawable
-                )
-            }
-            adView.iconView!!.visibility = View.VISIBLE
+
+        // Headline
+        (adView.headlineView as? TextView)?.apply {
+            text = nativeAd.headline
+            background = null
         }
 
-        // This method tells the Google Mobile Ads SDK that you have finished populating your
-        // native ad view with this native ad.
+        // Body
+        (adView.bodyView as? TextView)?.apply {
+            if (nativeAd.body == null) {
+                visibility = View.INVISIBLE
+            } else {
+                text = nativeAd.body
+                visibility = View.VISIBLE
+            }
+            background = null
+        }
+
+        // Call to Action
+        (adView.callToActionView as? Button)?.apply {
+            if (nativeAd.callToAction == null) {
+                visibility = View.INVISIBLE
+            } else {
+                text = nativeAd.callToAction
+                visibility = View.VISIBLE
+            }
+            backgroundTintList = ContextCompat.getColorStateList(activity, R.color.blue_bold)
+        }
+
+        // Icon
+        (adView.iconView as? ImageView)?.apply {
+            background = null
+            if (nativeAd.icon == null) {
+                visibility = View.GONE
+            } else {
+                if (nativeAd.icon?.drawable == null) {
+                    load(nativeAd.icon!!.uri) {
+                        crossfade(true)
+                    }
+                } else {
+                    setImageDrawable(nativeAd.icon?.drawable)
+                }
+                visibility = View.VISIBLE
+            }
+        }
+
+        // Tell the SDK that the native ad view is ready
         adView.setNativeAd(nativeAd)
 
-        // Get the video controller for the ad. One will always be provided, even if the ad doesn't
-        // have a video asset.
-        val vc = nativeAd.mediaContent!!.videoController
-
-        // Updates the UI to say whether or not this ad has a video asset.
-        if (vc.hasVideoContent()) {
-            // Create a new VideoLifecycleCallbacks object and pass it to the VideoController. The
-            // VideoController will call methods on this object when events occur in the video
-            // lifecycle.
-            vc.videoLifecycleCallbacks = object : VideoLifecycleCallbacks() {
-                override fun onVideoEnd() {
-                    super.onVideoEnd()
+        // Video controller setup
+        val vc = nativeAd.mediaContent?.videoController
+        vc?.let {
+            if (it.hasVideoContent()) {
+                it.videoLifecycleCallbacks = object : VideoController.VideoLifecycleCallbacks() {
+                    override fun onVideoEnd() {
+                        super.onVideoEnd()
+                        // Optional: handle video end
+                    }
                 }
             }
         }
@@ -183,111 +199,105 @@ class NativeAds {
         nativeAd: NativeAd,
         adView: NativeAdView
     ) {
-        adView.mediaView = adView.findViewById<View>(R.id.mv_ads) as MediaView
-        // Set other ad assets.
+        adView.mediaView = adView.findViewById(R.id.mv_ads)
         adView.headlineView = adView.findViewById(R.id.tv_ad_headline)
         adView.bodyView = adView.findViewById(R.id.tv_ad_body)
         adView.callToActionView = adView.findViewById(R.id.bt_ad_call_to_action)
         adView.iconView = adView.findViewById(R.id.iv_ad_app_icon)
-        //        adView.setStarRatingView(adView.findViewById(R.id.rb_ad_stars));
-//        adView.setStarRatingView(adView.findViewById(R.id.rb_ads));
-        // The headline and mediaContent are guaranteed to be in every NativeAd.
-        (adView.headlineView as TextView?)!!.text = nativeAd.headline
-        adView.mediaView!!.mediaContent = nativeAd.mediaContent
 
-        // điều chỉnh kích thước media view
+        // Headline
+        (adView.headlineView as? TextView)?.apply {
+            text = nativeAd.headline
+            background = null
+        }
+
+        // Media Content
+        adView.mediaView?.mediaContent = nativeAd.mediaContent
+
+        // MediaView scaling logic
         adView.mediaView?.setOnHierarchyChangeListener(object :
             ViewGroup.OnHierarchyChangeListener {
             override fun onChildViewAdded(parent: View, child: View) {
                 if (child is ImageView) {
-                    val imageView = child
-                    val drawable = imageView.drawable as BitmapDrawable
+                    val drawable = child.drawable as? BitmapDrawable ?: return
                     val bitmap = drawable.bitmap
                     val width = bitmap.width
                     val height = bitmap.height
                     val heightHor = (activity.resources.displayMetrics.widthPixels * 0.6).toInt()
                     if (width > height) {
-                        val params = FrameLayout.LayoutParams(
+                        adView.mediaView?.layoutParams = FrameLayout.LayoutParams(
                             ViewGroup.LayoutParams.MATCH_PARENT,
                             ViewGroup.LayoutParams.WRAP_CONTENT
                         )
-                        adView.mediaView!!.layoutParams = params
-                        imageView.adjustViewBounds = true
+                        child.adjustViewBounds = true
                     } else {
-                        adView.mediaView!!.setImageScaleType(ImageView.ScaleType.CENTER)
-                        val params = FrameLayout.LayoutParams(
+                        adView.mediaView?.setImageScaleType(ImageView.ScaleType.CENTER)
+                        adView.mediaView?.layoutParams = FrameLayout.LayoutParams(
                             ViewGroup.LayoutParams.WRAP_CONTENT,
                             heightHor
                         )
-                        adView.mediaView!!.layoutParams = params
-                        imageView.adjustViewBounds = true
+                        child.adjustViewBounds = true
                     }
                 }
             }
 
             override fun onChildViewRemoved(parent: View, child: View) {}
         })
-        // These assets aren't guaranteed to be in every NativeAd, so it's important to
-        // check before trying to display them.
-        if (nativeAd.body == null) {
-            adView.bodyView?.visibility = View.INVISIBLE
-        } else {
-            adView.bodyView?.visibility = View.VISIBLE
-            (adView.bodyView as TextView?)?.text = nativeAd.body
+
+        // Body
+        (adView.bodyView as? TextView)?.apply {
+            background = null
+            if (nativeAd.body == null) {
+                visibility = View.INVISIBLE
+            } else {
+                text = nativeAd.body
+                visibility = View.VISIBLE
+            }
         }
-        if (nativeAd.callToAction == null) {
-            adView.callToActionView?.visibility = View.INVISIBLE
-        } else {
-            adView.callToActionView?.visibility = View.VISIBLE
-            (adView.callToActionView as Button?)?.text = nativeAd.callToAction
+
+        // Call to Action
+        (adView.callToActionView as? Button)?.apply {
+            if (nativeAd.callToAction == null) {
+                visibility = View.INVISIBLE
+            } else {
+                text = nativeAd.callToAction
+                visibility = View.VISIBLE
+            }
+            backgroundTintList = ContextCompat.getColorStateList(activity, R.color.blue_bold)
         }
-        if (nativeAd.icon == null) {
-            adView.iconView?.visibility = View.GONE
-        } else {
-            if (nativeAd.icon!!.drawable == null) {
-                (adView.iconView as? ImageView)?.let { imageView ->
+
+        // Icon
+        (adView.iconView as? ImageView)?.apply {
+            background = null
+            if (nativeAd.icon == null) {
+                visibility = View.GONE
+            } else {
+                if (nativeAd.icon?.drawable == null) {
                     nativeAd.icon?.uri?.let { uri ->
-                        imageView.load(uri) {
+                        load(uri) {
                             crossfade(true)
                         }
                     }
+                } else {
+                    setImageDrawable(nativeAd.icon?.drawable)
                 }
-            } else {
-                (adView.iconView as ImageView?)?.setImageDrawable(
-                    nativeAd.icon!!.drawable
-                )
+                visibility = View.VISIBLE
             }
-            adView.iconView?.visibility = View.VISIBLE
         }
 
-//        if (nativeAd.getStarRating() == null) {
-//            adView.getStarRatingView().setVisibility(View.INVISIBLE);
-//        } else {
-//            ((RatingBar) adView.getStarRatingView())
-//                    .setRating(nativeAd.getStarRating().floatValue());
-//            adView.getStarRatingView().setVisibility(View.VISIBLE);
-//            Drawable drawableReview = ((RatingBar) adView.getStarRatingView()).getProgressDrawable();
-//            drawableReview.setColorFilter(Color.parseColor("#FFC107"), PorterDuff.Mode.SRC_ATOP);
-//        }
-
-        // This method tells the Google Mobile Ads SDK that you have finished populating your
-        // native ad view with this native ad.
+        // Finalize the ad view
         adView.setNativeAd(nativeAd)
 
-        // Get the video controller for the ad. One will always be provided, even if the ad doesn't
-        // have a video asset.
-        val vc = nativeAd.mediaContent!!.videoController
-
-        // Updates the UI to say whether or not this ad has a video asset.
-        if (vc.hasVideoContent()) {
-            // Create a new VideoLifecycleCallbacks object and pass it to the VideoController. The
-            // VideoController will call methods on this object when events occur in the video
-            // lifecycle.
-            vc.videoLifecycleCallbacks = object : VideoLifecycleCallbacks() {
-                override fun onVideoEnd() {
-                    super.onVideoEnd()
+        // Video handling
+        nativeAd.mediaContent?.videoController?.let { vc ->
+            if (vc.hasVideoContent()) {
+                vc.videoLifecycleCallbacks = object : VideoController.VideoLifecycleCallbacks() {
+                    override fun onVideoEnd() {
+                        super.onVideoEnd()
+                    }
                 }
             }
         }
     }
+
 }

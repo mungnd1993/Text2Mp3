@@ -121,5 +121,13 @@
     <string name="name_is_not_null">Nama tidak boleh kosong</string>
     <string name="rename_success">Berhasil mengganti nama!</string>
     <string name="name_duplicate">Nama duplikat!</string>
-
+    <string name="subscription_management">Kelola Langganan</string>
+    <string name="upgrade_now">Perbarui Sekarang</string>
+    <string name="premium">Premium</string>
+    <string name="current_plan">Rencana saat ini</string>
+    <string name="plan_name">Nama rencana</string>
+    <string name="price">Harga</string>
+    <string name="billing_cycle">Siklus penagihan</string>
+    <string name="status">Status</string>
+    <string name="active">Aktif</string>
 </resources>

@@ -69,6 +69,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), ProjectAdapter.OnClick
 
     private fun initView() {
         with(binding) {
+            Utils.setGradientText(tvPro)
+
             homeViewModel.getProjects()
 
             adapter = ProjectAdapter(this@HomeFragment)
@@ -82,13 +84,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), ProjectAdapter.OnClick
             viewLifecycleOwner.lifecycleScope.launch {
                 settingViewModel.proVersion.collect {
                     if (it) {
-                        Utils.setGradientText(tvPro)
-                        tvTrial.typeface = ResourcesCompat.getFont(requireContext(), R.font.roboto_regular)
-                        tvPro.typeface = ResourcesCompat.getFont(requireContext(), R.font.roboto_black)
+                        clUserMode.visibility = View.GONE
                     } else {
-                        Utils.setGradientText(tvTrial)
-                        tvTrial.typeface = ResourcesCompat.getFont(requireContext(), R.font.roboto_black)
-                        tvPro.typeface = ResourcesCompat.getFont(requireContext(), R.font.roboto_regular)
+                        clUserMode.visibility = View.VISIBLE
                     }
                 }
             }

@@ -26,6 +26,7 @@ import com.texttomp3.texttospeech.utils.Constants.PITCH
 import com.texttomp3.texttospeech.utils.Constants.SPEED
 import com.texttomp3.texttospeech.utils.Constants.VOICE_DEFAULT
 import com.texttomp3.texttospeech.utils.Constants.VOLUME
+import com.texttomp3.texttospeech.utils.Utils
 import com.texttomp3.texttospeech.viewmodels.SettingViewModel
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
@@ -52,6 +53,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                 settingViewModel.proVersion.collect {
                     if (!it) {
                         displayAds()
+                    } else {
+                        clContainAd.visibility = View.GONE
                     }
                 }
             }
@@ -104,7 +107,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                     tvSetting.setTextColor(
                         ContextCompat.getColor(this@MainActivity, R.color.grey_text_main)
                     )
-                    clContainAd.visibility = View.VISIBLE
+                    if (!settingViewModel.proVersion.value) {
+                        clContainAd.visibility = View.VISIBLE
+                    }
                 }
             }
 

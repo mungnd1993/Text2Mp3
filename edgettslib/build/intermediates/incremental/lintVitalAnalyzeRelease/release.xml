@@ -7,7 +7,7 @@
     proguardFiles="build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-8.7.2;proguard-rules.pro"
     consumerProguardFiles="consumer-rules.pro"
     partialResultsDir="build\intermediates\lint_vital_partial_results\release\lintVitalAnalyzeRelease\out"
-    desugaredMethodsFiles="C:\Users\ADMIN\.gradle\caches\8.9\transforms\c6af11164ee90bab488aeae07b225e2b\transformed\D8BackportedDesugaredMethods.txt">
+    desugaredMethodsFiles="C:\Users\ADMIN\.gradle\caches\8.9\transforms\b15b8a3888ca9a17b4a1dd487499a005\transformed\D8BackportedDesugaredMethods.txt">
   <buildFeatures
       namespacing="REQUIRED"/>
   <sourceProviders>
@@ -27,6 +27,6 @@
       applicationId="icu.xmc.edgettslib"
       generatedSourceFolders="build\generated\ap_generated_sources\release\out"
       generatedResourceFolders="build\generated\res\resValues\release"
-      desugaredMethodsFiles="C:\Users\ADMIN\.gradle\caches\8.9\transforms\c6af11164ee90bab488aeae07b225e2b\transformed\D8BackportedDesugaredMethods.txt">
+      desugaredMethodsFiles="C:\Users\ADMIN\.gradle\caches\8.9\transforms\b15b8a3888ca9a17b4a1dd487499a005\transformed\D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>

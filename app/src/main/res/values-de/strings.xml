@@ -116,5 +116,14 @@
     <string name="name_is_not_null">Name darf nicht leer sein</string>
     <string name="rename_success">Umbenennung erfolgreich!</string>
     <string name="name_duplicate">Name ist bereits vergeben!</string>
+    <string name="subscription_management">Abonnement verwalten</string>
+    <string name="upgrade_now">Jetzt upgraden</string>
+    <string name="premium">Premium</string>
+    <string name="current_plan">Aktueller Plan</string>
+    <string name="plan_name">Planname</string>
+    <string name="price">Preis</string>
+    <string name="billing_cycle">Abrechnungszyklus</string>
+    <string name="status">Status</string>
+    <string name="active">Aktiv</string>
 
 </resources>

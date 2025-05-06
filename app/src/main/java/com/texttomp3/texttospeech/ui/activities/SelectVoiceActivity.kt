@@ -2,6 +2,7 @@ package com.texttomp3.texttospeech.ui.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.util.TypedValue
 import android.view.View
 import android.widget.SeekBar
 import androidx.lifecycle.lifecycleScope
@@ -93,10 +94,30 @@ class SelectVoiceActivity : BaseActivity<ActivitySelectVoiceBinding>(),
         val languageList = LanguageHelper(this).getLanguageList()
 
         with(binding) {
+            val paddingBottom450dp = TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP,
+                450f,
+                clAdjustScroll.resources.displayMetrics
+            ).toInt()
+
             lifecycleScope.launch {
                 settingViewModel.proVersion.collect {
                     if (!it) {
                         displayAds()
+                        clAdjustScroll.setPadding(
+                            clAdjustScroll.paddingLeft,
+                            clAdjustScroll.paddingTop,
+                            clAdjustScroll.paddingRight,
+                            paddingBottom450dp
+                        )
+                    } else {
+                        clContainAd.visibility = View.GONE
+                        clAdjustScroll.setPadding(
+                            clAdjustScroll.paddingLeft,
+                            clAdjustScroll.paddingTop,
+                            clAdjustScroll.paddingRight,
+                            0
+                        )
                     }
                 }
             }

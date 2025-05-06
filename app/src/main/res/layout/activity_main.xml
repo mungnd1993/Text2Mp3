@@ -125,8 +125,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/cl_contain_ad"
-        android:background="#F3F3F3"
-        android:visibility="gone"/>
+        android:background="#F3F3F3" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_contain_ad"
@@ -136,7 +135,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <FrameLayout
+        <com.facebook.shimmer.ShimmerFrameLayout
             android:id="@+id/fl_loading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -148,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"/>
-        </FrameLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
 
         <FrameLayout
             android:id="@+id/fl_ad_placeholder_language"

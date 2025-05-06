@@ -116,5 +116,14 @@
     <string name="name_is_not_null">El nombre no puede estar vacío</string>
     <string name="rename_success">¡Renombrado con éxito!</string>
     <string name="name_duplicate">¡Nombre duplicado!</string>
+    <string name="subscription_management">Gestionar suscripción</string>
+    <string name="upgrade_now">Actualizar ahora</string>
+    <string name="premium">Premium</string>
+    <string name="current_plan">Plan actual</string>
+    <string name="plan_name">Nombre del plan</string>
+    <string name="price">Precio</string>
+    <string name="billing_cycle">Ciclo de facturación</string>
+    <string name="status">Estado</string>
+    <string name="active">Activo</string>
 
 </resources>

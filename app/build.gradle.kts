@@ -80,7 +80,7 @@ dependencies {
     implementation(libs.play.services.ads)
     implementation(libs.androidx.lifecycle.process)
     implementation(libs.user.messaging.platform)
-    implementation(libs.shimmer)
+    implementation("com.facebook.shimmer:shimmer:0.5.0")
 
     // Billing
     implementation(libs.billing.ktx)

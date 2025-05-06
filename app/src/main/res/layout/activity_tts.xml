@@ -135,6 +135,7 @@
             android:inputType="textMultiLine"
             android:scrollHorizontally="false"
             android:textColor="@color/black"
+            style="@style/CustomEditTextStyle"
             android:textColorHint="#9B9B9C"
             android:textSize="16sp"
             android:maxLength="3000" />

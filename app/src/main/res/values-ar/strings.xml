@@ -120,5 +120,14 @@
     <string name="name_is_not_null">لا يمكن أن يكون الاسم فارغًا</string>
     <string name="rename_success">تم تغيير الاسم بنجاح!</string>
     <string name="name_duplicate">الاسم مكرر!</string>
+    <string name="subscription_management">إدارة الاشتراك</string>
+    <string name="upgrade_now">الترقية الآن</string>
+    <string name="premium">ممتاز</string>
+    <string name="current_plan">الخطة الحالية</string>
+    <string name="plan_name">اسم خطة</string>
+    <string name="price">سعر</string>
+    <string name="billing_cycle">دورة الفواتير</string>
+    <string name="status">حالة</string>
+    <string name="active">نشيط</string>
 
 </resources>

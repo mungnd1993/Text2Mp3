@@ -159,6 +159,7 @@ class Upgrade2Fragment : BaseFragment<FragmentUpgrade2Binding>(),
                        offerToken = list[2].offerToken
                    }
                } else if (list.size == 2) {
+                   binding.btContinue.text = getString(R.string.upgrade_now)
                    binding.tvHeading1.text = getString(R.string.billed_week)
                    binding.tvHeading2.text = getString(R.string.billed_year)
 

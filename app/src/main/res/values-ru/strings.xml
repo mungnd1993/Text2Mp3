@@ -117,5 +117,14 @@
     <string name="name_is_not_null">Имя не может быть пустым</string>
     <string name="rename_success">Переименование прошло успешно!</string>
     <string name="name_duplicate">Имя уже используется!</string>
+    <string name="subscription_management">Управление подпиской</string>
+    <string name="upgrade_now">Обновить сейчас</string>
+    <string name="premium">Премиум</string>
+    <string name="current_plan">Текущий план</string>
+    <string name="plan_name">Планируйте имя</string>
+    <string name="price">Цена</string>
+    <string name="billing_cycle">Биллинг -цикл</string>
+    <string name="status">Статус</string>
+    <string name="active">Активный</string>
 
 </resources>

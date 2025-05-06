@@ -128,6 +128,7 @@ class UpgradeFragment : BaseFragment<FragmentUpgradeBinding>(), GoogleBillingMan
                     }
                 }
                 else if (list.size == 2) {
+                    binding.btContinue.text = getString(R.string.upgrade_now)
                     binding.tvPrice1.text = list[0].pricingPhases.pricingPhaseList[0].formattedPrice
                     binding.tvPrice2.text = list[1].pricingPhases.pricingPhaseList[0].formattedPrice
 
@@ -158,15 +159,15 @@ class UpgradeFragment : BaseFragment<FragmentUpgradeBinding>(), GoogleBillingMan
     }
 
     override fun onNewSubscribe() {
-        Utils.log("okokokokok", "onNewSubscribe")
+
     }
 
     override fun onAlreadySubscribed() {
-        Utils.log("okokokokok", "onAlreadySubscribed")
+
     }
 
     override fun onHaveNotSubscribed() {
-        Utils.log("okokokokok", "onHaveNotSubscribed")
+
     }
 
     override fun onFreeTrialActive(remainingDays: Int) {
@@ -175,7 +176,7 @@ class UpgradeFragment : BaseFragment<FragmentUpgradeBinding>(), GoogleBillingMan
     }
 
     override fun onPurchasePending() {
-        Utils.log("okokokokok", "onPurchasePending")
+
     }
 
     override fun onDestroyView() {

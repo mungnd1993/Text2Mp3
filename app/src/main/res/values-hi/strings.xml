@@ -117,5 +117,14 @@
     <string name="name_is_not_null">नाम खाली नहीं हो सकता</string>
     <string name="rename_success">नाम बदलने में सफलता!</string>
     <string name="name_duplicate">नाम डुप्लिकेट है!</string>
+    <string name="subscription_management">सदस्यता प्रबंधन</string>
+    <string name="upgrade_now">अब अपग्रेड करें</string>
+    <string name="premium">प्रीमियम</string>
+    <string name="current_plan">वर्तमान योजना</string>
+    <string name="plan_name">योजना का नाम</string>
+    <string name="price">कीमत</string>
+    <string name="billing_cycle">बिलिंग चक्र</string>
+    <string name="status">स्थिति</string>
+    <string name="active">सक्रिय</string>
 
 </resources>

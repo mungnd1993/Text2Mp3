@@ -2,7 +2,9 @@ package com.texttomp3.texttospeech.ui.fragments
 
 import android.content.Intent
 import android.net.Uri
+import android.util.TypedValue
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import com.texttomp3.texttospeech.R
 import com.texttomp3.texttospeech.base.BaseFragment
@@ -16,7 +18,10 @@ import com.texttomp3.texttospeech.utils.Constants.RATE_BOTTOM_SHEET
 import com.texttomp3.texttospeech.utils.Constants.SET_PACKAGE
 import com.texttomp3.texttospeech.utils.Utils
 import androidx.core.net.toUri
+import androidx.lifecycle.lifecycleScope
+import com.texttomp3.texttospeech.ui.activities.PremiumActivity
 import com.texttomp3.texttospeech.viewmodels.SettingViewModel
+import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 class SettingFragment : BaseFragment<FragmentSettingBinding>() {
@@ -41,6 +46,32 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
         with(binding) {
             Utils.setGradientText(tvGetPro)
 
+            val marginTop20dp = TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP,
+                20f,
+                clPrivacy.resources.displayMetrics
+            ).toInt()
+
+            viewLifecycleOwner.lifecycleScope.launch {
+                settingViewModel.proVersion.collect {
+                    if (it) {
+                        cvPr.visibility = View.GONE
+                        clPrivacy.apply {
+                            val layoutParams = layoutParams as? ViewGroup.MarginLayoutParams
+                            layoutParams?.topMargin = 0
+                            this.layoutParams = layoutParams
+                        }
+                    } else {
+                        cvPr.visibility = View.VISIBLE
+                        clPrivacy.apply {
+                            val layoutParams = layoutParams as? ViewGroup.MarginLayoutParams
+                            layoutParams?.topMargin = marginTop20dp
+                            this.layoutParams = layoutParams
+                        }
+                    }
+                }
+            }
+
             tvVersion.text = Utils.getAppVersion(requireContext())
         }
     }
@@ -60,6 +91,18 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
 
             clPrivacy.setOnClickListener {
                 startActivity(Intent(Intent.ACTION_VIEW, LINK_PRIVACY.toUri()))
+            }
+
+            clPremium.setOnClickListener {
+                if (settingViewModel.proVersion.value) {
+                    val intent = Intent(requireContext(), PremiumActivity::class.java)
+                    startActivity(intent)
+                } else {
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .add(R.id.fcv_main2, Upgrade2Fragment.newInstance())
+                        .addToBackStack(null)
+                        .commit()
+                }
             }
 
             clFeedback.setOnClickListener {

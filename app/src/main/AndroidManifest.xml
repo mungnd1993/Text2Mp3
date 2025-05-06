@@ -15,33 +15,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.TTSApp"
-        tools:targetApi="31"
-        tools:ignore="LockedOrientationActivity">
+        tools:ignore="LockedOrientationActivity"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.activities.PremiumActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.activities.FeedbackActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
-           />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activities.SearchActivity"
             android:exported="false" />
         <activity
             android:name=".ui.activities.SelectVoiceActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activities.TTSActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activities.WelcomeActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activities.SplashScreenActivity"
             android:exported="true"
-            android:theme="@style/Theme.TTSApp"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TTSApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -51,7 +53,7 @@
         <activity
             android:name=".ui.activities.MainActivity"
             android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

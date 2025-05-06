@@ -104,7 +104,7 @@
     <string name="version">Phiên bản</string>
     <string name="database">Cơ sở dữ liệu</string>
     <string name="search">Tìm kiếm...</string>
-    <string name="try_now">Dùng ngay</string>
+    <string name="try_now">Thử ngay</string>
     <string name="continue_with_ads">Tiếp tục với quảng cáo</string>
     <string name="already_subscribed">Bạn đã đăng ký</string>
     <string name="error_try_again">Có lỗi xảy ra! Vui lòng thử lại</string>
@@ -116,5 +116,13 @@
     <string name="name_is_not_null">Tên không được để trống</string>
     <string name="rename_success">Đổi tên thành công!</string>
     <string name="name_duplicate">Tên bị trùng lặp!</string>
-
+    <string name="subscription_management">Quản lý gói</string>
+    <string name="upgrade_now">Nâng cấp ngay</string>
+    <string name="premium">Premium</string>
+    <string name="current_plan">Gói hiện tại</string>
+    <string name="plan_name">Tên gói</string>
+    <string name="price">Giá</string>
+    <string name="billing_cycle">Chu kỳ thanh toán</string>
+    <string name="status">Trạng thái</string>
+    <string name="active">Hoạt động</string>
 </resources>

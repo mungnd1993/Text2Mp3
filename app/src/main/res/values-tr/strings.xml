@@ -117,5 +117,13 @@
     <string name="name_is_not_null">Ad boş olamaz</string>
     <string name="rename_success">Yeniden adlandırma başarılı!</string>
     <string name="name_duplicate">İsim zaten kullanılıyor!</string>
-
+    <string name="subscription_management">Abonelik Yönetimi</string>
+    <string name="upgrade_now">Şimdi Yükselt</string>
+    <string name="premium">Premium</string>
+    <string name="current_plan">Mevcut plan</string>
+    <string name="plan_name">Plan Adı</string>
+    <string name="price">Fiyat</string>
+    <string name="billing_cycle">Faturalandırma döngüsü</string>
+    <string name="status">Durum</string>
+    <string name="active">Aktif</string>
 </resources>
