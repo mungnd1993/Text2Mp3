@@ -16,7 +16,7 @@ class WelcomeActivity : BaseActivity<ActivityWelcomeBinding>() {
     }
 
     private fun initView() {
-        addFragment(binding.fcvMain.id, WelcomeFragment.newInstance(), isReplace = true, true)
+        addFragment(binding.fcvMain.id, WelcomeFragment.newInstance(), isReplace = true, false)
 
         onBackPressedDispatcher.addCallback(this) {
             val fragmentManager = supportFragmentManager

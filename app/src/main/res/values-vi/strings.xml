@@ -128,4 +128,5 @@
     <string name="auto_renew">Tự động gia hạn vào</string>
     <string name="billed_yearly">Thanh toán hàng năm</string>
     <string name="undefined">Không xác định</string>
+    <string name="expires_on">Hết hạn vào</string>
 </resources>

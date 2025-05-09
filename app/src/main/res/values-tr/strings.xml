@@ -129,4 +129,5 @@
     <string name="auto_renew">Otomatik yenileme tarihi</string>
     <string name="billed_yearly">Yıllık faturalandırılır</string>
     <string name="undefined">Tanımsız</string>
+    <string name="expires_on">Sonra sona erer</string>
 </resources>

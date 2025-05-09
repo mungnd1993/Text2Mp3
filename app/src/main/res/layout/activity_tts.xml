@@ -33,7 +33,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:padding="2dp"
+            android:padding="4dp"
             android:src="@drawable/ic_more_action" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -220,7 +220,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bt_generate"
         android:layout_marginBottom="16dp"
         android:paddingHorizontal="20dp"
-        android:paddingVertical="10dp"
+        android:paddingVertical="8dp"
         android:background="@drawable/bg_white_rounded"
         android:visibility="gone">
 
@@ -256,6 +256,7 @@
                     android:progress="0"
                     android:min="0"
                     android:splitTrack="false"
+                    android:paddingVertical="6dp"
                     android:progressDrawable="@drawable/bg_progress_bar"
                     android:thumb="@drawable/bg_thumb" />
 
@@ -265,7 +266,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/sb_audio"
-                    android:layout_marginTop="5dp"
+
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/roboto_regular"
                     android:text="00:00"
@@ -278,7 +279,6 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/sb_audio"
-                    android:layout_marginTop="5dp"
                     android:layout_marginEnd="14dp"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="#9B9B9C"

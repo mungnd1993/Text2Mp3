@@ -22,6 +22,7 @@ import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collec
 import com.texttomp3.texttospeech.R
 import com.texttomp3.texttospeech.helpers.PreferenceHelper
 import com.texttomp3.texttospeech.utils.Constants
+import com.texttomp3.texttospeech.utils.Constants.CANCEL_PLAN
 import com.texttomp3.texttospeech.utils.Constants.CYCLE
 import com.texttomp3.texttospeech.utils.Constants.PLAN
 import com.texttomp3.texttospeech.utils.Constants.PRICE
@@ -153,11 +154,22 @@ class GoogleBillingManager(
                         Utils.log("duckaaa", "querySubscriptionPurchases set ProVersion = true")
                         PreferenceHelper.getInstance(context).putString(PLAN, context.getString(R.string.pro))
                         settingViewModel?.setProVersion(true)
+                        val isCanceledButStillValid = !purchase.isAutoRenewing
                         val remainingDays = getRemainingTrialDays(purchase)
-                        if (remainingDays > 0) {
-                            listener?.onFreeTrialActive(remainingDays)
+                        if (isCanceledButStillValid) {
+                            // Gói đã hủy nhưng vẫn còn hạn
+                            Utils.log("billing", "Subscription canceled but still active ($remainingDays days left)")
+                            settingViewModel?.setProVersion(true)
+                            PreferenceHelper.getInstance(context).putBoolean(CANCEL_PLAN, true)
                         } else {
-                            listener?.onAlreadySubscribed()
+                            // Gói đang hoạt động bình thường
+                            PreferenceHelper.getInstance(context).putBoolean(CANCEL_PLAN, false)
+                            Utils.log("billing", "Subscription active and auto-renewing")
+                            if (remainingDays > 0) {
+                                listener?.onFreeTrialActive(remainingDays)
+                            } else {
+                                listener?.onAlreadySubscribed()
+                            }
                         }
                     }
 

@@ -76,7 +76,6 @@ class IntroFragment : BaseFragment<FragmentIntroBinding>() {
                         ColorStateList.valueOf(getColor(requireContext(), R.color.blue_light))
 
                     if (!settingViewModel.proVersion.value && loadAdsSuccess) {
-                        Utils.log("sjsjsjsss", settingViewModel.proVersion.value.toString())
                         clContainAd.visibility = View.VISIBLE
                         val metrics = Resources.getSystem().displayMetrics
                         val heightDp = metrics.heightPixels / metrics.density

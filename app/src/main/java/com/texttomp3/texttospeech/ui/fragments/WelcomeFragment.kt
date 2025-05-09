@@ -49,6 +49,7 @@ class WelcomeFragment : BaseFragment<FragmentWelcomeBinding>() {
             btContinue.setOnClickListener {
                 requireActivity().supportFragmentManager.beginTransaction()
                     .replace(R.id.fcv_main, IntroFragment.newInstance())
+                    .addToBackStack(null)
                     .commit()
             }
 

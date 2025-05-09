@@ -137,4 +137,5 @@
     <string name="active">Active</string>
     <string name="auto_renew">Auto-renews on</string>
     <string name="undefined">Undefined</string>
+    <string name="expires_on">Expires on</string>
 </resources>

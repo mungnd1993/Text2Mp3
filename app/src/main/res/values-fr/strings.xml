@@ -131,4 +131,5 @@
     <string name="auto_renew">Renouvellement automatique le</string>
     <string name="billed_yearly">Facturé annuellement</string>
     <string name="undefined">Non défini</string>
+    <string name="expires_on">Expire le</string>
 </resources>

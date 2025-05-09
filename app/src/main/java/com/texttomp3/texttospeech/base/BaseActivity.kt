@@ -45,6 +45,14 @@ abstract class BaseActivity<VB: ViewBinding>: AppCompatActivity() {
             hide(WindowInsetsCompat.Type.navigationBars())
             systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
         }
+
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+
+        val controller = WindowInsetsControllerCompat(window, window.decorView)
+        controller.hide(WindowInsetsCompat.Type.navigationBars())
+        controller.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+
+        controller.isAppearanceLightStatusBars = true
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {

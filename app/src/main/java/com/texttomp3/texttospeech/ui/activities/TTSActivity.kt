@@ -207,6 +207,7 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
                             setDataSource(it)
                             prepareAsync()
                             setOnPreparedListener { mp ->
+                                binding.sbAudio.progress = 0
                                 binding.sbAudio.max = mp.duration
                                 binding.tvMax.text = Utils.convertDuration(mp.duration)
                                 updateProgress()

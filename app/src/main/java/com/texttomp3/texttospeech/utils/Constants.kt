@@ -61,4 +61,5 @@ object Constants {
     const val PLAN = "plan"
     const val PRICE = "price"
     const val CYCLE = "cycle"
+    const val CANCEL_PLAN = "cancel_plan"
 }

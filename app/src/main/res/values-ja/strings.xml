@@ -129,4 +129,5 @@
     <string name="auto_renew">自動更新日:</string>
     <string name="billed_yearly">年単位で請求</string>
     <string name="undefined">未定義</string>
+    <string name="expires_on">期限:</string>
 </resources>

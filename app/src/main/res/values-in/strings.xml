@@ -133,4 +133,5 @@
     <string name="auto_renew">Perpanjangan otomatis pada</string>
     <string name="billed_yearly">Ditagih setiap tahun</string>
     <string name="undefined">Tidak terdefinisi</string>
+    <string name="expires_on">Berakhir pada</string>
 </resources>

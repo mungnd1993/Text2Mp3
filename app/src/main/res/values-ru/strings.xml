@@ -129,4 +129,5 @@
     <string name="auto_renew">Автоматическое продление</string>
     <string name="billed_yearly">Выставляется ежегодно</string>
     <string name="undefined">Неопределено</string>
+    <string name="expires_on">Истекает</string>
 </resources>

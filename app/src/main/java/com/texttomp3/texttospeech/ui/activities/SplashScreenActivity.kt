@@ -56,7 +56,7 @@ class SplashScreenActivity : AppCompatActivity(),
         }
         hideNavigationBar()
         billingManager = GoogleBillingManager(this, this, this, settingViewModel)
-//        billingManager.getSubscriptionData()
+        billingManager.getSubscriptionData()
         isFirstOpenApp = PreferenceHelper.getInstance(this).getBoolean(IS_FIRST_OPEN_APP, true)
         setupUMP()
     }

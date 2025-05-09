@@ -116,9 +116,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                     tvSetting.setTextColor(
                         ContextCompat.getColor(this@MainActivity, R.color.grey_text_main)
                     )
-                    if (!settingViewModel.proVersion.value) {
-                        clContainAd.visibility = View.VISIBLE
-                    }
                 }
             }
 
@@ -146,7 +143,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                     tvSetting.setTextColor(
                         ContextCompat.getColor(this@MainActivity, R.color.black)
                     )
-                    clContainAd.visibility = View.GONE
                 }
             }
         }

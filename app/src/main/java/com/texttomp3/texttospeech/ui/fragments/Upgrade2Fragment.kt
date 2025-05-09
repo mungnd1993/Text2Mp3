@@ -23,6 +23,8 @@ import com.texttomp3.texttospeech.utils.Utils
 import com.texttomp3.texttospeech.viewmodels.SettingViewModel
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 import androidx.core.net.toUri
+import com.texttomp3.texttospeech.helpers.PreferenceHelper
+import com.texttomp3.texttospeech.utils.Constants.CANCEL_PLAN
 
 class Upgrade2Fragment : BaseFragment<FragmentUpgrade2Binding>(),
     GoogleBillingManager.OnPurchaseStateChangeListener {
@@ -206,6 +208,7 @@ class Upgrade2Fragment : BaseFragment<FragmentUpgrade2Binding>(),
     }
 
     override fun onFreeTrialActive(remainingDays: Int) {
+        PreferenceHelper.getInstance(requireContext()).putBoolean(CANCEL_PLAN, false)
         val intent = Intent(requireContext(), MainActivity::class.java)
         startActivity(intent)
     }

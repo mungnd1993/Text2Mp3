@@ -5,7 +5,10 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.TTSApp" parent="Base.Theme.TTSApp" />
+    <style name="Theme.TTSApp" parent="Base.Theme.TTSApp">
+
+    </style>
+
 
     <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/white</item>

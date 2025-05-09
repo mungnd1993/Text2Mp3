@@ -132,4 +132,5 @@
     <string name="auto_renew">يتم التجديد التلقائي في</string>
     <string name="billed_yearly">يتم الفوترة سنويًا</string>
     <string name="undefined">غير محدد</string>
+    <string name="expires_on">ينتهي في</string>
 </resources>
