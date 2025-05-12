@@ -23,6 +23,7 @@ import com.texttomp3.texttospeech.utils.Constants.PITCH
 import com.texttomp3.texttospeech.utils.Constants.SPEED
 import com.texttomp3.texttospeech.utils.Constants.VOICE
 import com.texttomp3.texttospeech.utils.Constants.VOLUME
+import com.texttomp3.texttospeech.utils.Utils
 import com.texttomp3.texttospeech.viewmodels.HomeViewModel
 import com.texttomp3.texttospeech.viewmodels.TTSViewModel
 import kotlinx.coroutines.launch
@@ -52,17 +53,15 @@ class SearchActivity : BaseActivity<ActivitySearchBinding>(), ProjectAdapter.OnC
 
     private fun initView() {
         with(binding) {
-            homeViewModel.getProjects()
-
             adapter = ProjectAdapter(this@SearchActivity)
             rvProject.adapter = adapter
             rvProject.layoutManager = LinearLayoutManager(this@SearchActivity)
 
             lifecycleScope.launch {
                 homeViewModel.projects.collect {
+                    adapter.submitData(it)
                     list.clear()
                     list.addAll(it)
-                    adapter.submitData(list)
                 }
             }
         }

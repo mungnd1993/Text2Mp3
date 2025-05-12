@@ -107,7 +107,6 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
     override fun initMain() {
         initView()
         initEvent()
-
         handleOnBackPressed()
     }
 

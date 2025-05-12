@@ -34,13 +34,15 @@ class HomeViewModel(private val homeRepository: HomeRepository) : ViewModel() {
     )
     val sorts: StateFlow<List<Sort>> = _sorts
 
+    init {
+        getProjects()
+    }
+
     fun getProjects() {
         viewModelScope.launch {
             val selectedSort = _sorts.value.find { it.isSelected } ?: _sorts.value.first()
             val queryProjects = homeRepository.getProjectsSorted(selectedSort)
-            withContext(Dispatchers.Main) {
-                _projects.value = queryProjects
-            }
+            _projects.value = queryProjects
         }
     }
 
@@ -48,7 +50,7 @@ class HomeViewModel(private val homeRepository: HomeRepository) : ViewModel() {
         return homeRepository.getProject(id)
     }
 
-    fun setSortType(type: String) {
+     fun setSortType(type: String) {
         val updatedSorts = _sorts.value.map {
             it.copy(isSelected = it.subtitle == type)
         }
@@ -79,8 +81,8 @@ class HomeViewModel(private val homeRepository: HomeRepository) : ViewModel() {
 
     fun deleteProject(project: Project) {
         viewModelScope.launch {
-            _projects.value = _projects.value.filter { it.id != project.id }
             homeRepository.deleteProject(project)
+            _projects.value = _projects.value.filter { it.id != project.id }
         }
     }
 

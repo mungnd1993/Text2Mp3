@@ -49,7 +49,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), ProjectAdapter.OnClick
 
     override fun onResume() {
         super.onResume()
-        homeViewModel.getProjects()
+        viewLifecycleOwner.lifecycleScope.launch {
+            homeViewModel.getProjects()
+        }
     }
 
 
@@ -70,8 +72,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), ProjectAdapter.OnClick
         with(binding) {
             Utils.setGradientText(tvPro)
 
-            homeViewModel.getProjects()
-
             adapter = ProjectAdapter(this@HomeFragment)
             rvProject.adapter = adapter
             rvProject.layoutManager = LinearLayoutManager(requireContext())
@@ -91,11 +91,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), ProjectAdapter.OnClick
             }
 
             viewLifecycleOwner.lifecycleScope.launch {
+                homeViewModel.getProjects()
                 homeViewModel.projects.collect {
-                    Utils.log("sjsksjsjs", it.size.toString())
-                    for (i in it) {
-                        Utils.log("sjsksjsjs", i.name)
-                    }
                     adapter.submitData(it)
                     if (it.isNotEmpty()) {
                         ivProject.visibility = View.INVISIBLE
@@ -174,7 +171,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), ProjectAdapter.OnClick
     }
 
     override fun onClick(item: Sort) {
-        homeViewModel.setSortType(item.subtitle)
+        viewLifecycleOwner.lifecycleScope.launch {
+            homeViewModel.setSortType(item.subtitle)
+        }
         binding.clFilter.visibility = View.INVISIBLE
     }
 }
