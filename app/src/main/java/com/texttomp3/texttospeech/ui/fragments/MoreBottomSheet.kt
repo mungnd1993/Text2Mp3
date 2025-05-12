@@ -70,8 +70,9 @@ class MoreBottomSheet(private val project: Project) : BaseBottomSheetFragment<Fr
                         }
                     }
                 } else {
+                    dismiss()
                     val upgrade2Fragment = Upgrade2Fragment.newInstance()
-                        requireActivity().supportFragmentManager.beginTransaction()
+                    requireActivity().supportFragmentManager.beginTransaction()
                         .replace(R.id.fcv_main2, upgrade2Fragment)
                         .addToBackStack(null)
                         .commit()

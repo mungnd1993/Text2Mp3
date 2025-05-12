@@ -2,6 +2,7 @@ package com.texttomp3.texttospeech.ui.activities
 
 import android.content.Intent
 import android.view.View
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.addCallback
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
@@ -14,6 +15,7 @@ import com.texttomp3.texttospeech.ads.NativeAdsListener
 import com.texttomp3.texttospeech.base.BaseActivity
 import com.texttomp3.texttospeech.databinding.ActivityMainBinding
 import com.texttomp3.texttospeech.helpers.PreferenceHelper
+import com.texttomp3.texttospeech.ui.fragments.Upgrade2Fragment
 import com.texttomp3.texttospeech.utils.Constants.ANDROID
 import com.texttomp3.texttospeech.utils.Constants.DISPLAY_INDEX
 import com.texttomp3.texttospeech.utils.Constants.GB
@@ -44,6 +46,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun initMain() {
         initView()
         initEvent()
+        handleOnBackPressed()
     }
 
     private fun initView() {
@@ -69,7 +72,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                 PreferenceHelper.getInstance(this@MainActivity)
                     .getString(VOICE, VOICE_DEFAULT)
             val savedGender = PreferenceHelper.getInstance(this@MainActivity).getString(GENDER, "")
-            val savedIndex = PreferenceHelper.getInstance(this@MainActivity).getInt(DISPLAY_INDEX, 1)
+            val savedIndex =
+                PreferenceHelper.getInstance(this@MainActivity).getInt(DISPLAY_INDEX, 1)
             val savedPitch =
                 PreferenceHelper.getInstance(this@MainActivity).getFloat(PITCH, 1.0f)
             val savedSpeed =
@@ -88,16 +92,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
             addFragment(fcvMain.id, HomeFragment.newInstance(), isReplace = true, true)
         }
-
-        onBackPressedDispatcher.addCallback(this) {
-            val fragmentManager = supportFragmentManager
-            if (fragmentManager.backStackEntryCount > 1) {
-                fragmentManager.popBackStack()
-            } else {
-                finish() // không còn fragment nào, thoát activity
-            }
-        }
-
     }
 
     private fun initEvent() {
@@ -108,7 +102,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                         binding.fcvMain.id,
                         HomeFragment.newInstance(),
                         isReplace = true,
-                        true
+                        false
                     )
                     ivHome.setImageResource(R.drawable.ic_home_active)
                     tvHome.setTextColor(ContextCompat.getColor(this@MainActivity, R.color.black))
@@ -167,4 +161,34 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
             })
     }
+
+    private fun handleOnBackPressed() {
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                val fragmentManager = supportFragmentManager
+                if (fragmentManager.backStackEntryCount > 1) {
+                    if (supportFragmentManager.findFragmentById(R.id.fcv_main) !is HomeFragment && supportFragmentManager.findFragmentById(
+                            R.id.fcv_main2
+                        ) !is Upgrade2Fragment
+                    ) {
+                        binding.ivHome.setImageResource(R.drawable.ic_home_active)
+                        binding.tvHome.setTextColor(
+                            ContextCompat.getColor(
+                                this@MainActivity,
+                                R.color.black
+                            )
+                        )
+                        binding.ivSetting.setImageResource(R.drawable.ic_setting)
+                        binding.tvSetting.setTextColor(
+                            ContextCompat.getColor(this@MainActivity, R.color.grey_text_main)
+                        )
+                    }
+                    fragmentManager.popBackStack()
+                } else {
+                    finish() // không còn fragment nào, thoát activity
+                }
+            }
+        })
+    }
 }
+

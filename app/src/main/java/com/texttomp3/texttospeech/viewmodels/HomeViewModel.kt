@@ -11,9 +11,11 @@ import com.texttomp3.texttospeech.utils.Constants.NEW_TO_OLD
 import com.texttomp3.texttospeech.utils.Constants.OLD_TO_NEW
 import com.texttomp3.texttospeech.utils.Constants.Z_A
 import com.texttomp3.texttospeech.repositories.HomeRepository
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class HomeViewModel(private val homeRepository: HomeRepository) : ViewModel() {
     private val _projects = MutableStateFlow<List<Project>>(emptyList())
@@ -35,7 +37,10 @@ class HomeViewModel(private val homeRepository: HomeRepository) : ViewModel() {
     fun getProjects() {
         viewModelScope.launch {
             val selectedSort = _sorts.value.find { it.isSelected } ?: _sorts.value.first()
-            _projects.value = homeRepository.getProjectsSorted(selectedSort)
+            val queryProjects = homeRepository.getProjectsSorted(selectedSort)
+            withContext(Dispatchers.Main) {
+                _projects.value = queryProjects
+            }
         }
     }
 

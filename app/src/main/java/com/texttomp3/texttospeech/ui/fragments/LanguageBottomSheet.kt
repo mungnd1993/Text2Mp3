@@ -6,7 +6,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.texttomp3.texttospeech.data.models.Language
 import com.texttomp3.texttospeech.adapters.LanguageAdapter
 import com.texttomp3.texttospeech.base.BaseBottomSheetFragment
+import com.texttomp3.texttospeech.data.models.LanguageItem
 import com.texttomp3.texttospeech.databinding.FragmentLanguageBottomSheetBinding
+import com.texttomp3.texttospeech.helpers.LanguageHelper
+import com.texttomp3.texttospeech.utils.Utils
 
 class LanguageBottomSheet(private val listener: OnSelectLanguageListener, private var languages: List<Language>) : BaseBottomSheetFragment<FragmentLanguageBottomSheetBinding>(),
     LanguageAdapter.OnClickListener {
@@ -26,12 +29,19 @@ class LanguageBottomSheet(private val listener: OnSelectLanguageListener, privat
 
     private fun initView() {
         with(binding) {
+            val languageConfigs = LanguageHelper(binding.root.context).getLanguageList()
+            val codeToNameMap = languageConfigs.associate { it.code to it.name }
+
             adapter = LanguageAdapter(this@LanguageBottomSheet)
             rvLanguage.adapter = adapter
             rvLanguage.layoutManager = LinearLayoutManager(requireContext())
 
-            languages = languages.sortedByDescending { it.isSelected }
-            adapter.submitData(languages)
+            val sortedLanguages = languages.sortedWith(
+                compareByDescending<Language> { it.isSelected }
+                    .thenBy { codeToNameMap[it.name] ?: "" }
+            )
+
+            adapter.submitData(sortedLanguages)
         }
     }
 

@@ -209,8 +209,9 @@ class Upgrade2Fragment : BaseFragment<FragmentUpgrade2Binding>(),
 
     override fun onFreeTrialActive(remainingDays: Int) {
         PreferenceHelper.getInstance(requireContext()).putBoolean(CANCEL_PLAN, false)
-        val intent = Intent(requireContext(), MainActivity::class.java)
-        startActivity(intent)
+        requireActivity().supportFragmentManager.popBackStack()
+//        val intent = Intent(requireContext(), MainActivity::class.java)
+//        startActivity(intent)
     }
 
     override fun onPurchasePending() {

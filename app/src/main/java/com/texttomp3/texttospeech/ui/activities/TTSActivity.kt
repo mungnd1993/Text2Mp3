@@ -5,6 +5,7 @@ import android.content.Intent
 import android.media.MediaPlayer
 import android.view.View
 import android.widget.SeekBar
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.lifecycleScope
@@ -106,6 +107,8 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
     override fun initMain() {
         initView()
         initEvent()
+
+        handleOnBackPressed()
     }
 
     @SuppressLint("SetTextI18n")
@@ -208,6 +211,7 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
                             prepareAsync()
                             setOnPreparedListener { mp ->
                                 binding.sbAudio.progress = 0
+                                binding.tvMin.text = Utils.convertDuration(0)
                                 binding.sbAudio.max = mp.duration
                                 binding.tvMax.text = Utils.convertDuration(mp.duration)
                                 updateProgress()
@@ -227,24 +231,18 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
 
     private fun initEvent() {
         with(binding) {
-            binding.ivBack.setOnClickListener {
+            ivMore.setOnClickListener {
                 try {
                     mediaPlayer?.let { mp ->
-                        if (mp.isPlaying) mp.stop()
-                        mp.reset()
-                        mp.release()
+                        if (mp.isPlaying) {
+                            mp.pause()
+                            ivPlay.setImageResource(R.drawable.ic_play)
+                        }
                     }
-                    mediaPlayer = null
                 } catch (e: IllegalStateException) {
                     e.printStackTrace()
                 }
 
-                ttsViewModel.resetPath()
-                finish()
-            }
-
-
-            ivMore.setOnClickListener {
                 lifecycleScope.launch {
                     val project = homeViewModel.getProject(ttsViewModel.id.value)
                     val moreBottomSheet = MoreBottomSheet.newInstance(project)
@@ -253,6 +251,16 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
             }
 
             clLanguage.setOnClickListener {
+                try {
+                    mediaPlayer?.let { mp ->
+                        if (mp.isPlaying) {
+                            mp.pause()
+                            ivPlay.setImageResource(R.drawable.ic_play)
+                        }
+                    }
+                } catch (e: IllegalStateException) {
+                    e.printStackTrace()
+                }
                 val intent = Intent(this@TTSActivity, SelectVoiceActivity::class.java)
                 intent.putExtra(MODE, selectedSetting.mode)
                 intent.putExtra(LANGUAGE, selectedSetting.language)
@@ -364,6 +372,28 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
                 delay(100)
             }
         }
+    }
+
+    private fun handleOnBackPressed() {
+        binding.ivBack.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
+
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                try {
+                    mediaPlayer?.let { mp ->
+                        if (mp.isPlaying) mp.stop()
+                        mp.reset()
+                        mp.release()
+                    }
+                    mediaPlayer = null
+                } catch (e: IllegalStateException) {
+                    e.printStackTrace()
+                }
+
+                ttsViewModel.resetPath()
+                finish()
+            }
+        })
     }
 
 }

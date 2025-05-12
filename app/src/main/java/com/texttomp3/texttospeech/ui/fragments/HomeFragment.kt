@@ -92,6 +92,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), ProjectAdapter.OnClick
 
             viewLifecycleOwner.lifecycleScope.launch {
                 homeViewModel.projects.collect {
+                    Utils.log("sjsksjsjs", it.size.toString())
+                    for (i in it) {
+                        Utils.log("sjsksjsjs", i.name)
+                    }
                     adapter.submitData(it)
                     if (it.isNotEmpty()) {
                         ivProject.visibility = View.INVISIBLE

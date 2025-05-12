@@ -2,6 +2,7 @@ package com.texttomp3.texttospeech.ui.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import androidx.activity.OnBackPressedCallback
 import com.texttomp3.texttospeech.R
 import com.texttomp3.texttospeech.base.BaseActivity
 import com.texttomp3.texttospeech.databinding.ActivityPremiumBinding
@@ -29,6 +30,7 @@ class PremiumActivity : BaseActivity<ActivityPremiumBinding>(), GoogleBillingMan
     override fun initMain() {
         initView()
         initEvent()
+        handleOnBackPressed()
     }
 
     @SuppressLint("SetTextI18n")
@@ -63,11 +65,17 @@ class PremiumActivity : BaseActivity<ActivityPremiumBinding>(), GoogleBillingMan
                 }
                 startActivity(intent)
             }
+        }
+    }
 
-            ivBack.setOnClickListener {
+    private fun handleOnBackPressed() {
+        binding.ivBack.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
+
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
                 finish()
             }
-        }
+        })
     }
 
     override fun onResume() {

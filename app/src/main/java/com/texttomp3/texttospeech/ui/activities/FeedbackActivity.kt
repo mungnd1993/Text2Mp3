@@ -2,6 +2,7 @@ package com.texttomp3.texttospeech.ui.activities
 
 import android.content.Intent
 import android.os.Build
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.widget.addTextChangedListener
@@ -45,6 +46,7 @@ class FeedbackActivity : BaseActivity<ActivityFeedbackBinding>(), ProblemAdapter
     override fun initMain() {
         initView()
         initEvent()
+        handleOnBackPressed()
     }
 
     private fun initView() {
@@ -90,11 +92,6 @@ class FeedbackActivity : BaseActivity<ActivityFeedbackBinding>(), ProblemAdapter
                 sendFeedback(etText.text.toString())
             }
 
-            ivBack.setOnClickListener {
-                settingViewModel.reset()
-                finish()
-            }
-
             etText.addTextChangedListener {
                 settingViewModel.setDetail(it.toString())
             }
@@ -138,6 +135,17 @@ class FeedbackActivity : BaseActivity<ActivityFeedbackBinding>(), ProblemAdapter
 
     override fun onClick(item: Problem) {
         settingViewModel.setProblem(item.text)
+    }
+
+    private fun handleOnBackPressed() {
+        binding.ivBack.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
+
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                settingViewModel.reset()
+                finish()
+            }
+        })
     }
 
 }

@@ -1,5 +1,6 @@
 package com.texttomp3.texttospeech.ui.activities
 
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.addCallback
 import com.texttomp3.texttospeech.ui.fragments.WelcomeFragment
 import com.texttomp3.texttospeech.base.BaseActivity
@@ -17,20 +18,23 @@ class WelcomeActivity : BaseActivity<ActivityWelcomeBinding>() {
 
     private fun initView() {
         addFragment(binding.fcvMain.id, WelcomeFragment.newInstance(), isReplace = true, false)
-
-        onBackPressedDispatcher.addCallback(this) {
-            val fragmentManager = supportFragmentManager
-            if (fragmentManager.backStackEntryCount > 0) {
-                fragmentManager.popBackStack()
-            } else {
-                finish()
-            }
-        }
-
     }
 
     private fun initEvent() {
+        handleOnBackPressed()
+    }
 
+    private fun handleOnBackPressed() {
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                val fragmentManager = supportFragmentManager
+                if (fragmentManager.backStackEntryCount > 0) {
+                    fragmentManager.popBackStack()
+                } else {
+                    finish()
+                }
+            }
+        })
     }
 
 }

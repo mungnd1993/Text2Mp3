@@ -236,6 +236,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                android:padding="4dp"
                 android:src="@drawable/ic_play" />
 
             <androidx.constraintlayout.widget.ConstraintLayout

@@ -5,6 +5,7 @@ import android.content.Intent
 import android.util.TypedValue
 import android.view.View
 import android.widget.SeekBar
+import androidx.activity.OnBackPressedCallback
 import androidx.lifecycle.lifecycleScope
 import com.texttomp3.texttospeech.data.models.Language
 import com.texttomp3.texttospeech.data.models.Mode
@@ -73,6 +74,7 @@ class SelectVoiceActivity : BaseActivity<ActivitySelectVoiceBinding>(),
     override fun initMain() {
         initView()
         initEvent()
+        handleOnBackPressed()
     }
 
     @SuppressLint("SetTextI18n")
@@ -189,11 +191,6 @@ class SelectVoiceActivity : BaseActivity<ActivitySelectVoiceBinding>(),
 
     private fun initEvent() {
         with(binding) {
-            ivBack.setOnClickListener {
-                ttsViewModel.resetLanguagesAndVoices(0)
-                finish()
-            }
-
             clMode.setOnClickListener {
                 val modeBottomSheet = ModeBottomSheet.newInstance(this@SelectVoiceActivity, mode)
                 modeBottomSheet.show(supportFragmentManager, MODE_BOTTOM_SHEET)
@@ -286,6 +283,17 @@ class SelectVoiceActivity : BaseActivity<ActivitySelectVoiceBinding>(),
                 }
 
             })
+    }
+
+    private fun handleOnBackPressed() {
+        binding.ivBack.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
+
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                ttsViewModel.resetLanguagesAndVoices(0)
+                finish()
+            }
+        })
     }
 
     override fun onSelectMode(mode: Mode) {
