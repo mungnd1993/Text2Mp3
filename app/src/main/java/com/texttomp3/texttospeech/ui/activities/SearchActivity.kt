@@ -34,10 +34,6 @@ class SearchActivity : BaseActivity<ActivitySearchBinding>(), ProjectAdapter.OnC
         getViewModel<HomeViewModel>()
     }
 
-    private val ttsViewModel: TTSViewModel by lazy {
-        getViewModel<TTSViewModel>()
-    }
-
     private val list = mutableListOf<Project>()
     private lateinit var adapter: ProjectAdapter
 
@@ -49,6 +45,11 @@ class SearchActivity : BaseActivity<ActivitySearchBinding>(), ProjectAdapter.OnC
         initView()
         initEvent()
         handleOnBackPressed()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        homeViewModel.getProjects()
     }
 
     private fun initView() {
