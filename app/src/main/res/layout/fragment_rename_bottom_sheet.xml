@@ -36,6 +36,7 @@
             android:textSize="16sp"
             android:textColor="@color/black"
             android:singleLine="true"
+            android:maxLength="60"
             style="@style/CustomEditTextStyle"
             android:fontFamily="@font/roboto_regular"
             tools:ignore="MissingConstraints" />

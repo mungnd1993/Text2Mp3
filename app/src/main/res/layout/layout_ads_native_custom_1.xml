@@ -60,7 +60,7 @@
                 android:layout_marginStart="16dp"
                 android:background="@color/color_shimmer"
                 android:fontFamily="@font/roboto_medium"
-                android:minWidth="200dp"
+                android:minWidth="100dp"
                 android:singleLine="false"
                 android:textColor="@color/black"
                 android:textSize="14sp"

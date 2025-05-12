@@ -59,7 +59,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/cv_img"
-                android:minWidth="200dp"
+                android:minWidth="100dp"
                 android:layout_marginStart="12dp"
                 android:background="@color/color_shimmer"
                 android:textColor="@color/black"

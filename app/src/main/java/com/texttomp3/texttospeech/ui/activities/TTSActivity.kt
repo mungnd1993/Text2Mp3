@@ -213,6 +213,7 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
                                 binding.tvMin.text = Utils.convertDuration(0)
                                 binding.sbAudio.max = mp.duration
                                 binding.tvMax.text = Utils.convertDuration(mp.duration)
+                                binding.ivPlay.setImageResource(R.drawable.ic_play)
                                 updateProgress()
                             }
                             setOnCompletionListener {
@@ -349,6 +350,16 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
             }
 
             btGenerate.setOnClickListener {
+                try {
+                    mediaPlayer?.let { mp ->
+                        if (mp.isPlaying) {
+                            mp.pause()
+                            ivPlay.setImageResource(R.drawable.ic_play)
+                        }
+                    }
+                } catch (e: IllegalStateException) {
+                    e.printStackTrace()
+                }
                 val text = etText.text.toString()
                 ttsViewModel.generate(text)
                 supportFragmentManager.let { fragmentManager ->
