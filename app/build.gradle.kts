@@ -5,6 +5,7 @@ plugins {
     id("com.google.devtools.ksp")
     id("androidx.room")
     id("kotlin-parcelize")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -15,8 +16,8 @@ android {
         applicationId = "com.texttomp3.texttospeech"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 3
+        versionName = "3.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -89,6 +90,9 @@ dependencies {
     // Others
     implementation (libs.ffmpeg.kit.full)
     implementation(libs.sdp.android)
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
 
     implementation (libs.androidx.core.splashscreen)
     implementation(libs.androidx.core.ktx)

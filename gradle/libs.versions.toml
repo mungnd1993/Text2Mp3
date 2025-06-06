@@ -28,6 +28,7 @@ koinAndroid = "3.4.2"
 roomRuntime = "2.6.1"
 sdpAndroid = "1.1.0"
 shimmer = "0.5.0"
+firebaseBom = "33.12.0"
 userMessagingPlatform = "2.2.0"
 firebaseCrashlyticsBuildtools = "3.0.3"
 
@@ -45,6 +46,8 @@ coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 cupertinoswitch = { module = "io.github.vejei.cupertinoswitch:cupertinoswitch", version.ref = "cupertinoswitch" }
 dotsindicator = { module = "com.tbuonomo:dotsindicator", version.ref = "dotsindicator" }
 ffmpeg-kit-full = { module = "com.arthenica:ffmpeg-kit-full", version.ref = "ffmpegKitFull" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 flexbox = { module = "com.google.android.flexbox:flexbox", version.ref = "flexbox" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 jetbrains-kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJsonVersion" }

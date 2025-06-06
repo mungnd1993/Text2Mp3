@@ -250,12 +250,12 @@ class GoogleBillingManager(
             for (i in productDetails.subscriptionOfferDetails!!) {
                 if (offerToken == i.offerToken) {
                     if (i.basePlanId == "pro-w") {
-                        PreferenceHelper.getInstance(context).putString(PRICE, "${i.pricingPhases.pricingPhaseList[1].formattedPrice}/${context.getString(R.string.week)}")
+                        PreferenceHelper.getInstance(context).putString(PRICE, "${i.pricingPhases.pricingPhaseList[0].formattedPrice}/${context.getString(R.string.week)}")
                         val tenDaysMillis = 10 * 24 * 60 * 60 * 1000L
                         val futureTime = System.currentTimeMillis() + tenDaysMillis
                         PreferenceHelper.getInstance(context).putLong(CYCLE, futureTime)
                     } else {
-                        PreferenceHelper.getInstance(context).putString(PRICE, "${i.pricingPhases.pricingPhaseList[1].formattedPrice}/${context.getString(R.string.year)}")
+                        PreferenceHelper.getInstance(context).putString(PRICE, "${i.pricingPhases.pricingPhaseList[0].formattedPrice}/${context.getString(R.string.year)}")
                         val oneYearMillis = 368 * 24 * 60 * 60 * 1000L
                         val futureTime = System.currentTimeMillis() + oneYearMillis
                         PreferenceHelper.getInstance(context).putLong(CYCLE, futureTime)

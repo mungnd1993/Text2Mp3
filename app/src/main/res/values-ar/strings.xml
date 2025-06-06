@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">تطبيق TTS</string>
+    <string name="app_name" translatable="false">Text to Speech Converter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">مرحبا شظية فارغة</string>
     <string name="new_project">مشروع جديد</string>
@@ -23,13 +23,13 @@
     <string name="remove_ads">إزالة الإعلانات</string>
     <string name="use_the_application_without_being_bothered_by_ads">استخدم التطبيق دون أن يزعجهم الإعلانات</string>
     <string name="load_audio_file">تحميل ملف الصوت الخاص بك</string>
-    <string name="all_your_documents_pdfs_and_more_are_read_to_you">يتم قراءة جميع مستنداتك ، PDFs وأكثر من ذلك</string>
+    <string name="all_your_documents_pdfs_and_more_are_read_to_you">تحميل النص كملف MP3</string>
     <string name="weekly">أسبوعي</string>
     <string name="billed_weekly">فاتورة أسبوعيًا</string>
     <string name="annual">سنوي</string>
     <string name="save_30">وفر 30 ٪</string>
     <string name="original">الأصلي 7،500،000/سنة</string>
-    <string name="secured_with_app_store">مضمون مع متجر التطبيقات</string>
+    <string name="cancel_anytime_pro">إلغاء في أي وقت</string>
     <string name="home">بيت</string>
     <string name="setting">جلسة</string>
     <string name="project">مشروع</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TTS App</string>
+    <string name="app_name" translatable="false">Text to Speech Converter</string>
     <string name="hello_blank_fragment">Xin chào, đây là fragment trống</string>
     <string name="new_project">Tạo dự án mới</string>
     <string name="welcome_title">Chào mừng bạn đến với TTS</string>
@@ -21,13 +21,13 @@
     <string name="remove_ads">Gỡ quảng cáo</string>
     <string name="use_the_application_without_being_bothered_by_ads">Sử dụng ứng dụng mà không bị làm phiền bởi quảng cáo</string>
     <string name="load_audio_file">Tải tệp âm thanh của bạn</string>
-    <string name="all_your_documents_pdfs_and_more_are_read_to_you">Tất cả tài liệu, PDF và nhiều nội dung khác sẽ được đọc cho bạn</string>
+    <string name="all_your_documents_pdfs_and_more_are_read_to_you">Tải văn bản dưới dạng file MP3</string>
     <string name="weekly">Hàng tuần</string>
     <string name="billed_weekly">Thanh toán hàng tuần</string>
     <string name="annual">Hàng năm</string>
     <string name="save_30">TIẾT KIỆM 30%</string>
     <string name="original">Giá gốc đ7.500.000/năm</string>
-    <string name="secured_with_app_store">Bảo mật bởi App Store</string>
+    <string name="cancel_anytime_pro">Hủy bất cứ lúc nào</string>
     <string name="home">Trang chủ</string>
     <string name="setting">Cài đặt</string>
     <string name="project">Dự án</string>

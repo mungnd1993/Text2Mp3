@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Application TTS</string>
+    <string name="app_name" translatable="false">Text to Speech Converter</string>
     <string name="hello_blank_fragment">Bonjour fragment vierge</string>
     <string name="new_project">Nouveau projet</string>
     <string name="welcome_title">Bienvenue dans Texte en parole</string>
@@ -22,13 +22,13 @@
     <string name="remove_ads">Supprimer les publicités</string>
     <string name="use_the_application_without_being_bothered_by_ads">Utilisez l\'application sans être dérangé par les publicités</string>
     <string name="load_audio_file">Charger votre fichier audio</string>
-    <string name="all_your_documents_pdfs_and_more_are_read_to_you">Tous vos documents, PDFs et plus sont lus pour vous</string>
+    <string name="all_your_documents_pdfs_and_more_are_read_to_you">Télécharger le texte en fichier MP3</string>
     <string name="weekly">Hebdomadaire</string>
     <string name="billed_weekly">Facturé chaque semaine</string>
     <string name="annual">Annuel</string>
     <string name="save_30">ÉCONOMISEZ 30 %</string>
     <string name="original">Original 7.500.000₫/an</string>
-    <string name="secured_with_app_store">Sécurisé avec l\'App Store</string>
+    <string name="cancel_anytime_pro">Annulez à tout moment</string>
     <string name="home">Accueil</string>
     <string name="setting">Paramètres</string>
     <string name="project">Projet</string>

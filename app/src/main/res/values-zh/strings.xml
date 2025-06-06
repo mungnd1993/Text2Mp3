@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TTS应用</string>
+    <string name="app_name" translatable="false">Text to Speech Converter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">你好，空白片段</string>
     <string name="app_title" translatable="false">Text to speech</string>
@@ -24,13 +24,13 @@
     <string name="remove_ads">删除广告</string>
     <string name="use_the_application_without_being_bothered_by_ads">使用该应用程序而不会被广告打扰</string>
     <string name="load_audio_file">加载音频文件</string>
-    <string name="all_your_documents_pdfs_and_more_are_read_to_you">您的所有文档，PDF和更多文档都会阅读给您</string>
+    <string name="all_your_documents_pdfs_and_more_are_read_to_you">将文本下载为MP3文件</string>
     <string name="weekly">每周</string>
     <string name="billed_weekly">每周收费</string>
     <string name="annual">年度的</string>
     <string name="save_30">节省30％</string>
     <string name="original">原始的7,500,000/年</string>
-    <string name="secured_with_app_store">用App Store保证</string>
+    <string name="cancel_anytime_pro">随时取消</string>
     <string name="home">家</string>
     <string name="setting">环境</string>
     <string name="project">项目</string>

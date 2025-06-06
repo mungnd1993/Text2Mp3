@@ -385,7 +385,7 @@
 
                   <androidx.constraintlayout.widget.ConstraintLayout
                       android:id="@+id/cl_secured"
-                      android:layout_width="155dp"
+                      android:layout_width="wrap_content"
                       android:layout_height="23dp"
                       android:layout_marginTop="20dp"
                       app:layout_constraintTop_toBottomOf="@+id/ll_select"
@@ -406,7 +406,7 @@
                           android:layout_height="wrap_content"
                           android:layout_marginStart="6dp"
                           android:fontFamily="@font/roboto_regular"
-                          android:text="@string/secured_with_app_store"
+                          android:text="@string/cancel_anytime_pro"
                           android:textColor="@color/grey_text"
                           android:textSize="12sp"
                           app:layout_constraintBottom_toBottomOf="parent"

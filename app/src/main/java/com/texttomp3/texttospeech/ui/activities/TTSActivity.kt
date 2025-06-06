@@ -44,6 +44,9 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 import java.io.File
+import com.texttomp3.texttospeech.ads.InterstitialAdsListener
+import android.view.inputmethod.InputMethodManager
+import android.content.Context
 
 class TTSActivity : BaseActivity<ActivityTtsBinding>() {
     private var mediaPlayer: MediaPlayer? = null
@@ -191,37 +194,23 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
             }
 
             lifecycleScope.launch {
-                ttsViewModel.path.collect {
+                ttsViewModel.path.collect { it ->
                     if (it.isNotEmpty()) {
                         if (!settingViewModel.proVersion.value) {
                             supportFragmentManager.popBackStack()
-                            LoadInterstitialAds.getInstance().showInterstitial(this@TTSActivity)
+                            LoadInterstitialAds.getInstance().showInterstitial(this@TTSActivity, object : InterstitialAdsListener {
+                                override fun onStartActivity() {
+                                    // Không cần dùng nếu chỉ gọi showInterstitial
+                                }
+
+                                override fun onDismiss() {
+                                    playAudio(it)
+                                }
+                            })
                         } else {
                             delay(500)
                             supportFragmentManager.popBackStack()
-                        }
-                        clAudio.visibility = View.VISIBLE
-                        btGenerate.text = getString(R.string.re_generate)
-
-                        mediaPlayer?.reset()
-                        mediaPlayer = MediaPlayer()
-                        mediaPlayer?.apply {
-                            setDataSource(it)
-                            prepareAsync()
-                            setOnPreparedListener { mp ->
-                                binding.sbAudio.progress = 0
-                                binding.tvMin.text = Utils.convertDuration(0)
-                                binding.sbAudio.max = mp.duration
-                                binding.tvMax.text = Utils.convertDuration(mp.duration)
-                                binding.ivPlay.setImageResource(R.drawable.ic_play)
-                                updateProgress()
-                            }
-                            setOnCompletionListener {
-                                seekTo(0)
-                                binding.tvMin.text = Utils.convertDuration(0)
-                                binding.sbAudio.progress = 0
-                                binding.ivPlay.setImageResource(R.drawable.ic_play)
-                            }
+                            playAudio(it)
                         }
                     }
                 }
@@ -229,8 +218,32 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
         }
     }
 
+    private fun toggleKeyboard() {
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        if (binding.etText.hasFocus()) {
+            binding.etText.clearFocus()
+            imm.hideSoftInputFromWindow(binding.etText.windowToken, 0)
+        } else {
+            binding.etText.requestFocus()
+            imm.showSoftInput(binding.etText, 0)
+        }
+    }
+
     private fun initEvent() {
         with(binding) {
+            etText.setOnClickListener {
+                toggleKeyboard()
+            }
+
+            // Add click listener to parent layout to clear focus when clicking outside
+            main.setOnClickListener {
+                if (etText.hasFocus()) {
+                    etText.clearFocus()
+                    val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                    imm.hideSoftInputFromWindow(etText.windowToken, 0)
+                }
+            }
+
             ivMore.setOnClickListener {
                 try {
                     mediaPlayer?.let { mp ->
@@ -369,6 +382,33 @@ class TTSActivity : BaseActivity<ActivityTtsBinding>() {
                         getString(R.string.loading_audio)
                     )
                 }
+            }
+        }
+    }
+
+    private fun playAudio(path: String) {
+        binding.clAudio.visibility = View.VISIBLE
+        binding.btGenerate.text = getString(R.string.re_generate)
+
+        mediaPlayer?.reset()
+        mediaPlayer = MediaPlayer()
+        mediaPlayer?.apply {
+            setDataSource(path)
+            prepareAsync()
+            setOnPreparedListener { mp ->
+                binding.sbAudio.progress = 0
+                binding.tvMin.text = Utils.convertDuration(0)
+                binding.sbAudio.max = mp.duration
+                binding.tvMax.text = Utils.convertDuration(mp.duration)
+                binding.ivPlay.setImageResource(R.drawable.ic_play)
+                mp.start()
+                updateProgress()
+            }
+            setOnCompletionListener {
+                seekTo(0)
+                binding.tvMin.text = Utils.convertDuration(0)
+                binding.sbAudio.progress = 0
+                binding.ivPlay.setImageResource(R.drawable.ic_play)
             }
         }
     }

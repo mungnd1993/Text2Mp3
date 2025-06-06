@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TTS uygulaması</string>
+    <string name="app_name" translatable="false">Text to Speech Converter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Merhaba boş parça</string>
     <string name="new_project">Yeni proje</string>
@@ -22,13 +22,13 @@
     <string name="remove_ads">Reklamları Kaldır</string>
     <string name="use_the_application_without_being_bothered_by_ads">Uygulamayı reklamlardan rahatsız olmadan kullanın</string>
     <string name="load_audio_file">Ses dosyanızı yükleyin</string>
-    <string name="all_your_documents_pdfs_and_more_are_read_to_you">Tüm belgeleriniz, PDF"leriniz ve daha fazlası size okunur</string>
+    <string name="all_your_documents_pdfs_and_more_are_read_to_you">Metni MP3 dosyası olarak indir</string>
     <string name="weekly">Haftalık</string>
     <string name="billed_weekly">Haftalık faturalandırıldı</string>
     <string name="annual">Yıllık</string>
     <string name="save_30">% 30 tasarruf edin</string>
     <string name="original">Orijinal đ7,500.000/yıl</string>
-    <string name="secured_with_app_store">App Store ile Güvenli</string>
+    <string name="cancel_anytime_pro">İstediğiniz zaman iptal edin</string>
     <string name="home">Ev</string>
     <string name="setting">Ayar</string>
     <string name="project">Proje</string>

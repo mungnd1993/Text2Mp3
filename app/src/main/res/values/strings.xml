@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TTS App</string>
+    <string name="app_name" translatable="false">Text to Speech Converter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="app_title" translatable="false">Text to speech</string>
@@ -23,14 +23,14 @@
     <string name="remove_ads">Remove Ads</string>
     <string name="use_the_application_without_being_bothered_by_ads">Use the application without being bothered by ads</string>
     <string name="load_audio_file">Load your audio file</string>
-    <string name="all_your_documents_pdfs_and_more_are_read_to_you">All your documents, PDFs and more are read to you</string>
+    <string name="all_your_documents_pdfs_and_more_are_read_to_you">Download text into mp3 file</string>
     <string name="weekly">Weekly</string>
     <string name="billed_weekly">Billed weekly</string>
     <string name="billed_yearly">Billed annually</string>
     <string name="annual">Annually</string>
     <string name="save_30">SAVE 30%</string>
     <string name="original">Original đ7,500,000/yr</string>
-    <string name="secured_with_app_store">Secured with App Store</string>
+    <string name="cancel_anytime_pro">Cancel any time</string>
     <string name="home">Home</string>
     <string name="setting">Setting</string>
     <string name="project">Project</string>

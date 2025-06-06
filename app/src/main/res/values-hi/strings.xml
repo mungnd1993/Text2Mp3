@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">टीटीएस ऐप</string>
+    <string name="app_name" translatable="false">Text to Speech Converter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">हैलो खाली टुकड़ा</string>
     <string name="new_project">नई परियोजना</string>
@@ -22,13 +22,13 @@
     <string name="remove_ads">विज्ञापन हटाएँ</string>
     <string name="use_the_application_without_being_bothered_by_ads">विज्ञापनों द्वारा परेशान किए बिना आवेदन का उपयोग करें</string>
     <string name="load_audio_file">अपनी ऑडियो फ़ाइल लोड करें</string>
-    <string name="all_your_documents_pdfs_and_more_are_read_to_you">आपके सभी दस्तावेज़, पीडीएफ और बहुत कुछ आपको पढ़ा जाता है</string>
+    <string name="all_your_documents_pdfs_and_more_are_read_to_you">टेक्स्ट को एमपी3 फ़ाइल के रूप में डाउनलोड करें</string>
     <string name="weekly">साप्ताहिक</string>
     <string name="billed_weekly">साप्ताहिक बिल</string>
     <string name="annual">वार्षिक</string>
     <string name="save_30">30% बचाओ</string>
     <string name="original">मूल đ7,500,000/yr</string>
-    <string name="secured_with_app_store">ऐप स्टोर के साथ सुरक्षित</string>
+    <string name="cancel_anytime_pro">कभी भी रद्द करें</string>
     <string name="home">घर</string>
     <string name="setting">सेटिंग</string>
     <string name="project">परियोजना</string>

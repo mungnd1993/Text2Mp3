@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TTS App</string>
+    <string name="app_name" translatable="false">Text to Speech Converter</string>
     <string name="hello_blank_fragment">Hallo leeres Fragment</string>
     <string name="new_project">Neues Projekt</string>
     <string name="welcome_title">Willkommen bei Text-zu-Sprache</string>
@@ -21,13 +21,13 @@
     <string name="remove_ads">Werbung entfernen</string>
     <string name="use_the_application_without_being_bothered_by_ads">Die Anwendung ohne störende Werbung nutzen</string>
     <string name="load_audio_file">Ihre Audiodatei laden</string>
-    <string name="all_your_documents_pdfs_and_more_are_read_to_you">Alle Ihre Dokumente, PDFs und mehr werden Ihnen vorgelesen</string>
+    <string name="all_your_documents_pdfs_and_more_are_read_to_you">Text als MP3-Datei herunterladen</string>
     <string name="weekly">Wöchentlich</string>
     <string name="billed_weekly">Wöchentlich abgerechnet</string>
     <string name="annual">Jährlich</string>
     <string name="save_30">30% SPAREN</string>
     <string name="original">Original 7.500.000đ/Jahr</string>
-    <string name="secured_with_app_store">Gesichert mit dem App Store</string>
+    <string name="cancel_anytime_pro">Jederzeit kündigen</string>
     <string name="home">Startseite</string>
     <string name="setting">Einstellung</string>
     <string name="project">Projekt</string>

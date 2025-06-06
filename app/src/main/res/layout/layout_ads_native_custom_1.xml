@@ -12,15 +12,6 @@
         android:elevation="12dp"
         android:paddingBottom="16dp">
 
-<!--        <androidx.appcompat.widget.AppCompatImageView-->
-<!--            android:id="@+id/iv_info"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            android:padding="4dp"-->
-<!--            android:src="@drawable/ic_info_circle"/>-->
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_title"
             android:layout_width="match_parent"
@@ -97,21 +88,21 @@
 
         <FrameLayout
             android:id="@+id/fl_video"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/tv_ad_body"
             app:layout_constraintStart_toStartOf="parent"
-            android:background="@drawable/bg_ads_icon_shimmer"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginHorizontal="16dp"
+            android:paddingHorizontal="16dp"
             android:layout_marginTop="12dp">
 
             <com.google.android.gms.ads.nativead.MediaView
                 android:id="@+id/mv_ads"
                 android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:layout_gravity="center"
-                android:background="@drawable/shape_media_view_ads"/>
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_ads_icon_shimmer"/>
         </FrameLayout>
 
         <com.google.android.material.button.MaterialButton

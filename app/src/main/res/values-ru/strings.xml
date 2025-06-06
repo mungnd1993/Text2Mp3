@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Приложение TTS</string>
+    <string name="app_name" translatable="false">Text to Speech Converter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Привет, пустой фрагмент</string>
     <string name="new_project">Новый проект</string>
@@ -22,13 +22,13 @@
     <string name="remove_ads">Удалить рекламу</string>
     <string name="use_the_application_without_being_bothered_by_ads">Используйте приложение, не беспокоясь о рекламе</string>
     <string name="load_audio_file">Загрузите свой аудиофайл</string>
-    <string name="all_your_documents_pdfs_and_more_are_read_to_you">Все ваши документы, pdfs и многое другое читают вам</string>
+    <string name="all_your_documents_pdfs_and_more_are_read_to_you">Скачать текст в формате MP3</string>
     <string name="weekly">Еженедельно</string>
     <string name="billed_weekly">Выставлял счета еженедельно</string>
     <string name="annual">Ежегодный</string>
     <string name="save_30">Сохранить 30%</string>
     <string name="original">Оригинал đ7 500 000/год</string>
-    <string name="secured_with_app_store">Закреплен с помощью App Store</string>
+    <string name="cancel_anytime_pro">Отмените в любое время</string>
     <string name="home">Дом</string>
     <string name="setting">Параметр</string>
     <string name="project">Проект</string>

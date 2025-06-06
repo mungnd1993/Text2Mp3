@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TTSアプリ</string>
+    <string name="app_name" translatable="false">Text to Speech Converter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">こんにちは空白フラグメント</string>
     <string name="new_project">新しいプロジェクト</string>
@@ -22,13 +22,13 @@
     <string name="remove_ads">広告を削除します</string>
     <string name="use_the_application_without_being_bothered_by_ads">広告に悩まされることなくアプリケーションを使用します</string>
     <string name="load_audio_file">オーディオファイルをロードします</string>
-    <string name="all_your_documents_pdfs_and_more_are_read_to_you">あなたのすべての文書、PDFなどがあなたに読まれます</string>
+    <string name="all_your_documents_pdfs_and_more_are_read_to_you">テキストをMP3ファイルとしてダウンロードする</string>
     <string name="weekly">毎週</string>
     <string name="billed_weekly">毎週請求されます</string>
     <string name="annual">年間</string>
     <string name="save_30">30％を節約する</string>
     <string name="original">オリジナルch7,500,000/yr</string>
-    <string name="secured_with_app_store">App Storeで保護されています</string>
+    <string name="cancel_anytime_pro">いつでもキャンセルできます</string>
     <string name="home">家</string>
     <string name="setting">設定</string>
     <string name="project">プロジェクト</string>

@@ -89,7 +89,7 @@ class NativeAds {
     ) {
         val adOptions =
             NativeAdOptions.Builder().setMediaAspectRatio(MediaAspectRatio.LANDSCAPE).build()
-        adLoader = AdLoader.Builder(activity, AD_UNIT_ID_NATIVE_VIDEO_ADS)
+        adLoader = AdLoader.Builder(activity, AD_UNIT_ID_NATIVE_ADS)
             .forNativeAd(OnNativeAdLoadedListener { nativeAd ->
                 try {
                     if (!adLoader.isLoading) {

@@ -108,28 +108,27 @@ class UpgradeFragment : BaseFragment<FragmentUpgradeBinding>(), GoogleBillingMan
             val list = productDetails!!.subscriptionOfferDetails
             if (list != null) {
                 if (list.size == 4) {
-                    binding.tvPrice1.text = list[1].pricingPhases.pricingPhaseList[0].formattedPrice
-                    binding.tvPrice2.text = list[3].pricingPhases.pricingPhaseList[0].formattedPrice
+                    binding.tvPrice1.text = list[0].pricingPhases.pricingPhaseList[1].formattedPrice
+                    binding.tvPrice2.text = list[2].pricingPhases.pricingPhaseList[1].formattedPrice
 
                     this.productDetails = productDetails
-                    offerToken = list[1].offerToken
+                    offerToken = list[0].offerToken
 
                     binding.clWeek.setOnClickListener {
                         binding.clWeek.setBackgroundResource(R.drawable.bg_upgrade_active)
                         binding.clAnnu.setBackgroundResource(R.drawable.bg_upgrade_unactive)
                         this.productDetails = productDetails
-                        offerToken = list[1].offerToken
+                        offerToken = list[0].offerToken
                     }
 
                     binding.clAnnu.setOnClickListener {
                         binding.clWeek.setBackgroundResource(R.drawable.bg_upgrade_unactive)
                         binding.clAnnu.setBackgroundResource(R.drawable.bg_upgrade_active)
                         this.productDetails = productDetails
-                        offerToken = list[3].offerToken
+                        offerToken = list[2].offerToken
                     }
                 }
                 else if (list.size == 2) {
-                    binding.btContinue.text = getString(R.string.upgrade_now)
                     binding.tvPrice1.text = list[0].pricingPhases.pricingPhaseList[0].formattedPrice
                     binding.tvPrice2.text = list[1].pricingPhases.pricingPhaseList[0].formattedPrice
 

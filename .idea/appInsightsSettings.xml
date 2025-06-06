@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.texttomp3.texttospeech" />
+                  <option name="mobileSdkAppId" value="1:864570252697:android:a4b8e8fb14b9d373ce4708" />
+                  <option name="projectId" value="simpfoxproject" />
+                  <option name="projectNumber" value="864570252697" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

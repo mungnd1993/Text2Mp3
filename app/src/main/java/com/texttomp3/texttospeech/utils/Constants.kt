@@ -1,14 +1,14 @@
 package com.texttomp3.texttospeech.utils
 
 object Constants {
-    const val AD_UNIT_ID_APP_OPEN_ADS = "ca-app-pub-3940256099942544/9257395921"
-    const val AD_UNIT_ID_INTERSTITIAL_ADS = "ca-app-pub-3940256099942544/1033173712"
+    const val AD_UNIT_ID_APP_OPEN_ADS = "ca-app-pub-9182552879776108/4210195369"
+    const val AD_UNIT_ID_INTERSTITIAL_ADS = "ca-app-pub-9182552879776108/9342043055"
     const val AD_UNIT_ID_ADAPTIVE_BANNER_ADS = "ca-app-pub-3940256099942544/9214589741"
-    const val AD_UNIT_ID_FIXED_SIZE_BANNER_ADS = "ca-app-pub-3940256099942544/6300978111"
+    const val AD_UNIT_ID_FIXED_SIZE_BANNER_ADS = "ca-app-pub-9182552879776108/2509282645"
     const val AD_UNIT_ID_REWARDED_ADS = "ca-app-pub-3940256099942544/5224354917"
     const val AD_UNIT_ID_REWARDED_INTERSTITIAL_ADS = "ca-app-pub-3940256099942544/5354046379"
-    const val AD_UNIT_ID_NATIVE_ADS = "ca-app-pub-3940256099942544/2247696110"
-    const val AD_UNIT_ID_NATIVE_VIDEO_ADS = "ca-app-pub-3940256099942544/1044960115"
+    const val AD_UNIT_ID_NATIVE_ADS = "ca-app-pub-9182552879776108/7035669258"
+    const val AD_UNIT_ID_NATIVE_VIDEO_ADS = "ca-app-pub-9182552879776108/7035669258"
 
     const val LINK_GOOGLE_PLAY = "https://play.google.com/store/apps/details?id="
     const val SET_PACKAGE = "com.android.vending"

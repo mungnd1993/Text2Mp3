@@ -14,6 +14,7 @@ class LoadInterstitialAds {
             return instance ?: LoadInterstitialAds()
         }
     }
+
     fun openAdsThenOpenActivity(activity: Activity, listener: InterstitialAdsListener) {
         val application = activity.application
         if (application is MyApplication) {
@@ -41,7 +42,7 @@ class LoadInterstitialAds {
         }
     }
 
-    fun showInterstitial(activity: Activity) {
+    fun showInterstitial(activity: Activity, listener: InterstitialAdsListener) {
         val application = activity.application
         if (application is MyApplication) {
             mInterstitialAd = application.mInterstitialAd
@@ -49,10 +50,12 @@ class LoadInterstitialAds {
                 mInterstitialAd?.show(activity)
                 mInterstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
                     override fun onAdDismissedFullScreenContent() {
+                        listener.onDismiss()
                         application.loadInterstitial(AD_UNIT_ID_INTERSTITIAL_ADS)
                     }
 
                     override fun onAdFailedToShowFullScreenContent(adError: AdError) {
+                        listener.onDismiss()
                         application.loadInterstitial(AD_UNIT_ID_INTERSTITIAL_ADS)
                     }
 
@@ -60,6 +63,7 @@ class LoadInterstitialAds {
                     }
                 }
             } else {
+                listener.onDismiss()
                 application.loadInterstitial(AD_UNIT_ID_INTERSTITIAL_ADS)
             }
         }

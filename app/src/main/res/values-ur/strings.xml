@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ٹی ٹی ایس ایپ</string>
+    <string name="app_name" translatable="false">Text to Speech Converter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">ہیلو خالی ٹکڑا</string>
     <string name="new_project">نیا پروجیکٹ</string>
@@ -22,13 +22,13 @@
     <string name="remove_ads">اشتہارات کو ہٹا دیں</string>
     <string name="use_the_application_without_being_bothered_by_ads">اشتہارات کی زحمت کے بغیر درخواست کا استعمال کریں</string>
     <string name="load_audio_file">اپنی آڈیو فائل لوڈ کریں</string>
-    <string name="all_your_documents_pdfs_and_more_are_read_to_you">آپ کے تمام دستاویزات ، پی ڈی ایف اور بہت کچھ آپ کو پڑھا جاتا ہے</string>
+    <string name="all_your_documents_pdfs_and_more_are_read_to_you">متن کو MP3 فائل کے طور پر ڈاؤن لوڈ کریں</string>
     <string name="weekly">ہفتہ وار</string>
     <string name="billed_weekly">ہفتہ وار بل</string>
     <string name="annual">سالانہ</string>
     <string name="save_30">30 ٪ کی بچت کریں</string>
     <string name="original">اصل đ7،500،000/سال</string>
-    <string name="secured_with_app_store">ایپ اسٹور کے ساتھ محفوظ</string>
+    <string name="cancel_anytime_pro">کسی بھی وقت منسوخ کریں</string>
     <string name="home">گھر</string>
     <string name="setting">ترتیب</string>
     <string name="project">پروجیکٹ</string>
