@@ -40,6 +40,7 @@
     <string name="more_than_100_languages">More than 100 languages</string>
     <string name="free_trial_enabled">Free Trial Enabled</string>
     <string name="three_days_free_trial_auto_renewal">3 Days Free Trial, Auto Renewal</string>
+    <string name="three_days_free_trial" translatable="false">3 Days Free Trial</string>
     <string name="billed_week">Billed Week, Auto Renewal</string>
     <string name="cancel_anytime">, cancel anytime</string>
     <string name="billed_year">Billed Year, Auto Renewal</string>

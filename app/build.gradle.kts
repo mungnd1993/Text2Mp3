@@ -16,8 +16,8 @@ android {
         applicationId = "com.texttomp3.texttospeech"
         minSdk = 24
         targetSdk = 35
-        versionCode = 3
-        versionName = "3.1"
+        versionCode = 4
+        versionName = "3.1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

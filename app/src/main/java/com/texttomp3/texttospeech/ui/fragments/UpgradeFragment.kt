@@ -108,6 +108,10 @@ class UpgradeFragment : BaseFragment<FragmentUpgradeBinding>(), GoogleBillingMan
             val list = productDetails!!.subscriptionOfferDetails
             if (list != null) {
                 if (list.size == 4) {
+                    binding.btContinue.text = getString(R.string.try_for_free)
+                    binding.tvSub.text = getString(R.string.three_days_free_trial)
+                    binding.tvSub2.text = getString(R.string.three_days_free_trial)
+
                     binding.tvPrice1.text = list[0].pricingPhases.pricingPhaseList[1].formattedPrice
                     binding.tvPrice2.text = list[2].pricingPhases.pricingPhaseList[1].formattedPrice
 
