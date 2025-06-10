@@ -1,10 +1,10 @@
-# TTS App
+# Text to Speech Converter
 
 An Android Text-to-Speech (TTS) application developed with Kotlin.
 
 ## Description
 
-TTS App is an Android application that converts text to speech. The app uses the EdgeTTS library to generate natural and high-quality voice output.
+Text to Speech Converter is an Android application that converts text to speech. The app uses the EdgeTTS library to generate natural and high-quality voice output.
 
 ## Features
 
@@ -23,7 +23,7 @@ TTS App is an Android application that converts text to speech. The app uses the
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/tts-app.git
+git clone https://github.com/mungnd1993/Text2Mp3.git
 ```
 
 2. Open the project in Android Studio
@@ -34,7 +34,7 @@ git clone https://github.com/your-username/tts-app.git
 
 ```
 TTSApp/
-├── app/                   # Main application module
+├── app/                  # Main application module
 ├── edgettslib/           # EdgeTTS library
 ├── gradle/               # Gradle wrapper
 └── build.gradle.kts      # Gradle configuration file
