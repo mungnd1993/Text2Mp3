@@ -1,49 +1,49 @@
 # TTS App
 
-Ứng dụng Text-to-Speech (TTS) cho Android được phát triển bằng Kotlin.
+An Android Text-to-Speech (TTS) application developed with Kotlin.
 
-## Mô tả
+## Description
 
-TTS App là một ứng dụng Android cho phép chuyển đổi văn bản thành giọng nói. Ứng dụng sử dụng thư viện EdgeTTS để tạo ra giọng nói tự nhiên và chất lượng cao.
+TTS App is an Android application that converts text to speech. The app uses the EdgeTTS library to generate natural and high-quality voice output.
 
-## Tính năng
+## Features
 
-- Chuyển đổi văn bản thành giọng nói
-- Hỗ trợ nhiều ngôn ngữ
-- Giao diện người dùng thân thiện
-- Lưu trữ và quản lý các file âm thanh
+- Convert text to speech
+- Support for multiple languages
+- User-friendly interface
+- Store and manage audio files
 
-## Yêu cầu hệ thống
+## System Requirements
 
-- Android 5.0 (API level 21) trở lên
-- Kotlin 1.8.0 trở lên
-- Gradle 7.0 trở lên
+- Android 5.0 (API level 21) or higher
+- Kotlin 1.8.0 or higher
+- Gradle 7.0 or higher
 
-## Cài đặt
+## Installation
 
-1. Clone repository:
+1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/tts-app.git
 ```
 
-2. Mở project trong Android Studio
+2. Open the project in Android Studio
 
-3. Đồng bộ Gradle và build project
+3. Sync Gradle and build the project
 
-## Cấu trúc dự án
+## Project Structure
 
 ```
 TTSApp/
-├── app/                    # Module chính của ứng dụng
-├── edgettslib/            # Thư viện EdgeTTS
-├── gradle/                # Gradle wrapper
-└── build.gradle.kts       # File cấu hình Gradle
+├── app/                   # Main application module
+├── edgettslib/           # EdgeTTS library
+├── gradle/               # Gradle wrapper
+└── build.gradle.kts      # Gradle configuration file
 ```
 
-## Đóng góp
+## Contributing
 
-Mọi đóng góp đều được hoan nghênh! Vui lòng tạo pull request hoặc issue để đóng góp vào dự án.
+Contributions are welcome! Please feel free to submit a Pull Request or create an issue.
 
-## Giấy phép
+## License
 
-Dự án này được cấp phép theo giấy phép MIT - xem file [LICENSE](LICENSE) để biết thêm chi tiết. 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
